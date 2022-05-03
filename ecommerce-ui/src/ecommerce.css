@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create flex row class */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.right-side {
+  justify-content: flex-end;
+}
+
+/* Create flex column class */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 0.2rem;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  padding: 0.2rem;
+}
+
+.card {
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  padding: 0.25rem;
+  background-color: whitesmoke;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.text-container {
+  padding-left: 0.5rem;
+  height: 14rem;
+  width: 100%;
+}
+
+.sub-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%
+}
+
+.btn {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.btn-bg {
+  background: red;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  color: blue;
+}
+
+.star {
+  color: red;
+  justify-content: flex-start;
+}
+
+.comment{
+  margin-left: 1.5rem;
+}
+
+.content {
+  padding: 0.25rem;
+  color: black;
+}
+.payment {
+  position:absolute;
+  right:0.8rem;
+  top:0;
+}
+
+.border-line {
+  border: 1px solid gray;
+}
+
+.bottom-line {
+  border-bottom: 1px solid gray;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 50rem) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Responsive columns */
+@media screen and (min-width: 50rem) {
+  .double-column {
+    flex: 2
+  }
+
+  .column {
+    flex: 1;
+  }
+}
