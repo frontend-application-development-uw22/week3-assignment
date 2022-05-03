@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./PropertyCard.css";
 
 export default function PropertyCard({ size, data }) {
-  console.log(data);
   return (
     <div className={`property-card__container--${size}`}>
       <Link className={`property-card__link`} to={`property/${data.id}`}>

@@ -1,13 +1,18 @@
 import React from "react";
 import PropertyCard from "./Property/PropertyCard";
+import CollectionCard from "./Collections/CollectionCard";
 import "./Home.css";
 
-export default function Property({ data }) {
-  let featuredProps = data.filter((property) => {
+export default function Property({ propertyData, collectionsData }) {
+  let featuredProps = propertyData.filter((property) => {
     return property.rating.stars >= 4 && property.rating.reviews >= 80;
   });
 
   featuredProps = featuredProps.slice(0, 4);
+
+  const featuredCollections = collectionsData.filter((collection) => {
+    return collection.id <= 4;
+  });
 
   return (
     <>
@@ -19,6 +24,11 @@ export default function Property({ data }) {
         })}
       </div>
       <h3>Popular locations</h3>
+      <div className="carousel--container carousel--container__popular">
+        {featuredCollections.map((collection) => {
+          return <CollectionCard size="medium" data={collection} />;
+        })}
+      </div>
     </>
   );
 }
