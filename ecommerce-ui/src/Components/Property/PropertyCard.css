@@ -1,0 +1,19 @@
+.property-card__container--medium {
+  flex: 1 1 280px;
+}
+
+.property-card__container--large {
+  flex: 1 1 560px;
+}
+
+.property-card__image--medium {
+  width: 240px;
+}
+
+.property-card__image--large {
+  width: 480px;
+}
+
+.property-card__link {
+  text-decoration: none;
+}
