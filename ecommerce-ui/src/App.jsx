@@ -35,8 +35,13 @@ export default function App() {
           element={<Properties />}
         ></Route>
         <Route
-          path="/collections/:city"
-          element={<Collection data={collectionsData} />}
+          path="/collection/:city"
+          element={
+            <Collection
+              propertyData={propertyData}
+              collectionsData={collectionsData}
+            />
+          }
         ></Route>
       </Routes>
     </main>

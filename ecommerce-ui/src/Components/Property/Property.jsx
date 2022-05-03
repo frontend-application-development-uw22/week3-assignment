@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import PropertyCard from "./PropertyCard";
+import Map from "../Map/Map";
 import "./Property.css";
 
 export default function Property({ data }) {
@@ -10,6 +11,7 @@ export default function Property({ data }) {
   return (
     <>
       <PropertyCard size="large" data={property} />
+      <Map lat={property.location.lat} lng={property.location.lng} />
     </>
   );
 }

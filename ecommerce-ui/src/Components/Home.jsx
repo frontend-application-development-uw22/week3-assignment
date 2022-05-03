@@ -26,7 +26,7 @@ export default function Property({ propertyData, collectionsData }) {
         })}
       </div>
       <h3>Popular locations</h3>
-      <div className="carousel--container carousel--container__popular">
+      <div className="carousel--container carousel--container__collections">
         {featuredCollections.map((collection) => {
           return <CollectionCard size="medium" data={collection} />;
         })}
