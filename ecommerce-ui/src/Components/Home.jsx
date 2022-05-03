@@ -16,7 +16,9 @@ export default function Property({ propertyData, collectionsData }) {
 
   return (
     <>
-      <h1>Find your dream getaway</h1>
+      <div className="hero--container">
+        <h1 className="hero--headline">Your dream getaway is out there</h1>
+      </div>
       <h3>Popular getaways</h3>
       <div className="carousel--container carousel--container__popular">
         {featuredProps.map((property) => {
