@@ -31,6 +31,7 @@ export default function App() {
           element={
             <Home
               propertyData={propertyData}
+              onAddToCartHandler={onAddToCartHandler}
               collectionsData={collectionsData}
             />
           }

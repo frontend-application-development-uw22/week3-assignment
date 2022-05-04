@@ -21,8 +21,19 @@ export default function Map({ lat, lng }) {
   const [map, setMap] = useState(null);
 
   const onLoad = useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    //map.fitBounds(bounds);
+    const bounds = new window.google.maps.LatLngBounds();
+    map.setCenter(center);
+    map.setZoom(13);
+    const icon = {
+      url: "https://realfavicongenerator.net/homepage_icons/platforms/android_2x.png",
+      size: new window.google.maps.Size(80, 80),
+    };
+    new window.google.maps.Marker({
+      position: center,
+      map,
+      title: "Rental",
+      icon: icon,
+    });
     setMap(map);
   }, []);
 
@@ -31,15 +42,12 @@ export default function Map({ lat, lng }) {
   }, []);
   return isLoaded ? (
     <GoogleMap
-      disableDefaultUI={true}
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={13}
-      zoomControl={false}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-      <Marker position={{ lat: lat, lng: lng }} />
+      <Marker position={center} />
     </GoogleMap>
   ) : (
     <>Map view not available</>

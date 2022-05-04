@@ -3,7 +3,11 @@ import PropertyCard from "./Property/PropertyCard";
 import CollectionCard from "./Collections/CollectionCard";
 import "./Home.css";
 
-export default function Property({ propertyData, collectionsData }) {
+export default function Property({
+  onAddToCartHandler,
+  propertyData,
+  collectionsData,
+}) {
   let featuredProps = propertyData.filter((property) => {
     return property.rating.stars >= 4 && property.rating.reviews >= 80;
   });
@@ -22,7 +26,13 @@ export default function Property({ propertyData, collectionsData }) {
       <h3>Popular getaways</h3>
       <div className="carousel--container carousel--container__popular">
         {featuredProps.map((property) => {
-          return <PropertyCard size="medium" data={property} />;
+          return (
+            <PropertyCard
+              onAddToCartHandler={onAddToCartHandler}
+              size="medium"
+              data={property}
+            />
+          );
         })}
       </div>
       <h3>Popular locations</h3>
