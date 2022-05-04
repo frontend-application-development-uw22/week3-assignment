@@ -6,7 +6,10 @@
     "image": "https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80",
     "location": {
       "city": "New York",
-      "country": "USA"
+      "country": "USA",
+      "neighborhood": "Flushing",
+      "lat": 40.7675,
+      "lng": -73.8331
     },
     "payment": {
       "cost": 105,
@@ -28,7 +31,10 @@
     "image": "https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80",
     "location": {
       "city": "Denver",
-      "country": "USA"
+      "country": "USA",
+      "neighborhood": "LoDo",
+      "lat": 39.7527,
+      "lng": -105.0017
     },
     "payment": {
       "cost": 130,
@@ -72,7 +78,10 @@
     "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": {
       "city": "San Diego",
-      "country": "USA"
+      "country": "USA",
+      "neighorhood": "Point Loma",
+      "lat": 32.7,
+      "lng": -117.2467
     },
     "payment": {
       "cost": 230,
@@ -135,6 +144,7 @@
     }
   },
   {
+    "id": 6,
     "title": "Warm two bedroom home in downtown Columbus, close to trendy restaurant scene",
     "houseType": "Entire home",
     "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -156,6 +166,7 @@
     }
   },
   {
+    "id": 7,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -177,6 +188,7 @@
     }
   },
   {
+    "id": 8,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -198,6 +210,7 @@
     }
   },
   {
+    "id": 9,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -219,6 +232,7 @@
     }
   },
   {
+    "id": 10,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -240,6 +254,7 @@
     }
   },
   {
+    "id": 11,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -261,6 +276,7 @@
     }
   },
   {
+    "id": 12,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -282,6 +298,7 @@
     }
   },
   {
+    "id": 13,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -303,6 +320,7 @@
     }
   },
   {
+    "id": 14,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
@@ -324,6 +342,7 @@
     }
   },
   {
+    "id": 15,
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",

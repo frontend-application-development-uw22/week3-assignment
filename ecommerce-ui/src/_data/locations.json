@@ -19,23 +19,23 @@
   },
   {
     "id": 3,
-    "city": "Orlando",
-    "slug": "orlando",
-    "image": "https://images.unsplash.com/photo-1539325056414-59554db098e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlhbWl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-  },
-  {
-    "id": 4,
-    "city": "San Francisco",
-    "slug": "san-francisco",
-    "image": "https://images.unsplash.com/photo-1541464522988-31b420f688b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlhbWl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-  },
-  {
-    "id": 5,
     "city": "Seattle",
     "slug": "seattle",
     "lat": 47.6062,
     "lng": -122.3321,
     "image": "https://images.unsplash.com/photo-1566492238579-73920a74378a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlhbWl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+  },
+  {
+    "id": 4,
+    "city": "Orlando",
+    "slug": "orlando",
+    "image": "https://images.unsplash.com/photo-1539325056414-59554db098e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlhbWl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+  },
+  {
+    "id": 5,
+    "city": "San Francisco",
+    "slug": "san-francisco",
+    "image": "https://images.unsplash.com/photo-1541464522988-31b420f688b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlhbWl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
   },
   {
     "id": 6,

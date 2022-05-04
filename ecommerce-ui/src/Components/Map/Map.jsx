@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from "react";
 
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "400px",
-  height: "400px",
+  width: "1200px",
+  height: "300px",
 };
 
 export default function Map({ lat, lng }) {
@@ -12,7 +12,7 @@ export default function Map({ lat, lng }) {
     lat: lat,
     lng: lng,
   };
-  console.log(process.env.REACT_APP_API_KEY);
+
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: process.env.REACT_APP_API_KEY,
@@ -31,15 +31,17 @@ export default function Map({ lat, lng }) {
   }, []);
   return isLoaded ? (
     <GoogleMap
+      disableDefaultUI={true}
       mapContainerStyle={containerStyle}
       center={center}
       zoom={13}
+      zoomControl={false}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-      <></>
+      <Marker position={{ lat: lat, lng: lng }} />
     </GoogleMap>
   ) : (
-    <></>
+    <>Map view not available</>
   );
 }

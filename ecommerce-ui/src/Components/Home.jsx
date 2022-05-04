@@ -11,7 +11,7 @@ export default function Property({ propertyData, collectionsData }) {
   featuredProps = featuredProps.slice(0, 4);
 
   const featuredCollections = collectionsData.filter((collection) => {
-    return collection.id <= 4;
+    return collection.id <= 3;
   });
 
   return (

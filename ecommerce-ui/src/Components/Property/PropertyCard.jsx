@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./PropertyCard.css";
 
-export default function PropertyCard({ size, data }) {
+export default function PropertyCard({ onAddToCartHandler, size, data }) {
+  const addItem = () => {
+    onAddToCartHandler(data);
+  };
+
   return (
     <div className={`property-card__container--${size}`}>
-      <Link className={`property-card__link`} to={`property/${data.id}`}>
+      <Link className={`property-card__link`} to={`/property/${data.id}`}>
         <img
           className={`property-card__image--${size}`}
           src={data.image}
@@ -19,6 +23,7 @@ export default function PropertyCard({ size, data }) {
           {data.rating.stars} stars | {data.rating.reviews} reviews
         </h5>
       </Link>
+      <button onClick={addItem}>Add to cart</button>
     </div>
   );
 }

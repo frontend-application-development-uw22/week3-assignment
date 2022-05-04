@@ -4,13 +4,17 @@ import PropertyCard from "./PropertyCard";
 import Map from "../Map/Map";
 import "./Property.css";
 
-export default function Property({ data }) {
+export default function Property({ onAddToCartHandler, data }) {
   const { propertyId } = useParams();
   const property = data.filter((property) => property.id === +propertyId)[0];
 
   return (
     <>
-      <PropertyCard size="large" data={property} />
+      <PropertyCard
+        onAddToCartHandler={onAddToCartHandler}
+        size="large"
+        data={property}
+      />
       <Map lat={property.location.lat} lng={property.location.lng} />
     </>
   );
