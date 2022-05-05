@@ -61,6 +61,7 @@ export default function App() {
           path="/collection/:city"
           element={
             <Collection
+              cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}
               propertyData={propertyData}

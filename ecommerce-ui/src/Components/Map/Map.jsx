@@ -20,21 +20,23 @@ export default function Map({ lat, lng }) {
 
   const [map, setMap] = useState(null);
 
-  const onLoad = useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.setCenter(center);
-    map.setZoom(15);
-    const icon = {
-      url: "https://cdn-icons-png.flaticon.com/32/7290/7290568.png",
-      size: new window.google.maps.Size(32, 32),
-    };
-    new window.google.maps.Marker({
-      position: center,
-      map,
-      icon: icon,
-    });
-    setMap(map);
-  }, []);
+  const onLoad = useCallback(
+    function callback(map) {
+      map.setCenter(center);
+      map.setZoom(15);
+      const icon = {
+        url: "https://cdn-icons-png.flaticon.com/32/7290/7290568.png",
+        size: new window.google.maps.Size(32, 32),
+      };
+      new window.google.maps.Marker({
+        position: center,
+        map: map,
+        icon: icon,
+      });
+      setMap(map);
+    },
+    [containerStyle]
+  );
 
   const onUnmount = useCallback(function callback(map) {
     setMap(null);

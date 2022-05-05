@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import PropertyCard from "../Property/PropertyCard";
 
 export default function Property({
+  cartItems,
   onAddToCartHandler,
+  onRemoveFromCartHandler,
   propertyData,
   collectionsData,
 }) {
@@ -20,7 +22,9 @@ export default function Property({
         {collectionProps.map((property) => {
           return (
             <PropertyCard
+              cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
               size="medium"
               data={property}
             />

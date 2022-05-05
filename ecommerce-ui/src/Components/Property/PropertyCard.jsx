@@ -11,6 +11,8 @@ export default function PropertyCard({
 }) {
   let inCart = false;
 
+  console.log(cartItems);
+
   if (cartItems) {
     inCart = cartItems.find((property) => property.id === data.id);
   }
