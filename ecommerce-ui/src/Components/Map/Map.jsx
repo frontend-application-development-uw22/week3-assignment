@@ -24,8 +24,8 @@ export default function Map({ lat, lng }) {
     map.setCenter(center);
     map.setZoom(15);
     const icon = {
-      url: "https://cdn-icons-png.flaticon.com/32/7290/7290568.png",
-      size: new window.google.maps.Size(32, 32),
+      url: "https://cdn-icons-png.flaticon.com/64/7086/7086895.png",
+      scaledSize: new window.google.maps.Size(28, 28),
     };
     new window.google.maps.Marker({
       position: center,
