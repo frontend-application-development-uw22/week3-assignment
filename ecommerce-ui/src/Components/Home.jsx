@@ -4,6 +4,7 @@ import CollectionCard from "./Collections/CollectionCard";
 import "./Home.css";
 
 export default function Property({
+  cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
   propertyData,
@@ -29,6 +30,7 @@ export default function Property({
         {featuredProps.map((property) => {
           return (
             <PropertyCard
+              cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}
               size="medium"

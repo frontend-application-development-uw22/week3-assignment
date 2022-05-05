@@ -19,7 +19,6 @@ export default function PropertyCard({
 
   return (
     <div className={`property-card__container--${size}`}>
-      {inCart && <p>In cart</p>}
       <Link className={`property-card__link`} to={`/property/${data.id}`}>
         <img
           className={`property-card__image property-card__image--${size}`}

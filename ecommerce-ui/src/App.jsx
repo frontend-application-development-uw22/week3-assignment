@@ -34,6 +34,7 @@ export default function App() {
           path="/"
           element={
             <Home
+              cartItems={cartItems}
               propertyData={propertyData}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}
