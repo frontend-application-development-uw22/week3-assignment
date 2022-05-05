@@ -42,7 +42,15 @@ export default function App() {
             />
           }
         ></Route>
-        <Route path="/cart" element={<Cart cartItems={cartItems} />}></Route>
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              cartItems={cartItems}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
+            />
+          }
+        ></Route>
         <Route
           path="/property/:propertyId"
           element={
