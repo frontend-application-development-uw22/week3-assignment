@@ -5,6 +5,7 @@ import "./Home.css";
 
 export default function Property({
   onAddToCartHandler,
+  onRemoveFromCartHandler,
   propertyData,
   collectionsData,
 }) {
@@ -29,6 +30,7 @@ export default function Property({
           return (
             <PropertyCard
               onAddToCartHandler={onAddToCartHandler}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
               size="medium"
               data={property}
             />

@@ -17,6 +17,10 @@ export default function App() {
     setCartItems((prevState) => [...prevState, property]);
   };
 
+  const onRemoveFromCartHandler = (property) => {
+    setCartItems(cartItems.filter((item) => item.id !== property.id));
+  };
+
   return (
     <main className="main">
       <Link to="/">GetAway</Link> | <Link to="/properties/houses">Houses</Link>{" "}
@@ -32,6 +36,7 @@ export default function App() {
             <Home
               propertyData={propertyData}
               onAddToCartHandler={onAddToCartHandler}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
               collectionsData={collectionsData}
             />
           }
@@ -41,7 +46,9 @@ export default function App() {
           path="/property/:propertyId"
           element={
             <Property
+              cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
               data={propertyData}
             />
           }
@@ -55,6 +62,7 @@ export default function App() {
           element={
             <Collection
               onAddToCartHandler={onAddToCartHandler}
+              onRemoveFromCartHandler={onRemoveFromCartHandler}
               propertyData={propertyData}
               collectionsData={collectionsData}
             />

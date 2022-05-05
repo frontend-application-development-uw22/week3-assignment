@@ -16,6 +16,10 @@
   object-fit: cover;
 }
 
+.property-card__image--medium:hover {
+  box-shadow: 0 0 10px 2px rgb(191, 191, 191);
+}
+
 .property-card__image--large {
   width: 480px;
 }

@@ -16,6 +16,10 @@
   object-fit: cover;
 }
 
+.collection-card__image--medium:hover {
+  box-shadow: 0 0 10px 2px rgb(191, 191, 191);
+}
+
 .collection-card__image--large {
   width: 480px;
 }
