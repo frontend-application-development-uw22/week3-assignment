@@ -23,15 +23,14 @@ export default function Map({ lat, lng }) {
   const onLoad = useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds();
     map.setCenter(center);
-    map.setZoom(13);
+    map.setZoom(15);
     const icon = {
-      url: "https://realfavicongenerator.net/homepage_icons/platforms/android_2x.png",
-      size: new window.google.maps.Size(80, 80),
+      url: "https://cdn-icons-png.flaticon.com/32/7290/7290568.png",
+      size: new window.google.maps.Size(32, 32),
     };
     new window.google.maps.Marker({
       position: center,
       map,
-      title: "Rental",
       icon: icon,
     });
     setMap(map);
