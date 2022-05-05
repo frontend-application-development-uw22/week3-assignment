@@ -6,8 +6,14 @@
   flex: 1 1 560px;
 }
 
+.property-card__image {
+  border: 1px solid rgb(150, 150, 150);
+}
+
 .property-card__image--medium {
   width: 240px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .property-card__image--large {

@@ -21,7 +21,7 @@ export default function Property({
   return (
     <>
       <div className="hero--container">
-        <h1 className="hero--headline">Your dream getaway is out there</h1>
+        <h1 className="hero--headline">Find your dream getaway today</h1>
       </div>
       <h3>Popular getaways</h3>
       <div className="carousel--container carousel--container__popular">
@@ -38,7 +38,13 @@ export default function Property({
       <h3>Popular locations</h3>
       <div className="carousel--container carousel--container__collections">
         {featuredCollections.map((collection) => {
-          return <CollectionCard size="medium" data={collection} />;
+          return (
+            <CollectionCard
+              onAddToCartHandler={onAddToCartHandler}
+              size="medium"
+              data={collection}
+            />
+          );
         })}
       </div>
     </>

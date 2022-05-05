@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <main className="main">
-      <Link to="/">Home</Link> | <Link to="/properties/houses">Houses</Link>{" "}
+      <Link to="/">GetAway</Link> | <Link to="/properties/houses">Houses</Link>{" "}
       |&nbsp;
       <Link to="/properties/apartments">Apartments</Link> |&nbsp;
       <Link to="/properties/condos">Condos</Link> |&nbsp;
@@ -54,6 +54,7 @@ export default function App() {
           path="/collection/:city"
           element={
             <Collection
+              onAddToCartHandler={onAddToCartHandler}
               propertyData={propertyData}
               collectionsData={collectionsData}
             />

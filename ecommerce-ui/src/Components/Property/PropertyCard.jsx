@@ -11,7 +11,7 @@ export default function PropertyCard({ onAddToCartHandler, size, data }) {
     <div className={`property-card__container--${size}`}>
       <Link className={`property-card__link`} to={`/property/${data.id}`}>
         <img
-          className={`property-card__image--${size}`}
+          className={`property-card__image property-card__image--${size}`}
           src={data.image}
           alt={data.title}
         />

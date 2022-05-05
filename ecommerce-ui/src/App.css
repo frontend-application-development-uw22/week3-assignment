@@ -1,7 +1,18 @@
 .main {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid rgb(99, 99, 99);
+}
+
+a {
+  color: rgb(80, 80, 80);
+}
+
+a:hover {
+  color: rgb(30, 30, 30);
+}
+
+img {
+  border-radius: 4px;
 }
 
 .property__image {

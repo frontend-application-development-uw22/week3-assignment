@@ -6,8 +6,14 @@
   flex: 1 1 560px;
 }
 
+.collection-card__image {
+  border: 1px solid rgb(150, 150, 150);
+}
+
 .collection-card__image--medium {
   width: 240px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .collection-card__image--large {
