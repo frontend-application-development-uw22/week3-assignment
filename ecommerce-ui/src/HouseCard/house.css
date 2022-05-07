@@ -1,0 +1,170 @@
+.first-line {
+    width: 77%;
+    text-align: left;
+    padding-left: 15px;
+    margin: 0;
+    color: grey;
+    font-size: small;
+}
+.heart-div {
+    padding-top:15px;
+    display: -webkit-box;
+    width: 100%;
+}
+hr {
+    width:20%;
+}
+.house-name {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.details-container{
+    border: 1px solid grey;
+    display: flex;
+    margin: 15px;
+}
+.cost {
+    margin:0px;
+}
+.amenities{
+    width: 100%;
+    text-align: left;
+    padding-left:15px;
+    font-size: small;
+}
+.amenities__span{
+    float:right;
+}
+.bold{
+    font-weight: 700;
+    font-size: 18px;;
+}
+.houseDetails__outerdiv{
+    width:57%;
+}
+img{
+    width: 355px;
+}
+p{
+    margin: 0;
+}
+.cost-div {
+    padding-top: 15px;
+}
+.room-details {
+    font-size: small;
+}
+.reviews {
+    font-size: small;
+    text-align: left;
+    padding-left: 15px;
+    margin: 0;
+    color: grey;
+    font-size: small;
+}
+.carousel-container{
+    display: flex;
+    height: 425px;
+    width:80%;
+    margin:0 auto;
+}
+.carousel-images {
+    display: flex;
+}
+
+.carousel{
+    width: var(--carouselWidth);
+    margin: 0 0 0 var(--carouselLeftMargin);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left:2%;
+    animation-duration: 2s;
+}.prev {
+    animation-duration: .6s;
+    position: relative;
+    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: fade;
+    animation-duration: 2s;
+    height: 30px;
+  }
+  
+  .next {
+    animation-duration: .6s;
+    position: relative;
+    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: fade;
+    animation-duration: 2s;
+    height: 30px;
+  }
+  
+  li {
+    text-align: center;
+   
+    box-sizing: border-box;
+    position: absolute;
+  }  
+  .carousel img {
+    width: 1000px;
+    height:410px
+  }
+.margin22{
+    margin-top:12%;
+}
+.margin44{
+    margin-left:89%;
+    margin-top:12%;
+}
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .header-button{
+    width: 100%;
+    text-align: right;
+  }
+  .header-button button {
+      margin:15px;
+  }
+  .home-title {
+    padding: 20px;
+    background: aliceblue;
+  }
+ 
+  .reserve-button{
+      margin-bottom: 10px;
+  }
+  .booking-container {
+      border: 1px solid black;
+      margin: 15px;
+  }
+  .house-div{
+      width:50%;
+  }
+  .houseCards {
+    display: flex;
+  }
+  .booking-line{
+      width:90%!important;
+  }
+
+  .booking-cards {
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 5px;
+  }
+  .booking-text {
+    width: 90%;
+    text-align: left;
+  }
+  .booking-img img {
+      width:200px;
+  }
+  .show {
+      display: block;
+  }
+  .hide {
+      display:none;
+  }
