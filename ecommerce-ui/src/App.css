@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .App-logo {
@@ -35,4 +38,168 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*styles copied from past project*/
+
+.author-name{
+  font-weight: bold;
+
+}
+
+#author{
+  vertical-align: bottom;
+
+}
+
+#link-article{
+  vertical-align: top;
+
+}
+
+.author-img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.article-img{
+  width:240px;
+  height:240px;
+  object-fit:cover;
+  align-content: center;
+  align-items: center;
+  alignment: center;
+
+}
+
+.missed-article-img{
+  width:647px;
+  height:240px;
+  object-fit:cover;
+
+}
+
+.app-grid{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+}
+
+.grid{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+}
+
+.grid-missed-articles{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 1rem 1rem;
+}
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 1rem 1rem;
+}
+
+.parent {
+  border: 1px solid lightgray;
+  margin: 1rem;
+  text-align: left;
+}
+
+.parent-missed-article {
+  display: inline;
+  height: 600px;
+  border: 1px solid lightgray;
+  margin: 1rem;
+  text-align: left;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.child {
+  display: inline-block;
+  height: 240px;
+  vertical-align: text-top;
+  horiz-align: left;
+}
+
+.child-missed-article {
+  display: inline;
+  vertical-align: top;
+  horiz-align: left;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.child-prime {
+  display: inline-block;
+  vertical-align: text-bottom;
+  horiz-align: left;
+}
+
+.parent-two {
+  height: 120px;
+  vertical-align: text-top;
+  padding: 10px 10px;
+  text-align: left;
+
+}
+
+.parent-two-prime {
+  height: 120px;
+  padding: 10px 10px;
+  text-align: left;
+  vertical-align: text-bottom;
+  bottom: 0;
+}
+
+.child-two {
+  vertical-align: text-top;
+  horiz-align: left;
+}
+
+.link-style{
+  color: black;
+  font-size: 20px;
+
+}
+
+.child-three {
+  display: inline-block;
+  vertical-align: text-bottom;
+  horiz-align: left;
+}
+
+.child-four {
+  vertical-align: text-bottom;
+  horiz-align: left;
+}
+
+.child-five {
+  display: inline-block;
+  width: 300px;
+  vertical-align: text-bottom;
+  horiz-align: right;
+}
+
+.child-six {
+  display: inline-block;
+  width: 300px;
+  vertical-align: text-bottom;
+  horiz-align: right;
+  text-align: right;
+}
+
+.bookmark-style{
+  horiz-align: right;
+  width: 300px;
+  text-align: right;
+
 }

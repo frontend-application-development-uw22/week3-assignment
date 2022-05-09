@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import React from "react";
+// import ShoppingCart from './rentals/ShoppingCart'
+import VacationRental from './rentals/VacationRental'
+import bnbs from './_data/bnbs.json'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="app-grid">
+
+        <h1>Vacation Rentals</h1>
+
+        <hr />
+
+        <VacationRental bnbs={bnbs}/>
+
+      </div>
+
+      <div className="app-grid">
+
+        <h1>Shopping Cart</h1>
+
+        <hr />
+
+        <VacationRental bnbs={bnbs}/>
+
+      </div>
+
     </div>
   );
 }
