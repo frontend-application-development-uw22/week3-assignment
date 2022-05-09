@@ -1,10 +1,22 @@
 import './App.css';
-import React from "react";
+import React, {useState} from "react";
 import VacationRental from './rentals/VacationRental'
 import bnbs from './_data/bnbs.json'
-// import ShoppingCart from "./rentals/ShoppingCart";
+// import {useState} from "@types/react";
+import ShoppingCart from "./rentals/ShoppingCart";
 
 function App() {
+
+  const [cart, setCart] = useState([])
+
+  function addToCart(card){
+
+    console.log('button clicked')
+    console.log(cart)
+
+    setCart([...cart, card])
+
+  }
 
 
 
@@ -17,7 +29,7 @@ function App() {
 
         <hr />
 
-        <VacationRental bnbs={bnbs}/>
+        <VacationRental bnbs={bnbs} addToCart = {addToCart}/>
 
       </div>
 
@@ -28,6 +40,7 @@ function App() {
         <hr />
 
         {/*<ShoppingCart />*/}
+        <ShoppingCart cart={cart}/>
 
       </div>
 
