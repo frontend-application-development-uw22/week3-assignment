@@ -18,7 +18,16 @@ function App() {
 
   }
 
+  function removeFromCart(idx){
 
+    console.log('button clicked')
+    console.log(idx)
+
+    setCart([...cart.slice(0, idx), ...cart.slice(idx+1, cart.length)])
+
+    // setCart([...cart, card])
+
+  }
 
   return (
     <div className="App">
@@ -39,8 +48,7 @@ function App() {
 
         <hr />
 
-        {/*<ShoppingCart />*/}
-        <ShoppingCart cart={cart}/>
+        <ShoppingCart cart={cart} removeFromCart={removeFromCart}/>
 
       </div>
 

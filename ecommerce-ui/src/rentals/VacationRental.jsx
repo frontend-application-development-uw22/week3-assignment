@@ -6,17 +6,6 @@ import VacationList from './VacationList'
 
 export default function VacationRental({bnbs, addToCart}) {
 
-  // const [cart, setCart] = useState([])
-  //
-  // function addToCart(card){
-  //
-  //   console.log('button clicked')
-  //   console.log(cart)
-  //
-  //   setCart([...cart, card])
-  //
-  // }
-
   return (
     <div>
 
@@ -25,14 +14,6 @@ export default function VacationRental({bnbs, addToCart}) {
         <VacationList bnbs={bnbs} addToCart={addToCart}/>
 
       </div>
-
-
-      {/*<div>*/}
-
-      {/*  <ShoppingCart cart={cart}/>*/}
-
-      {/*</div>*/}
-
 
     </div>
 

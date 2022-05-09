@@ -11,7 +11,6 @@ export default function VacationList({bnbs, addToCart}){
       key={idx}
       onAdd = {()=>addToCart(card)}
 
-
     />)
 
   return(
