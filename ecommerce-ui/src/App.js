@@ -57,19 +57,15 @@ function App() {
 
         <ShoppingCart cart={cart} removeFromCart={removeFromCart}/>
 
-        <div className="payment-due">
+      </div>
 
-          <h1>Total Payment Due</h1>
-          <h1>{sum}</h1>
+      <div className="app-grid">
 
+        <h1>Total Payment Due</h1>
+        <h1>{sum}</h1>
 
+        <hr />
 
-          {/*Need a state variable to keep track of amount in shopping cart*/}
-
-          <hr />
-
-
-        </div>
 
       </div>
 
