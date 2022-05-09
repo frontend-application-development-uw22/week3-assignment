@@ -1,26 +1,46 @@
-import React from 'react'
-import VacationCard from "./VacationCard";
-import PropTypes from "prop-types"
+/* eslint-disable react/prop-types */
+import React, {useState} from 'react'
+import VacationList from './VacationList'
+import ShoppingCart from "./ShoppingCart";
+// import {useState} from "@types/react";
 
-export default function VacationRental({bnbs}){
+export default function VacationRental({bnbs}) {
 
-  const vacationRentals = bnbs.map((card, idx)=>
+  const [cart, setCart] = useState([])
+
+  function addToCart(card){
+
+    console.log('button clicked')
+    console.log(cart)
+
+    setCart([...cart, card])
+
+  }
+
+  return (
+    <div>
+      <div>
+
+        <VacationList bnbs={bnbs} addToCart={addToCart}/>
+
+      </div>
+
+      <div>
+
+        <ShoppingCart cart={cart}/>
+
+      </div>
 
 
-    <VacationCard key={idx} card={card}/>)
+      {/*<div>*/}
 
-  return(
+      {/*  <ShoppingCart bnbs={bnbs} addToCart={addToCart}/>*/}
 
-    <div className="grid">
-      {vacationRentals}
+      {/*</div>*/}
+
     </div>
+
   )
-
 }
 
-VacationRental.propTypes = {
-
-  bnbs: PropTypes.arrayOf(PropTypes.object).isRequired
-
-}
 

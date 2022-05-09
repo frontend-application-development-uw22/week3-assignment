@@ -203,3 +203,7 @@
   text-align: right;
 
 }
+
+.not-on-cart{
+  display: none;
+}

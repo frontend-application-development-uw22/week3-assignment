@@ -1,11 +1,13 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from "react";
-// import ShoppingCart from './rentals/ShoppingCart'
 import VacationRental from './rentals/VacationRental'
 import bnbs from './_data/bnbs.json'
+// import ShoppingCart from "./rentals/ShoppingCart";
 
 function App() {
+
+
+
   return (
     <div className="App">
 
@@ -25,7 +27,7 @@ function App() {
 
         <hr />
 
-        <VacationRental bnbs={bnbs}/>
+        {/*<ShoppingCart />*/}
 
       </div>
 
