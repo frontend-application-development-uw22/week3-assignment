@@ -1,3 +1,7 @@
+.property-card__container {
+  display: flex;
+}
+
 .property-card__container--medium {
   flex: 1 1 280px;
 }
@@ -6,24 +10,29 @@
   flex: 1 1 560px;
 }
 
-.property-card__image {
-  border: 1px solid rgb(150, 150, 150);
-}
-
 .property-card__image--medium {
   width: 240px;
   height: 150px;
   object-fit: cover;
+  transition: transform 0.2s;
 }
 
 .property-card__image--medium:hover {
-  box-shadow: 0 0 10px 2px rgb(191, 191, 191);
+  box-shadow: 0 0 6px 2px rgb(209, 209, 209);
+  transform: scale(1.02);
 }
 
 .property-card__image--large {
   width: 480px;
+  height: 320px;
+  object-fit: cover;
 }
 
 .property-card__link {
   text-decoration: none;
+}
+
+.property-card__details {
+  display: flex;
+  flex-direction: column;
 }

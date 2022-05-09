@@ -1,27 +1,27 @@
-.collection-card__container--medium {
+.property-card__container--medium {
   flex: 1 1 280px;
 }
 
-.collection-card__container--large {
+.property-card__container--large {
   flex: 1 1 560px;
 }
 
-.collection-card__image--medium {
+.property-card__image--medium {
   width: 240px;
   height: 150px;
   object-fit: cover;
   transition: transform 0.2s;
 }
 
-.collection-card__image--medium:hover {
+.property-card__image--medium:hover {
   box-shadow: 0 0 6px 2px rgb(209, 209, 209);
   transform: scale(1.02);
 }
 
-.collection-card__image--large {
+.property-card__image--large {
   width: 480px;
 }
 
-.collection-card__link {
+.property-card__link {
   text-decoration: none;
 }

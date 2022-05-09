@@ -1,9 +1,5 @@
-.carousel--container {
-  display: flex;
-}
-
 .hero--headline {
-  color: #fff;
+  color: var(--font-color-light);
   position: relative;
   top: 100px;
   font-size: 40px;
@@ -21,4 +17,12 @@
   background-position: bottom;
   background-size: 1200px;
   background-repeat: no-repeat;
+}
+
+.carousel--header {
+  margin-top: 50px;
+}
+
+.carousel--container {
+  display: flex;
 }

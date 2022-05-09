@@ -1,5 +1,5 @@
 import React from "react";
-import PropertyCard from "./Property/PropertyCard";
+import PropertySummaryCard from "./Property/PropertySummaryCard";
 import CollectionCard from "./Collections/CollectionCard";
 import "./Home.css";
 
@@ -25,11 +25,11 @@ export default function Property({
       <div className="hero--container">
         <h1 className="hero--headline">Find your dream getaway today</h1>
       </div>
-      <h3>Popular getaways</h3>
+      <h3 className="carousel--header">Popular getaways</h3>
       <div className="carousel--container carousel--container__popular">
         {featuredProps.map((property) => {
           return (
-            <PropertyCard
+            <PropertySummaryCard
               cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}
@@ -39,7 +39,7 @@ export default function Property({
           );
         })}
       </div>
-      <h3>Popular locations</h3>
+      <h3 className="carousel--header">Popular locations</h3>
       <div className="carousel--container carousel--container__collections">
         {featuredCollections.map((collection) => {
           return (
