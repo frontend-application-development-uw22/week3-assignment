@@ -2,7 +2,6 @@ import './App.css';
 import React, {useState} from "react";
 import VacationRental from './rentals/VacationRental'
 import bnbs from './_data/bnbs.json'
-// import {useState} from "@types/react";
 import ShoppingCart from "./rentals/ShoppingCart";
 
 function App() {
@@ -22,12 +21,20 @@ function App() {
 
     console.log('button clicked')
     console.log(idx)
-
     setCart([...cart.slice(0, idx), ...cart.slice(idx+1, cart.length)])
 
-    // setCart([...cart, card])
 
   }
+
+  let sum=0
+
+  cart.forEach(value =>{
+
+    sum+=value.payment.cost
+
+  })
+
+
 
   return (
     <div className="App">
@@ -50,7 +57,23 @@ function App() {
 
         <ShoppingCart cart={cart} removeFromCart={removeFromCart}/>
 
+        <div className="payment-due">
+
+          <h1>Total Payment Due</h1>
+          <h1>{sum}</h1>
+
+
+
+          {/*Need a state variable to keep track of amount in shopping cart*/}
+
+          <hr />
+
+
+        </div>
+
       </div>
+
+
 
     </div>
   );
