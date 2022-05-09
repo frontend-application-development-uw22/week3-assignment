@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import VacationCard from "./VacationCard";
-// import VacationCard from "./VacationCard";
 
 export default function ShoppingCart({cart}){
 
@@ -14,36 +13,9 @@ export default function ShoppingCart({cart}){
 
   return(
 
-    <div className="grid">
+    <div>
       {shoppingCartList}
     </div>
   )
-
-  // const items = cartList.map((item, idx)=>{
-  //
-  //   return (
-  //
-  //     <VacationCard key={idx} card={item} onAdd={()=>addToCart(item)}/>
-  //
-  //   )
-  //
-  // })
-  //
-  // return (
-  //   <div>
-  //     <ul>
-  //
-  //       {items}
-  //
-  //     </ul>
-  //
-  //
-  //
-  //     {/*Shopping Cart*/}
-  //
-  //     {/*Shop*/}
-  //
-  //   </div>
-  // )
 
 }

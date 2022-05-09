@@ -19,6 +19,7 @@ export default function VacationRental({bnbs}) {
 
   return (
     <div>
+
       <div>
 
         <VacationList bnbs={bnbs} addToCart={addToCart}/>
@@ -31,12 +32,6 @@ export default function VacationRental({bnbs}) {
 
       </div>
 
-
-      {/*<div>*/}
-
-      {/*  <ShoppingCart bnbs={bnbs} addToCart={addToCart}/>*/}
-
-      {/*</div>*/}
 
     </div>
 

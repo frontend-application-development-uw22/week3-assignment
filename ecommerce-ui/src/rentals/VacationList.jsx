@@ -16,7 +16,7 @@ export default function VacationList({bnbs, addToCart}){
 
   return(
 
-    <div className="grid">
+    <div>
       {vacationRentals}
     </div>
   )
