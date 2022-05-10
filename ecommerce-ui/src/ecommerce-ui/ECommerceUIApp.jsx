@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import VacationRentals from "./VacationRentals"
 import ShoppingCart from "./ShoppingCart"
 import rentalData from "../_data/bnbs.json"
@@ -7,13 +7,27 @@ import '../images/beach-banner.png'
 
 // import vacationRentals from '../_data/bnbs.json';
 function ECommerceUIApp() {
+    const [rentalToAdd, setRentalObject] = useState({});
+    const [rentals, setRentals] = useState([])
+
+
+    // const [costToAdd, setRentalCost] = useState([0])
+
+    const addRental = (event) => {
+        event.prevent.default();
+        console.log('Your rental request has been submitted')
+        setRentals([...rentals, rentalToAdd])
+
+    }
+    console.log(rentals)
+
     return (
         <main>
             <div className="header-container">
-            <header>
-                <h1>Relaxables</h1>
-                <h3>Find yourself a piece of heaven</h3>
-            </header>
+                <header>
+                    <h1>Rent-2-Relax</h1>
+                    <h3>Find yourself a piece of heaven</h3>
+                </header>
             </div>
             <div className="container">
                 <section className="rentals">
@@ -35,6 +49,9 @@ function ECommerceUIApp() {
                                 isSuperhost={rental.host.isSuperhost}
                                 start={rental.rating.stars}
                                 reviews={rental.rating.reviews}
+                                rentalToAdd={rentalToAdd}
+                                addRental={addRental}
+                                setRentalObject={setRentalObject}
                             />
                         )}
 
@@ -43,7 +60,8 @@ function ECommerceUIApp() {
                 <aside className="cart">
                     <h2> Your Shopping Cart</h2>
                     <div className="cart-group">
-                    <ShoppingCart />
+                        <ShoppingCart
+                            rentals={rentals} />
                     </div>
                 </aside>
             </div>
@@ -53,3 +71,24 @@ function ECommerceUIApp() {
 }
 
 export default ECommerceUIApp
+
+  // for (let i = 0; i < rentals.length; i++) {
+    //     rentals.push({
+    //         key = { index },
+    //             image = { rental.image },
+    //             title = { rental.title },
+    //             houseType = { rental.houseType },
+    //             rentalImage = { rental.image },
+    //             city = { rental.location.city },
+    //             country = { rental.location.country },
+    //             cost = { rental.payment.cost },
+    //             costDescr = { rental.payment.description },
+    //             hostName = { rental.host.name },
+    //             isSuperhost = { rental.host.isSuperhost },
+    //             start = { rental.rating.stars },
+    //             reviews = { rental.rating.reviews },
+    //             rentalToAdd = { rentalToAdd },
+    //             addRental = { addRental },
+    //             setRentalObject = { setRentalObject }
+    //     })
+    //}

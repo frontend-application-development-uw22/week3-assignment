@@ -29,7 +29,7 @@ p {
 
 header {
   margin-left: 15%;
-  height: 300px;
+  height: 200px;
   width: 70%;
   background-image: url("./images/beach-banner2.png");
   background-color: skyblue;
@@ -39,7 +39,7 @@ header {
 header h1 {
   /* display: block; */
   font-size: 3rem;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   font-style: italic;
 
@@ -52,6 +52,17 @@ header h3 {
 
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+}
+
+.rentals {
+  width: 60%;
+}
+
 .rentals h1 {
   font-size: 2rem;
   color: black;
@@ -60,36 +71,41 @@ header h3 {
 
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 /* styling for rentals */
 .rental-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+
+  /* flex-wrap: wrap; */
 
 }
 
 .rental-options {
   width: 30%;
-  margin: 3% 2%;
+  margin: 1% 1%;
   border: 2px solid darkblue;
-  padding-bottom: 3%;
+  /* padding-bottom: 3%; */
+  border-radius: 0.5rem;
 
 }
 
 .rental-options h2 {
   font-size: 1.25rem;
   padding-bottom: 3%;
-  padding-top: 3%;
+  padding-top: 2%;
   text-align: center;
   border-bottom: 2px solid darkblue;
   background-color: skyblue;
 }
+
+
+/* .rental-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
 
 .rental-image {
   width: 100%;
@@ -99,14 +115,14 @@ header h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 3%;
+  padding: 2%;
 }
 
 /* styling for cart */
 
 .cart {
-  /* width: 40%; */
-  margin: 3% 30%;
+  width: 40%;
+  margin: 2% 2%;
 
 
 }
@@ -122,6 +138,7 @@ header h3 {
   flex-direction: row;
   justify-content: space-between;
   border: 3px solid darkblue;
+  border-radius: 0.5rem;
   background-color: rgb(197, 226, 244);
   padding-left: 3%;
 
@@ -156,7 +173,7 @@ header h3 {
 .cart-button-container {
   height: 50px;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .center-button,
@@ -169,16 +186,23 @@ header h3 {
   transform: translate(-50%, -50%);
 }
 
-
-
 .add-rental {
-  background-color: darkblue;
+  /* background-color: darkblue;
   color: white;
   font-weight: bold;
   padding: 10px 15px;
   margin-top: 25%;
   margin-bottom: 10%;
+  width: 100%; */
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem darkblue solid;
+  background-color: darkblue;
+  color: white;
   width: 100%;
+  cursor: pointer;
 }
 
 .delete-cart {
