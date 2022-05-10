@@ -23,7 +23,7 @@ export default function VacationCard({card, idx, onAdd}){
 
         <div>
 
-          <div>
+          <div className="rental-list-description">
 
             <p>{card.title}</p>
 
@@ -31,59 +31,28 @@ export default function VacationCard({card, idx, onAdd}){
 
         </div>
 
-        <div>
+        <div className="rental-list-city">
 
           <p> {card.location.city} </p>
 
         </div>
-        <div>
+        <div className="rental-list-country">
 
-          <p className="author-name"> {card.location.country} </p>
-
-        </div>
-
-        <div>
-
-          <p className="author-name"> {card.payment.cost} </p>
+          <p> {card.location.country} </p>
 
         </div>
 
-        <div>
+        <div className="rental-list-cost">
+
+          <p> {card.payment.cost} </p>
+
+        </div>
+
+        <div className="rental-add-to-cart">
 
           <button className="btn btn-primary" onClick={onAdd}>Add to Cart</button>
 
         </div>
-
-        {/*<div className="parent-two-prime">*/}
-
-        {/*  <div className="child-three">*/}
-
-        {/*    <div className="child-four">*/}
-
-        {/*      <div className="child-five">*/}
-
-        {/*        <p className="author-name"> {card.location.city} </p>*/}
-
-        {/*        <p className="author-name"> {card.location.country} </p>*/}
-
-        {/*        <p className="author-name"> {card.payment.cost} </p>*/}
-
-        {/*        <p className="author-name"> {card.description} </p>*/}
-
-        {/*      </div>*/}
-        {/*      <div className="child-six">*/}
-
-        {/*        <button className="btn btn-primary" onClick={onAdd}>Add to Cart</button>*/}
-
-        {/*      </div>*/}
-
-        {/*    </div>*/}
-
-        {/*  </div>*/}
-
-
-        {/*</div>*/}
-
 
       </div>
 

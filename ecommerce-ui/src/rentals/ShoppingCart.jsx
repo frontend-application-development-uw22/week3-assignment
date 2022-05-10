@@ -15,7 +15,7 @@ export default function ShoppingCart({cart, removeFromCart}){
 
   return(
 
-    <div>
+    <div className="shopping-cart-component">
       {shoppingCartList}
     </div>
   )

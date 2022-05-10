@@ -41,7 +41,7 @@ function App() {
 
       <div className="app-grid">
 
-        <h1>Vacation Rentals</h1>
+        <h1 className="vacation-rentals-h1">Vacation Rentals</h1>
 
         <hr />
 
@@ -49,9 +49,9 @@ function App() {
 
       </div>
 
-      <div className="app-grid">
+      <div className="app-grid-shopping-cart">
 
-        <h1>Shopping Cart</h1>
+        <h1 className="shopping-cart-h1">Shopping Cart</h1>
 
         <hr />
 
@@ -59,12 +59,13 @@ function App() {
 
       </div>
 
-      <div className="app-grid">
+      <div className="app-grid-total-due">
 
-        <h1>Total Payment Due</h1>
-        <h1>{sum}</h1>
-
+        <h1 className="total-payment">Total Due</h1>
         <hr />
+        <h1 className="sum">{sum}</h1>
+
+
 
 
       </div>

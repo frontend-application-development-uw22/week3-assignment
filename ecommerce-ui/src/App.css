@@ -1,8 +1,10 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 4fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
 }
 
 .App-logo {
@@ -40,9 +42,6 @@
   }
 }
 
-/*styles copied from past project*/
-
-
 .shopping-cart{
 
   text-align: center;
@@ -50,7 +49,12 @@
   grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-gap: 20px;
   margin: 1rem;
+  background-color: aliceblue;
 
+}
+
+.shopping-cart-component{
+  background-color: aliceblue;
 }
 
 
@@ -140,6 +144,25 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   padding: 1rem 1rem;
+  background-color: lightgray;
+}
+
+.app-grid-shopping-cart{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: aliceblue;
+}
+
+.app-grid-total-due{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: aliceblue;
+  /*border-style: dotted;*/
+  /*border-color: #282c34;*/
 }
 
 .grid{
@@ -149,11 +172,6 @@
   padding: 1rem 1rem;
 }
 
-.grid-missed-articles{
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  padding: 1rem 1rem;
-}
 
 .grid-container{
   display: inline-grid;
@@ -174,92 +192,61 @@
   horiz-align: left;
 }
 
-.parent-missed-article {
-  display: inline;
-  height: 600px;
-  border: 1px solid lightgray;
-  margin: 1rem;
-  text-align: left;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-
-
-.child-missed-article {
-  display: inline;
-  vertical-align: top;
-  horiz-align: left;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.child-prime {
-  display: inline-block;
-  vertical-align: text-bottom;
-  horiz-align: left;
-}
-
-.parent-two {
-  height: 120px;
-  vertical-align: text-top;
-  padding: 10px 10px;
-  text-align: left;
-
-}
-
-.parent-two-prime {
-  height: 120px;
-  padding: 10px 10px;
-  text-align: left;
-  vertical-align: text-bottom;
-  bottom: 0;
-}
-
-.child-two {
-  vertical-align: text-top;
-  horiz-align: left;
-}
-
-.link-style{
-  color: black;
-  font-size: 20px;
-
-}
-
-.child-three {
-  display: inline-block;
-  vertical-align: text-bottom;
-  horiz-align: left;
-}
-
-.child-four {
-  vertical-align: text-bottom;
-  horiz-align: left;
-}
-
-.child-five {
-  display: inline-block;
-  width: 300px;
-  vertical-align: text-bottom;
-  horiz-align: right;
-}
-
-.child-six {
-  display: inline-block;
-  width: 300px;
-  vertical-align: text-bottom;
-  horiz-align: right;
-  text-align: right;
-}
-
-.bookmark-style{
-  horiz-align: right;
-  width: 300px;
-  text-align: right;
-
-}
-
 .not-on-cart{
   display: none;
+}
+
+.rental-list-description{
+  margin: 1rem;
+
+}
+
+.rental-list-city{
+  margin: 1rem;
+
+}
+
+.rental-list-country{
+  margin: 1rem;
+
+}
+
+.rental-list-cost{
+  margin: 1rem;
+
+}
+
+.rental-add-to-cart{
+  /*float: right;*/
+  /*horiz-align: right;*/
+  /*alignment: right;*/
+  margin: 1rem;
+
+}
+
+.total-payment{
+
+  color: blue;
+  font-size: 40px;
+
+
+}
+
+.sum{
+
+  color: tomato;
+  border-style: dashed;
+  border-color: blue;
+  border-width: thick;
+
+
+
+}
+
+.vacation-rentals-h1{
+  color:blue;
+}
+
+.shopping-cart-h1{
+  color:blue;
 }
