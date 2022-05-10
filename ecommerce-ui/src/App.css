@@ -1,38 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
 .App {
-  text-align: center;
+  margin-bottom: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+span {
+  font-weight: bold;
+  color: blue;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-weight: bold;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
+  background-color: rgb(92, 171, 202);
+}
+
+header {
+  margin-left: 15%;
+  height: 300px;
+  width: 70%;
+  background-image: url("./images/beach-banner2.png");
+  background-color: skyblue;
+  color: darkblue;
+}
+
+header h1 {
+  /* display: block; */
+  font-size: 3rem;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-style: italic;
+
+}
+
+header h3 {
+  color: black;
+  padding-left: 10%;
+  font-style: italic;
+
+}
+
+.rentals h1 {
+  font-size: 2rem;
+  color: black;
+  margin-top: 3%;
+  margin-left: 5%;
+
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+/* styling for rentals */
+.rental-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.rental-options {
+  width: 30%;
+  margin: 3% 2%;
+  border: 2px solid darkblue;
+  padding-bottom: 3%;
+
+}
+
+.rental-options h2 {
+  font-size: 1.25rem;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+  border-bottom: 2px solid darkblue;
+  background-color: skyblue;
+}
+
+.rental-image {
+  width: 100%;
+}
+
+.rental-card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+/* styling for cart */
+
+.cart {
+  /* width: 40%; */
+  margin: 3% 30%;
+
+
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid darkblue;
+  background-color: rgb(197, 226, 244);
+  padding-left: 3%;
+
+}
+
+.cart-item {
+  border-left: 30px solid darkblue;
+
+}
+
+.cart-info {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 50%;
+}
+
+
+
+.cart-image {
+  height: 50px;
+  width: auto;
+
+}
+
+/* styling for buttons */
+.button-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.cart-button-container {
+  height: 50px;
+  position: relative;
+  width: 50%;
+}
+
+.center-button,
+.cart-center-button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.add-rental {
+  background-color: darkblue;
   color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.delete-cart {
+  margin-top: 50%;
+  /* margin-right: 15%; */
+  width: 100%;
+  padding: 5% 5%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
