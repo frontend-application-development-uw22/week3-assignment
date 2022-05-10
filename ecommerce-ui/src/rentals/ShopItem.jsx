@@ -26,36 +26,6 @@ export default function ShopItem({card, idx, onRemove}){
 
         </div>
 
-
-        {/*<div className="parent-two-prime">*/}
-
-        {/*  /!*<div className="child-three">*!/*/}
-        {/*  */}
-        {/*  /!*  /!*<div className="child-four">*!/*!/*/}
-        {/*  /!*  *!/*/}
-        {/*  /!*  /!*  /!*<div className="child-five">*!/*!/*!/*/}
-        {/*  /!*  /!*  *!/*!/*/}
-        {/*  /!*  /!*  /!*  <p className="author-name"> {card.location.city} </p>*!/*!/*!/*/}
-        {/*  /!*  /!*  /!*  <p className="author-name"> {card.location.country} </p>*!/*!/*!/*/}
-        {/*  /!*  /!*  /!*  <p className="author-name"> {card.payment.cost} </p>*!/*!/*!/*/}
-        {/*  /!*  /!*  /!*  <p className="author-name"> {card.description} </p>*!/*!/*!/*/}
-        {/*  /!*  /!*  *!/*!/*/}
-        {/*  /!*  /!*  /!*</div>*!/*!/*!/*/}
-        {/*  /!*  /!*  *!/*!/*/}
-        {/*  /!*  /!*  /!*<div className="child-six">*!/*!/*!/*/}
-        {/*  /!*  /!*  *!/*!/*/}
-        {/*  /!*  /!*  /!*  <button onClick={onRemove}>Remove From Cart</button>*!/*!/*!/*/}
-        {/*  /!*  /!*  *!/*!/*/}
-        {/*  /!*  /!*  /!*</div>*!/*!/*!/*/}
-        {/*  /!*  *!/*/}
-        {/*  /!*  /!*</div>*!/*!/*/}
-        {/*  */}
-        {/*  /!*</div>*!/*/}
-
-
-        {/*</div>*/}
-
-
       </div>
 
       <div>
@@ -69,7 +39,7 @@ export default function ShopItem({card, idx, onRemove}){
         <p className="rental-price"> {card.payment.cost} </p>
 
         <div>
-          <button className="remove-button" onClick={onRemove}>Remove</button>
+          <button className="btn btn-primary" onClick={onRemove}>Remove</button>
         </div>
 
       </div>

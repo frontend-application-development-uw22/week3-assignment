@@ -21,9 +21,9 @@ export default function VacationCard({card, idx, onAdd}){
 
       <div className="child">
 
-        <div id="link-article" className="parent-two">
+        <div>
 
-          <div className="child-two">
+          <div>
 
             <p>{card.title}</p>
 
@@ -31,35 +31,58 @@ export default function VacationCard({card, idx, onAdd}){
 
         </div>
 
-        <div className="parent-two-prime">
+        <div>
 
-          <div className="child-three">
-
-            <div className="child-four">
-
-              <div className="child-five">
-
-                <p className="author-name"> {card.location.city} </p>
-
-                <p className="author-name"> {card.location.country} </p>
-
-                <p className="author-name"> {card.payment.cost} </p>
-
-                <p className="author-name"> {card.description} </p>
-
-              </div>
-              <div className="child-six">
-
-                <button onClick={onAdd}>Add to Cart</button>
-
-              </div>
-
-            </div>
-
-          </div>
-
+          <p> {card.location.city} </p>
 
         </div>
+        <div>
+
+          <p className="author-name"> {card.location.country} </p>
+
+        </div>
+
+        <div>
+
+          <p className="author-name"> {card.payment.cost} </p>
+
+        </div>
+
+        <div>
+
+          <button className="btn btn-primary" onClick={onAdd}>Add to Cart</button>
+
+        </div>
+
+        {/*<div className="parent-two-prime">*/}
+
+        {/*  <div className="child-three">*/}
+
+        {/*    <div className="child-four">*/}
+
+        {/*      <div className="child-five">*/}
+
+        {/*        <p className="author-name"> {card.location.city} </p>*/}
+
+        {/*        <p className="author-name"> {card.location.country} </p>*/}
+
+        {/*        <p className="author-name"> {card.payment.cost} </p>*/}
+
+        {/*        <p className="author-name"> {card.description} </p>*/}
+
+        {/*      </div>*/}
+        {/*      <div className="child-six">*/}
+
+        {/*        <button className="btn btn-primary" onClick={onAdd}>Add to Cart</button>*/}
+
+        {/*      </div>*/}
+
+        {/*    </div>*/}
+
+        {/*  </div>*/}
+
+
+        {/*</div>*/}
 
 
       </div>
