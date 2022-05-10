@@ -9,7 +9,7 @@ import Collection from "./Components/Collections/Collection";
 import ThemeContext from "./Components/Context/ThemeContext";
 
 import propertyData from "./_data/bnbs.json";
-import collectionsData from "./_data/locations.json";
+import locationData from "./_data/locations.json";
 
 export default function App() {
   const theme = "light";
@@ -43,7 +43,7 @@ export default function App() {
                 propertyData={propertyData}
                 onAddToCartHandler={onAddToCartHandler}
                 onRemoveFromCartHandler={onRemoveFromCartHandler}
-                collectionsData={collectionsData}
+                locationData={locationData}
               />
             }
           ></Route>
@@ -63,7 +63,8 @@ export default function App() {
                 cartItems={cartItems}
                 onAddToCartHandler={onAddToCartHandler}
                 onRemoveFromCartHandler={onRemoveFromCartHandler}
-                data={propertyData}
+                propertyData={propertyData}
+                locationData={locationData}
               />
             }
           ></Route>
@@ -79,7 +80,7 @@ export default function App() {
                 onAddToCartHandler={onAddToCartHandler}
                 onRemoveFromCartHandler={onRemoveFromCartHandler}
                 propertyData={propertyData}
-                collectionsData={collectionsData}
+                locationData={locationData}
               />
             }
           ></Route>

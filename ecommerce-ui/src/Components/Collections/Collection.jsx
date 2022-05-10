@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PropertyCard from "../Property/PropertyCard";
+import PropertySummaryCard from "../Property/PropertySummaryCard";
 
 export default function Property({
   cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
   propertyData,
-  collectionsData,
+  locationData,
 }) {
   const { city } = useParams();
 
@@ -21,7 +21,7 @@ export default function Property({
       <div className="carousel--container carousel--container__popular">
         {collectionProps.map((property) => {
           return (
-            <PropertyCard
+            <PropertySummaryCard
               cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}

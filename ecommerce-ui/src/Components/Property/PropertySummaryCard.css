@@ -1,3 +1,6 @@
+.property-card__container {
+}
+
 .property-card__container--medium {
   flex: 1 1 280px;
 }
@@ -7,8 +10,6 @@
 }
 
 .property-card__image--medium {
-  width: 240px;
-  height: 150px;
   object-fit: cover;
   transition: transform 0.2s;
 }

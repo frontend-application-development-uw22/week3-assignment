@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./PropertySummaryCard.css";
 
-export default function PropertyCard({
+export default function PropertySummaryCard({
   cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
@@ -18,7 +18,9 @@ export default function PropertyCard({
   }
 
   return (
-    <div className={`property-card__container--${size}`}>
+    <div
+      className={`property-card__container property-card__container--${size}`}
+    >
       <Link className={`property-card__link`} to={`/property/${data.id}`}>
         <img
           className={`property-card__image property-card__image--${size}`}

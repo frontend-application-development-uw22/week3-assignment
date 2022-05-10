@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./PropertyCard.css";
 
 export default function PropertyCard({
@@ -7,14 +6,12 @@ export default function PropertyCard({
   onAddToCartHandler,
   onRemoveFromCartHandler,
   size,
-  data,
+  propertyData,
 }) {
   let inCart = false;
 
-  console.log(cartItems);
-
   if (cartItems) {
-    inCart = cartItems.find((property) => property.id === data.id);
+    inCart = cartItems.find((property) => property.id === propertyData.id);
   }
 
   return (
@@ -22,29 +19,42 @@ export default function PropertyCard({
       className={`property-card__container property-card__container--${size}`}
     >
       <div className="property-card__details">
-        <h1 className={`property-card__title`}>{data.title}</h1>
+        <h1 className={`property-card__title`}>{propertyData.title}</h1>
         <p className={`property-card__house-type`}>
-          {data.houseType} hosted by {data.host.name}
+          {propertyData.houseType} hosted by {propertyData.host.name}
         </p>
         <p className={`property-card__location`}>
-          {data.location.city}, {data.location.country}
+          {propertyData.location.city}, {propertyData.location.country}
         </p>
         <p className={`property-card__details`}>
-          {data.rating.stars} stars | {data.rating.reviews} reviews
+          {propertyData.rating.stars} stars | {propertyData.rating.reviews}{" "}
+          reviews
+        </p>
+        <p className={`property-card__details`}>
+          ${propertyData.payment.cost} / night (
+          {propertyData.payment.description})
         </p>
         {!inCart && (
-          <button onClick={() => onAddToCartHandler(data)}>Add to cart</button>
+          <button
+            className="property-card__button"
+            onClick={() => onAddToCartHandler(propertyData)}
+          >
+            Add to cart
+          </button>
         )}
         {inCart && (
-          <button onClick={() => onRemoveFromCartHandler(data)}>
+          <button
+            className="property-card__button"
+            onClick={() => onRemoveFromCartHandler(propertyData)}
+          >
             Remove from cart
           </button>
         )}
       </div>
       <img
         className={`property-card__image property-card__image--${size}`}
-        src={data.image}
-        alt={data.title}
+        src={propertyData.image}
+        alt={propertyData.title}
       />
     </div>
   );

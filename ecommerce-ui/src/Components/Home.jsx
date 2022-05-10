@@ -8,7 +8,7 @@ export default function Property({
   onAddToCartHandler,
   onRemoveFromCartHandler,
   propertyData,
-  collectionsData,
+  locationData,
 }) {
   let featuredProps = propertyData.filter((property) => {
     return property.rating.stars >= 4 && property.rating.reviews >= 80;
@@ -16,8 +16,8 @@ export default function Property({
 
   featuredProps = featuredProps.slice(0, 4);
 
-  const featuredCollections = collectionsData.filter((collection) => {
-    return collection.id <= 3;
+  const featuredLocations = locationData.filter((location) => {
+    return location.id <= 3;
   });
 
   return (
@@ -41,12 +41,12 @@ export default function Property({
       </div>
       <h3 className="carousel--header">Popular locations</h3>
       <div className="carousel--container carousel--container__collections">
-        {featuredCollections.map((collection) => {
+        {featuredLocations.map((collection) => {
           return (
             <CollectionCard
               onAddToCartHandler={onAddToCartHandler}
               size="medium"
-              data={collection}
+              locationData={collection}
             />
           );
         })}

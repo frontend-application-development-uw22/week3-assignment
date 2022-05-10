@@ -1,5 +1,5 @@
 .hero--headline {
-  color: var(--font-color-light);
+  color: var(--white);
   position: relative;
   top: 100px;
   font-size: 40px;
@@ -25,4 +25,11 @@
 
 .carousel--container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel--container > * {
+  flex: 1 1 18em;
+  padding: 10px 0;
+  white-space: unset;
 }

@@ -9,10 +9,18 @@ export default function Property({
   cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
-  data,
+  propertyData,
+  locationData,
 }) {
   const { propertyId } = useParams();
-  const property = data.filter((property) => property.id === +propertyId)[0];
+
+  const property = propertyData.filter(
+    (property) => property.id === +propertyId
+  )[0];
+
+  const location = locationData.filter(
+    (location) => location.city === property.location.city
+  )[0];
 
   return (
     <div className="property__wrapper">
@@ -21,10 +29,11 @@ export default function Property({
         onAddToCartHandler={onAddToCartHandler}
         onRemoveFromCartHandler={onRemoveFromCartHandler}
         size="large"
-        data={property}
+        propertyData={property}
       />
+      <h2>Property Reviews</h2>
       <Reviews totalReviews={property.rating.reviews} />
-      <Map lat={property.location.lat} lng={property.location.lng} />
+      <Map lat={location.lat} lng={location.lon} />
     </div>
   );
 }
