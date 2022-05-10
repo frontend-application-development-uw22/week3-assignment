@@ -1,18 +1,33 @@
 .cart-card {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .cart-card__image {
-  width: 200px;
   margin-right: 20px;
+  width: 300px;
+  flex: 0 1 2em;
 }
 
 .cart-card__details {
+  display: flex;
+  margin-bottom: 20px;
+  flex: 1 1 4em;
+}
+
+.cart-card__info {
   display: flex;
   flex-direction: column;
 }
 
 .cart-card__button {
   width: 160px;
+}
+
+.cart-card__cost {
+  border: 1px solid var(--red);
+  background-color: var(--green);
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+  height: 60px;
 }

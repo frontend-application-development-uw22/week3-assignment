@@ -1,0 +1,17 @@
+.cart-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cart-header__title {
+  margin: 30px 0;
+}
+
+.cart-header__total-cost {
+  border: 1px solid var(--red);
+  background-color: var(--green);
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+}
