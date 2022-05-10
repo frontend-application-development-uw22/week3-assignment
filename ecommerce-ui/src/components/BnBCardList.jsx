@@ -22,4 +22,8 @@ function BnBCardList ({bnbData}) {
 
 }
 
+BnBCardList.propTypes = {
+  bnbData: PropTypes.arrayOf(PropTypes.object).isRequired
+}
+
 export default BnBCardList;

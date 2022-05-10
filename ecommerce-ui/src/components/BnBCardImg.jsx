@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 function BnBCardImg ({title, imgUrl, isSuperHost}) {
 
   // Determine visibility of 'Superhost' tag.
-  const superHostClass = "hidden";
+  let superHostClass = "hidden";
   if (isSuperHost) {
     superHostClass = "bnbcard-img-superhost";
   }
@@ -20,6 +20,12 @@ function BnBCardImg ({title, imgUrl, isSuperHost}) {
     </div>
   );
 
+}
+
+BnBCardImg.propTypes = {
+  title: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string,
+  isSuperHost: PropTypes.bool.isRequired
 }
 
 export default BnBCardImg;

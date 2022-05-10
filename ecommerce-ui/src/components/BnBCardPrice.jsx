@@ -17,4 +17,8 @@ function BnBCardPrice ({cost}) {
 
 }
 
+BnBCardPrice.propTypes = {
+  cost: PropTypes.number.isRequired
+}
+
 export default BnBCardPrice;

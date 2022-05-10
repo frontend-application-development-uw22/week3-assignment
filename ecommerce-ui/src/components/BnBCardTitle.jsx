@@ -21,4 +21,11 @@ function BnBCardTitle ({title, houseType, city, country}) {
 
 }
 
+BnBCardTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  houseType: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired
+}
+
 export default BnBCardTitle;

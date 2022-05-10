@@ -38,4 +38,8 @@ function BnBCard ({bnb}) {
 
 }
 
+BnBCard.propTypes = {
+  bnb: PropTypes.object.isRequired
+}
+
 export default BnBCard;

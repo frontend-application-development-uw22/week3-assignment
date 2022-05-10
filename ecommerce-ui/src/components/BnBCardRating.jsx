@@ -19,4 +19,9 @@ function BnBCardRating ({stars, reviews}) {
 
 }
 
+BnBCardRating.propTypes = {
+  stars: PropTypes.number.isRequired,
+  reviews: PropTypes.number.isRequired
+}
+
 export default BnBCardRating;

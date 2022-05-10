@@ -13,4 +13,8 @@ function BnBCardButton ({inCart}) {
 
 }
 
+BnBCardButton.propTypes = {
+  inCart: PropTypes.bool
+}
+
 export default BnBCardButton;
