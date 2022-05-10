@@ -86,3 +86,35 @@ p {
   cursor: pointer;
   float: right;
 }
+
+
+nav {
+  /* 
+  Photographer: Giuseppe
+  License:  Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)
+  URL: https://www.flickr.com/photos/25050455@N02/2733466836
+  */
+  background-image: url("img/nav-bg.jpg");
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav > ul > li {
+  color: #FFF;
+  font-size: 18px;
+  display: inline;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav > ul > li:hover {
+  background-color: #01A5D9;
+}
