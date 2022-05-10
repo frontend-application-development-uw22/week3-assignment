@@ -4,26 +4,21 @@ import React from 'react'
 
 export default function ShopItem({card, idx, onRemove}){
 
-  // function handleClick(e){
-  //   e.preventDefault()
-  //   console.log('the button was clicked')
-  // }
-
   return (
 
-    <div key={idx} className="parent">
+    <div key={idx} className="shopping-cart">
 
-      <div className="child">
+      <div>
 
-        <img src={card.image} className="article-img" alt="rental"/>
+        <img src={card.image} className="shopping-cart-img" alt="rental"/>
 
       </div>
 
-      <div className="child">
+      <div className="rental-description">
 
-        <div id="link-article" className="parent-two">
+        <div>
 
-          <div className="child-two">
+          <div>
 
             <p>{card.title}</p>
 
@@ -31,36 +26,51 @@ export default function ShopItem({card, idx, onRemove}){
 
         </div>
 
-        <div className="parent-two-prime">
 
-          <div className="child-three">
+        {/*<div className="parent-two-prime">*/}
 
-            <div className="child-four">
+        {/*  /!*<div className="child-three">*!/*/}
+        {/*  */}
+        {/*  /!*  /!*<div className="child-four">*!/*!/*/}
+        {/*  /!*  *!/*/}
+        {/*  /!*  /!*  /!*<div className="child-five">*!/*!/*!/*/}
+        {/*  /!*  /!*  *!/*!/*/}
+        {/*  /!*  /!*  /!*  <p className="author-name"> {card.location.city} </p>*!/*!/*!/*/}
+        {/*  /!*  /!*  /!*  <p className="author-name"> {card.location.country} </p>*!/*!/*!/*/}
+        {/*  /!*  /!*  /!*  <p className="author-name"> {card.payment.cost} </p>*!/*!/*!/*/}
+        {/*  /!*  /!*  /!*  <p className="author-name"> {card.description} </p>*!/*!/*!/*/}
+        {/*  /!*  /!*  *!/*!/*/}
+        {/*  /!*  /!*  /!*</div>*!/*!/*!/*/}
+        {/*  /!*  /!*  *!/*!/*/}
+        {/*  /!*  /!*  /!*<div className="child-six">*!/*!/*!/*/}
+        {/*  /!*  /!*  *!/*!/*/}
+        {/*  /!*  /!*  /!*  <button onClick={onRemove}>Remove From Cart</button>*!/*!/*!/*/}
+        {/*  /!*  /!*  *!/*!/*/}
+        {/*  /!*  /!*  /!*</div>*!/*!/*!/*/}
+        {/*  /!*  *!/*/}
+        {/*  /!*  /!*</div>*!/*!/*/}
+        {/*  */}
+        {/*  /!*</div>*!/*/}
 
-              <div className="child-five">
 
-                <p className="author-name"> {card.location.city} </p>
-
-                <p className="author-name"> {card.location.country} </p>
-
-                <p className="author-name"> {card.payment.cost} </p>
-
-                <p className="author-name"> {card.description} </p>
-
-              </div>
-              <div className="child-six">
-
-                <button onClick={onRemove}>Remove From Cart</button>
-
-              </div>
-
-            </div>
-
-          </div>
+        {/*</div>*/}
 
 
+      </div>
+
+      <div>
+
+        <p className="rental-city"> {card.location.city} </p>
+
+      </div>
+
+      <div>
+
+        <p className="rental-price"> {card.payment.cost} </p>
+
+        <div>
+          <button className="remove-button" onClick={onRemove}>Remove</button>
         </div>
-
 
       </div>
 
