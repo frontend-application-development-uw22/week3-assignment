@@ -25,7 +25,7 @@ function BnBCardImg ({title, imgUrl, isSuperHost}) {
 BnBCardImg.propTypes = {
   title: PropTypes.string.isRequired,
   imgUrl: PropTypes.string,
-  isSuperHost: PropTypes.bool.isRequired
+  isSuperHost: PropTypes.bool
 }
 
 export default BnBCardImg;

@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 function BnBCardButton ({inCart}) {
 
   return (
-    <button>Add to Cart</button>
+    <button className="bnbcard-button">Add to Cart</button>
   );
 
 }

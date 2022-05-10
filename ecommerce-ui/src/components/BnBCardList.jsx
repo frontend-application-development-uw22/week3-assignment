@@ -9,8 +9,14 @@ import BnBCard from './BnBCard';
 function BnBCardList ({bnbData}) {
 
   // Map each [bnb] in [bnbData] to a [BnBCard] in [bnbCardList].
+  let iKey = -1;
   const bnbCardList = bnbData.map((bnb) => {
-    return <BnBCard bnb={bnb} />
+    iKey++;
+    const id = "bnbcard-" + iKey;
+    return <BnBCard 
+      bnb={bnb}
+      key={id}
+      id={id} />
   });
 
   // Return the list of [BnBCard]s in [bnbCardList].

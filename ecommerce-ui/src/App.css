@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  color: #5C5857;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hidden {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bnbcard-list {
+  width: 62vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bnbcard {
+  display: grid;
+  grid-template-columns: 38% auto;
+  box-shadow: 0px 0px 20px 5px rgba(92, 88, 87, 0.25);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.bnbcard-img > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+
+.bnbcard-data {
+  padding: 1em;
+}
+
+.bnbcard-foot {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.bnbcard-rating {
+  flex-basis: initial;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bnbcard-price {
+  text-align: right;
+  flex-basis: auto;
+}
+
+.bnbcard-title > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bnbcard-title > h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0.2em;
+}
+
+.bnbcard-button {
+  background-color: #01A5D9;
+  color: #FFF;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
 }

@@ -12,7 +12,7 @@ function BnBCardTitle ({title, houseType, city, country}) {
 
   return (
     <div className="bnbcard-title">
-      <p>{subtitle}</p>
+      {subtitle}
       <h2>
         {title}
       </h2>

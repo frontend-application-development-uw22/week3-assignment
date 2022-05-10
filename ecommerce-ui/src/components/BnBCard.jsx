@@ -10,36 +10,41 @@ import BnBCardRating from './BnBCardRating';
 import BnBCardPrice from './BnBCardPrice';
 import BnBCardButton from './BnBCardButton';
 
-function BnBCard ({bnb}) {
+function BnBCard ({bnb, id}) {
 
   return (
-    <div className="bnbcard">
+    <div className="bnbcard" id={id}>
       <BnBCardImg 
         title={bnb.title} 
         imgUrl={bnb.image} 
         isSuperHost={bnb.host.isSuperHost}
       />
-      <BnBCardTitle
-        title={bnb.title}
-        houseType={bnb.houseType}
-        city={bnb.location.city}
-        country={bnb.location.country}
-      />
-      <BnBCardRating 
-        stars={bnb.rating.stars}
-        reviews={bnb.rating.reviews}
-      />
-      <BnBCardPrice
-        cost={bnb.payment.cost}
-      />
-      <BnBCardButton />
+      <div className="bnbcard-data">
+        <BnBCardTitle
+          title={bnb.title}
+          houseType={bnb.houseType}
+          city={bnb.location.city}
+          country={bnb.location.country}
+        />
+        <div className="bnbcard-foot">
+          <BnBCardRating 
+            stars={bnb.rating.stars}
+            reviews={bnb.rating.reviews}
+          />
+          <BnBCardPrice
+            cost={bnb.payment.cost}
+          />
+        </div>
+        <BnBCardButton />
+      </div>
     </div>
   );
 
 }
 
 BnBCard.propTypes = {
-  bnb: PropTypes.object.isRequired
+  bnb: PropTypes.object.isRequired,
+  id: PropTypes.string.isRequired
 }
 
 export default BnBCard;
