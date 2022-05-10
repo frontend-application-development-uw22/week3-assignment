@@ -6,7 +6,7 @@ export default function Reviews({ totalReviews }) {
   const [reviewers, setReviewers] = useState([]);
   const [reviews, setReviews] = useState([]);
 
-  const reviewerEndpoint = `https://randomuser.me/api/?results=5`;
+  const reviewerEndpoint = `https://randomuser.me/api/?results=6`;
   const reviewsEndpoint = `https://baconipsum.com/api/?type=meat-and-filler&paras=10&format=json`;
 
   useEffect(() => {
@@ -24,7 +24,13 @@ export default function Reviews({ totalReviews }) {
   return (
     <div className="reviews">
       {reviewers.map((reviewer, index) => {
-        return <ReviewCard reviewer={reviewer} review={reviews[index]} />;
+        return (
+          <ReviewCard
+            key={reviewer.login.uuid}
+            reviewer={reviewer}
+            review={reviews[index]}
+          />
+        );
       })}
     </div>
   );

@@ -1,3 +1,8 @@
+.property-card__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .property-card__container--large {
   flex: 1 1 560px;
 }

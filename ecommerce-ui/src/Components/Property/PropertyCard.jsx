@@ -20,17 +20,17 @@ export default function PropertyCard({
     >
       <div className="property-card__details">
         <h1 className={`property-card__title`}>{propertyData.title}</h1>
-        <p className={`property-card__house-type`}>
+        <p className={`property-card__type`}>
           {propertyData.houseType} hosted by {propertyData.host.name}
         </p>
         <p className={`property-card__location`}>
           {propertyData.location.city}, {propertyData.location.country}
         </p>
-        <p className={`property-card__details`}>
+        <p className={`property-card__rating`}>
           {propertyData.rating.stars} stars | {propertyData.rating.reviews}{" "}
           reviews
         </p>
-        <p className={`property-card__details`}>
+        <p className={`property-card__cost`}>
           ${propertyData.payment.cost} / night (
           {propertyData.payment.description})
         </p>

@@ -11,7 +11,7 @@ export default function ReviewCard({ reviewer, review }) {
       />
       <div className="review-card__review">
         <h4 className="review-card__name">{reviewer.name.first}</h4>
-        <p className="review-card__review">{review.substring(0, 120)}...</p>
+        <p className="review-card__review">{review.substring(0, 50)}...</p>
       </div>
     </div>
   );
