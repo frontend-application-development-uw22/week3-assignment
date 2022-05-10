@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
-function VacationRentals({ title, houseType, rentalImage, city, country, cost, costDescr, hostName, isSuperhost, stars, reviews, addRental }) {
+function VacationRentals({ id, title, houseType, rentalImage, city, country, cost, costDescr, hostName, isSuperhost, stars, reviews, addRental }) {
 
     return (
         <article className="rental-options">
@@ -22,7 +22,7 @@ function VacationRentals({ title, houseType, rentalImage, city, country, cost, c
                             type="submit"
                             onClick={event => addRental(event.target.key)}
                             className="add-rental">
-                            Add to the cart
+                            Add to cart
                         </button>
                     </div>
                 </div>

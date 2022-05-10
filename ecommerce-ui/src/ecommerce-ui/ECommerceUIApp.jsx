@@ -7,19 +7,12 @@ import '../images/beach-banner.png'
 
 // import vacationRentals from '../_data/bnbs.json';
 function ECommerceUIApp() {
+  
     const [rentalToAdd, setRentalObject] = useState({});
-    const [rentals, setRentals] = useState([])
+    // const [rentals, setRentals] = useState([])
 
 
-    // const [costToAdd, setRentalCost] = useState([0])
-
-    const addRental = (event) => {
-        event.prevent.default();
-        console.log('Your rental request has been submitted')
-        setRentals([...rentals, rentalToAdd])
-
-    }
-    console.log(rentals)
+ 
 
     return (
         <main>
@@ -37,6 +30,7 @@ function ECommerceUIApp() {
                         {rentalData.map((rental, index) =>
                             <VacationRentals
                                 key={index}
+                                id={rental.id}
                                 image={rental.image}
                                 title={rental.title}
                                 houseType={rental.houseType}
@@ -50,7 +44,7 @@ function ECommerceUIApp() {
                                 start={rental.rating.stars}
                                 reviews={rental.rating.reviews}
                                 rentalToAdd={rentalToAdd}
-                                addRental={addRental}
+                                // addRental={addRental}
                                 setRentalObject={setRentalObject}
                             />
                         )}
@@ -61,7 +55,8 @@ function ECommerceUIApp() {
                     <h2> Your Shopping Cart</h2>
                     <div className="cart-group">
                         <ShoppingCart
-                            rentals={rentals} />
+                            // rentals={rentals} 
+                            />
                     </div>
                 </aside>
             </div>
