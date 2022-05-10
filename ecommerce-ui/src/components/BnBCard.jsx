@@ -14,9 +14,9 @@ function BnBCard ({bnb, id}) {
 
   return (
     <div className="bnbcard" id={id}>
-      <BnBCardImg 
-        title={bnb.title} 
-        imgUrl={bnb.image} 
+      <BnBCardImg
+        title={bnb.title}
+        imgUrl={bnb.image}
         isSuperHost={bnb.host.isSuperHost}
       />
       <div className="bnbcard-data">
@@ -26,8 +26,9 @@ function BnBCard ({bnb, id}) {
           city={bnb.location.city}
           country={bnb.location.country}
         />
+        <BnBCardButton />
         <div className="bnbcard-foot">
-          <BnBCardRating 
+          <BnBCardRating
             stars={bnb.rating.stars}
             reviews={bnb.rating.reviews}
           />
@@ -35,7 +36,6 @@ function BnBCard ({bnb, id}) {
             cost={bnb.payment.cost}
           />
         </div>
-        <BnBCardButton />
       </div>
     </div>
   );
