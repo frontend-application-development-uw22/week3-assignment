@@ -17,7 +17,7 @@ function BnBCard ({bnb, id}) {
       <BnBCardImg
         title={bnb.title}
         imgUrl={bnb.image}
-        isSuperHost={bnb.host.isSuperHost}
+        isSuperhost={Boolean(bnb.host.isSuperhost)}
       />
       <div className="bnbcard-data">
         <BnBCardTitle
