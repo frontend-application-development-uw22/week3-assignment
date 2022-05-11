@@ -46,6 +46,13 @@ function App() {
     setFormVisible(!formVisible)
   }
 
+  function handleForm(event){
+    event.preventDefault()
+
+    console.log('form button clicked')
+    console.log()
+  }
+
   let sum=0
 
   cart.forEach(value =>{
@@ -118,7 +125,7 @@ function App() {
 
               <hr />
 
-              <form id="bnb-form">
+              <form onSubmit={handleForm} id="bnb-form">
                 <div className="form-group mb-2">
                   <label htmlFor="title">Title</label>
                   <input
