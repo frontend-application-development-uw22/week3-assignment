@@ -3,6 +3,8 @@ import React, {useState} from "react";
 import VacationRental from './rentals/VacationRental'
 import bnbs from './_data/bnbs.json'
 import ShoppingCart from "./rentals/ShoppingCart";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function App() {
 
@@ -45,6 +47,16 @@ function App() {
 
       <div className="menu-buttons">
         {/*add material-ui button*/}
+
+        <Stack spacing={2} direction="row">
+
+          <Button variant="contained" color="secondary">Input BnB</Button>
+
+          <Button variant="contained" color="secondary">Toggle Cart</Button>
+
+        </Stack>
+
+
 
       </div>
 
