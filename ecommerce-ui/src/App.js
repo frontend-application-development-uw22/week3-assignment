@@ -110,11 +110,11 @@ function App() {
 
         <div className="App">
 
-          <div>
+          <div className="input-bnb-form">
 
             <div className={formVisible ? 'app-grid-form' : 'form-off'}>
 
-              <h1 className="input-bnb-h1">BnB Form</h1>
+              <h1 className="input-bnb-h1">Input BnB</h1>
 
               <hr />
 
@@ -147,6 +147,101 @@ function App() {
                   <input
                     id="image"
                     name="image"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="city">City</label>
+                  <input
+                    id="city"
+                    name="city"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="country">Country</label>
+                  <input
+                    id="country"
+                    name="country"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="cost">Cost</label>
+                  <input
+                    id="cost"
+                    name="cost"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="description">Description</label>
+                  <input
+                    id="description"
+                    name="description"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+                <div className="form-group mb-2">
+                  <label htmlFor="isSuperhost">isSuperhost</label>
+                  <input
+                    id="isSuperhost"
+                    name="isSuperhost"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="stars">Stars</label>
+                  <input
+                    id="stars"
+                    name="stars"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <label htmlFor="reviews">Reviews</label>
+                  <input
+                    id="reviews"
+                    name="reviews"
                     className="form-control"
                     type="text"
                     placeholder=""

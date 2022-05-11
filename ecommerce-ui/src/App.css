@@ -203,6 +203,11 @@
   grid-template-rows: auto auto;
   padding: 1rem 1rem;
   background-color: white;
+  /*margin: 1rem 1rem;*/
+}
+
+.input-bnb-form{
+  margin: 0 1rem;
 }
 
 .vacation-list{
@@ -333,6 +338,7 @@
 .input-bnb-h1{
   color:slategray;
   text-align: left;
+  /*margin: 1rem;*/
 }
 
 .shopping-cart-off{
@@ -352,5 +358,6 @@
   font-weight: normal;
   /*opacity: 0.5;*/
   text-align: left;
+  /*margin: 1rem;*/
 
 }
