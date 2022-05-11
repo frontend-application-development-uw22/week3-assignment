@@ -16,6 +16,8 @@ function App() {
 
   const [cartVisible, setCartVisible] = useState(true)
 
+  const [formVisible, setFormVisible] = useState(true)
+
   function addToCart(card){
 
     console.log('button clicked')
@@ -41,6 +43,7 @@ function App() {
 
   function handleInputBnB(){
     console.log('Input BnB button clicked')
+    setFormVisible(!formVisible)
   }
 
   let sum=0
@@ -58,18 +61,13 @@ function App() {
       <div className="website-description">
 
         <div>
-
         </div>
         <div>
-
           <h1>Random BnBs at Localhost</h1>
-
         </div>
+
         <div>
-
         </div>
-
-
 
       </div>
 
@@ -106,24 +104,65 @@ function App() {
 
         </div>
 
-
-
-
-
-
       </div>
 
       <div>
 
         <div className="App">
 
-          <div className="app-grid">
+          <div>
 
-            <h1 className="input-bnb-h1">BnB Form</h1>
+            <div className={formVisible ? 'app-grid-form' : 'form-off'}>
 
-            <hr />
+              <h1 className="input-bnb-h1">BnB Form</h1>
+
+              <hr />
+
+              <form id="bnb-form">
+                <div className="form-group mb-2">
+                  <label htmlFor="title">Title</label>
+                  <input
+                    id="title"
+                    name="title"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="^\w+\s*\w+$"
+
+                  />
+                </div>
+                <div className="form-group mb-2">
+                  <label htmlFor="houseType">House Type</label>
+                  <input
+                    id="houseType"
+                    name="houseType"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="^\w+\s*\w+$"
+                  />
+                </div>
+                <div className="form-group mb-2">
+                  <label htmlFor="image">Image</label>
+                  <input
+                    id="image"
+                    name="image"
+                    className="form-control"
+                    type="text"
+                    placeholder=""
+                    // pattern="\d{1,}"
+                  />
+                </div>
+
+                <div className="form-group mb-2">
+                  <input id="submit" className="btn btn-primary" type="submit"
+                         value="Submit Form"/>
+                </div>
 
 
+              </form>
+
+            </div>
 
           </div>
 
@@ -138,8 +177,6 @@ function App() {
           </div>
 
           <div className={cartVisible ? 'app-grid-shopping-cart' : 'shopping-cart-off'}>
-
-          {/*<div className="app-grid-shopping-cart">*/}
 
             <h1 className="shopping-cart-h1">Shopping Cart</h1>
 
