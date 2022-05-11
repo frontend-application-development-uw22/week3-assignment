@@ -27,4 +27,10 @@ function ShoppingCart ({cartContents, setCartContents}) {
 
 }
 
+ShoppingCart.propTypes = {
+  cartContents: PropTypes.array.isRequired,
+  setCartContents: PropTypes.func.isRequired
+}
+
+
 export default ShoppingCart;

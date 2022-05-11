@@ -14,10 +14,10 @@ function ShoppingCartItemList ({cartContents, setCartContents}) {
   const shoppingCartItemList = cartContents.map((bnb) => {
     // Construct a unique key for each [ShoppingCartItem].
     iKey++;
-    const id = "shoppingcart-item-" + iKey;
+    const shoppingCartItemId = "shoppingcart-item-" + iKey;
     return <ShoppingCartItem
-      key={id}
-      id={id}
+      key={shoppingCartItemId}
+      shoppingCartItemId={shoppingCartItemId}
       title={bnb.title}
       cost={bnb.cost}
       cartContents={cartContents}
@@ -31,6 +31,11 @@ function ShoppingCartItemList ({cartContents, setCartContents}) {
     </ul>
   );
 
+}
+
+ShoppingCartItemList.propTypes = {
+  cartContents: PropTypes.array.isRequired,
+  setCartContents: PropTypes.func.isRequired
 }
 
 export default ShoppingCartItemList;

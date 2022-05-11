@@ -5,23 +5,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ShoppingCartItem ({id, title, cost, cartContents, setCartContents}) {
+const INDEX_PLACE = 18;
+
+function ShoppingCartItem ({shoppingCartItemId, title, cost, cartContents, setCartContents}) {
 
   // removeFromCart ////////////////////////////////////////////////////////////
-  // Rewrites [cartContents] with an added object representing this 
-  // BnBCardButton's BnB.
+  // Rewrites [cartContents] having removed data related to this 
+  // [ShoppingCartItem].
   const removeFromCart = () => {
-    const index = id.slice(18); 
-    console.log("index " + index);
+    const index = shoppingCartItemId.slice(INDEX_PLACE);
     const tempCartContents = [...cartContents];
     tempCartContents.splice(index, 1);
     setCartContents(cartContents => [
       ...tempCartContents
-    ])
+    ]);
   }
 
   return (
-    <li id={id} className="shoppingcart-item">
+    <li id={shoppingCartItemId} className="shoppingcart-item">
       {title} - ${cost}
       <button 
         className="shoppingcart-item-x"
@@ -32,6 +33,14 @@ function ShoppingCartItem ({id, title, cost, cartContents, setCartContents}) {
     </li>
   );
 
+}
+
+ShoppingCartItem.propTypes = {
+  shoppingCartItemId: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.number.isRequired,
+  cartContents: PropTypes.array.isRequired,
+  setCartContents: PropTypes.func.isRequired
 }
 
 export default ShoppingCartItem;
