@@ -39,7 +39,7 @@ export default function ShopItem({card, idx, onRemove}){
         <p className="rental-price"> {card.payment.cost} </p>
 
         <div>
-          <button className="btn btn-primary" onClick={onRemove}>Remove</button>
+          <button className="btn btn-danger" onClick={onRemove}>Remove</button>
         </div>
 
       </div>

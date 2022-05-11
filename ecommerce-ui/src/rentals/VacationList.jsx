@@ -15,7 +15,7 @@ export default function VacationList({bnbs, addToCart}){
 
   return(
 
-    <div>
+    <div className="vacation-card">
       {vacationRentals}
     </div>
   )

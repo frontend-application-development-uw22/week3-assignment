@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-// import VacationCard from "./VacationCard";
 import ShopItem from "./ShopItem";
 
 export default function ShoppingCart({cart, removeFromCart}){

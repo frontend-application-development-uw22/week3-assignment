@@ -4,18 +4,13 @@ import React from 'react'
 
 export default function VacationCard({card, idx, onAdd}){
 
-  // function handleClick(e){
-  //   e.preventDefault()
-  //   console.log('the button was clicked')
-  // }
-
   return (
 
     <div key={idx} className="parent">
 
       <div className="child">
 
-        <img src={card.image} className="article-img" alt="rental"/>
+        <img src={card.image} className="card-img" alt="rental"/>
 
       </div>
 

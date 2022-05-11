@@ -23,7 +23,6 @@ function App() {
     console.log(idx)
     setCart([...cart.slice(0, idx), ...cart.slice(idx+1, cart.length)])
 
-
   }
 
   let sum=0
@@ -34,45 +33,76 @@ function App() {
 
   })
 
-
-
   return (
-    <div className="App">
 
-      <div className="app-grid">
+    <div className="mother">
 
-        <h1 className="vacation-rentals-h1">Vacation Rentals</h1>
+      <div className="website-description">
 
-        <hr />
-
-        <VacationRental bnbs={bnbs} addToCart = {addToCart}/>
+        <h1>Random BnBs at Localhost</h1>
 
       </div>
 
-      <div className="app-grid-shopping-cart">
-
-        <h1 className="shopping-cart-h1">Shopping Cart</h1>
-
-        <hr />
-
-        <ShoppingCart cart={cart} removeFromCart={removeFromCart}/>
+      <div className="menu-buttons">
+        {/*add material-ui button*/}
 
       </div>
 
-      <div className="app-grid-total-due">
+      <div>
 
-        <h1 className="total-payment">Total Due</h1>
-        <hr />
-        <h1 className="sum">{sum}</h1>
+        <div className="App">
+
+          <div className="app-grid">
+
+            <h1 className="input-bnb-h1">BnB Form</h1>
+
+            <hr />
 
 
 
+          </div>
+
+          <div className="app-grid">
+
+            <h1 className="vacation-rentals-h1">Vacation Rentals</h1>
+
+            <hr />
+
+            <VacationRental bnbs={bnbs} addToCart = {addToCart}/>
+
+          </div>
+
+          <div className="app-grid-shopping-cart">
+
+            <h1 className="shopping-cart-h1">Shopping Cart</h1>
+
+            <hr />
+
+            <ShoppingCart cart={cart} removeFromCart={removeFromCart}/>
+
+            <div className="app-grid-total-due">
+
+              <h1 className="total-payment">Total Due</h1>
+              <hr />
+              <h1 className="sum">{sum}</h1>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
 
       </div>
 
 
 
-    </div>
+
+
+
   );
 }
 
