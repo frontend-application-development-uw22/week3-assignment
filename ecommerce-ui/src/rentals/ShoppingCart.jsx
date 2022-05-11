@@ -14,6 +14,7 @@ export default function ShoppingCart({cart, removeFromCart}){
 
   return(
 
+    // <div className={cartVisible ? 'shopping-cart-component' : 'shopping-cart-off'}>
     <div className="shopping-cart-component">
       {shoppingCartList}
     </div>

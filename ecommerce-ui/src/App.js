@@ -5,10 +5,16 @@ import bnbs from './_data/bnbs.json'
 import ShoppingCart from "./rentals/ShoppingCart";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+// import { red } from '@mui/material/colors';
+
+// const toggleButtonColor = red[500];
+
 
 function App() {
 
   const [cart, setCart] = useState([])
+
+  const [cartVisible, setCartVisible] = useState(true)
 
   function addToCart(card){
 
@@ -27,6 +33,16 @@ function App() {
 
   }
 
+  function handleToggle(){
+    console.log('toggle button clicked')
+    setCartVisible(!cartVisible)
+    console.log(cartVisible)
+  }
+
+  function handleInputBnB(){
+    console.log('Input BnB button clicked')
+  }
+
   let sum=0
 
   cart.forEach(value =>{
@@ -41,20 +57,57 @@ function App() {
 
       <div className="website-description">
 
-        <h1>Random BnBs at Localhost</h1>
+        <div>
+
+        </div>
+        <div>
+
+          <h1>Random BnBs at Localhost</h1>
+
+        </div>
+        <div>
+
+        </div>
+
+
 
       </div>
 
       <div className="menu-buttons">
         {/*add material-ui button*/}
 
-        <Stack spacing={2} direction="row">
+        <div>
 
-          <Button variant="contained" color="secondary">Input BnB</Button>
+        </div>
 
-          <Button variant="contained" color="secondary">Toggle Cart</Button>
+        <div>
 
-        </Stack>
+          <Stack spacing={2} direction="row">
+
+            <Button onClick={handleInputBnB} variant="contained" style={{
+              backgroundColor: "#c51162",
+              padding: "10px 10px",
+              marginTop: "10px",
+
+            }}>Input BnB</Button>
+
+            <Button onClick={handleToggle} variant="contained" style={{
+              backgroundColor: "#6200ea",
+              padding: "10px 10px",
+              marginTop: "10px",
+
+            }}>Toggle Cart</Button>
+
+          </Stack>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
+
 
 
 
@@ -84,7 +137,9 @@ function App() {
 
           </div>
 
-          <div className="app-grid-shopping-cart">
+          <div className={cartVisible ? 'app-grid-shopping-cart' : 'shopping-cart-off'}>
+
+          {/*<div className="app-grid-shopping-cart">*/}
 
             <h1 className="shopping-cart-h1">Shopping Cart</h1>
 

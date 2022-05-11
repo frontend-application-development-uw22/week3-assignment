@@ -1,18 +1,45 @@
 .mother{
+  /*text-align: center;*/
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 3fr 1fr;*/
+  /*!*grid-gap: 20px;*!*/
+  /*!*background-color: powderblue;*!*/
+  /*!*background-color: lightgray;*!*/
+  /*background-color: white;*/
 
 }
 
 .website-description{
-  color: slateblue;
-  text-align: center;
+  margin: 1rem;
+  /*color: slateblue;*/
+  color: fuchsia;
+  text-align: left;
   font-style: oblique;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
+  background-color: white;
+  padding: 0 16px;
 }
 
 .menu-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /*display: flex;*/
+  /*justify-content: left;*/
+  /*align-items: center;*/
   /*border: 1px solid gray;*/
+
+  margin: 1rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
+  background-color: white;
+  padding: 0 16px;
+
 }
 
 .App {
@@ -270,27 +297,36 @@
 
   color: slategray;
   font-size: 40px;
+  text-align: left;
 
 
 }
 
 .sum{
 
-  color: slateblue;
+  color: blue;
   /*border-style: dashed;*/
   /*border-color: blue;*/
   /*border-width: thick;*/
+  text-align: left;
 
 }
 
 .vacation-rentals-h1{
   color:blue;
+  text-align: left;
 }
 
 .shopping-cart-h1{
   color: coral;
+  text-align: left;
 }
 
 .input-bnb-h1{
   color:slategray;
+  text-align: left;
+}
+
+.shopping-cart-off{
+  display: none;
 }
