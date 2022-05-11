@@ -11,7 +11,7 @@ export default function CartCard({ onRemoveFromCartHandler, property }) {
           alt={property.title}
         />
         <div className="cart-card__info">
-          <h3 className="cart-card__title">{property.title}</h3>
+          <h4 className="cart-card__title">{property.title}</h4>
           <p className="cart-card__location">
             {property.location.city}, {property.location.country}
           </p>
@@ -24,7 +24,7 @@ export default function CartCard({ onRemoveFromCartHandler, property }) {
         </div>
       </div>
       <div className="cart-card__cost">
-        <p>Cost = ${property.payment.cost}</p>
+        <p>Unit Cost = ${property.payment.cost}</p>
       </div>
     </div>
   );

@@ -15,3 +15,8 @@
   padding: 10px;
   font-weight: bold;
 }
+
+.cart__summary {
+  display: flex;
+  justify-content: space-around;
+}

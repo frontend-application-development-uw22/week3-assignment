@@ -1,6 +1,9 @@
 .property-card__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  flex-basis: 260px;
+  flex-grow: 0;
 }
 
 .property-card__container--large {
@@ -8,8 +11,7 @@
 }
 
 .property-card__image--medium {
-  width: 240px;
-  height: 150px;
+  width: 260px;
   object-fit: cover;
   transition: transform 0.2s;
 }

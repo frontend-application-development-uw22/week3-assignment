@@ -15,7 +15,8 @@
   --red-variant: hsl(320, 36%, 32%);
   --green: #c1d598;
   --white: hsl(0, 0%, 93%);
-  --black: hsl(0, 0%, 19%);
+  --black: hsl(0, 0%, 20%);
+  --grey: hsl(0, 0%, 80%);
   background-color: var(--white);
   padding: 20px 60px;
 }
