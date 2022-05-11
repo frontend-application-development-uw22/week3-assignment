@@ -94,6 +94,13 @@ p {
   float: right;
 }
 
+.bnbcard-img-superhost {
+  padding: 1em;
+  background-color: #FFF;
+  position: absolute;
+  border-top-left-radius: 25px;
+}
+
 
 nav {
   /* 

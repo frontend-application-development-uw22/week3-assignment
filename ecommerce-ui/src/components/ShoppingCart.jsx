@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////////////////
+// ShoppingCart ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import ShoppingCartItemList from './ShoppingCartItemList';
+
+function ShoppingCart () {
+
+  return (
+    <div className="shoppingcart">
+      <h2>
+        Cart
+      </h2>
+      <ShoppingCartItemList />
+    </div>
+  );
+
+}
+
+export default ShoppingCart;

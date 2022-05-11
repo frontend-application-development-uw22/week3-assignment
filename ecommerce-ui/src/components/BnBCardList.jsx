@@ -6,7 +6,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BnBCard from './BnBCard';
 
-function BnBCardList ({bnbData}) {
+function BnBCardList ({bnbData, cartContents, setCartContents}) {
 
   // Map each [bnb] in [bnbData] to a [BnBCard] in [bnbCardList].
   let iKey = -1;
@@ -17,7 +17,9 @@ function BnBCardList ({bnbData}) {
     return <BnBCard 
       bnb={bnb}
       key={id}
-      id={id} />
+      id={id}
+      cartContents={cartContents}
+      setCartContents={setCartContents} />
   });
 
   // Return the list of [BnBCard]s in [bnbCardList].
@@ -30,7 +32,9 @@ function BnBCardList ({bnbData}) {
 }
 
 BnBCardList.propTypes = {
-  bnbData: PropTypes.arrayOf(PropTypes.object).isRequired
+  bnbData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  cartContents: PropTypes.array.isRequired,
+  setCartContents: PropTypes.func.isRequired
 }
 
 export default BnBCardList;

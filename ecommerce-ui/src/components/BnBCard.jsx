@@ -10,7 +10,7 @@ import BnBCardRating from './BnBCardRating';
 import BnBCardPrice from './BnBCardPrice';
 import BnBCardButton from './BnBCardButton';
 
-function BnBCard ({bnb, id}) {
+function BnBCard ({bnb, id, cartContents, setCartContents}) {
 
   return (
     <div className="bnbcard" id={id}>
@@ -26,7 +26,12 @@ function BnBCard ({bnb, id}) {
           city={bnb.location.city}
           country={bnb.location.country}
         />
-        <BnBCardButton />
+        <BnBCardButton
+          title={bnb.title}
+          cost={bnb.payment.cost}
+          cartContents={cartContents}
+          setCartContents={setCartContents} 
+        />
         <div className="bnbcard-foot">
           <BnBCardRating
             stars={bnb.rating.stars}
@@ -44,7 +49,9 @@ function BnBCard ({bnb, id}) {
 
 BnBCard.propTypes = {
   bnb: PropTypes.object.isRequired,
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
+  cartContents: PropTypes.array.isRequired,
+  setCartContents: PropTypes.func.isRequired
 }
 
 export default BnBCard;
