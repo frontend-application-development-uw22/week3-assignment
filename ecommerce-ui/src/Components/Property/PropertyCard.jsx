@@ -19,7 +19,12 @@ export default function PropertyCard({
       className={`property-card__container property-card__container--${size}`}
     >
       <div className="property-card__details">
-        <h1 className={`property-card__title`}>{propertyData.title}</h1>
+        {size === "large" && (
+          <h1 className={`property-card__title`}>{propertyData.title}</h1>
+        )}
+        {size === "medium" && (
+          <h4 className={`property-card__title`}>{propertyData.title}</h4>
+        )}
         <p className={`property-card__type`}>
           {propertyData.houseType} hosted by {propertyData.host.name}
         </p>

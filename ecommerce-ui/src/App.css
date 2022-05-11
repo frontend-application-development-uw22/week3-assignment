@@ -48,6 +48,8 @@ body {
 
 .main {
   margin: 0 auto;
+  position: relative;
+  top: 20px;
 }
 
 a {
@@ -85,4 +87,22 @@ button {
 
 button:hover {
   background-color: var(--red-variant);
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--white);
+}
+
+.navbar__link {
+  font-size: 18px;
+  padding: 15px;
+  transition: background-color 0.2s ease-in;
+}
+
+.navbar__link:hover {
+  background-color: var(--grey);
 }

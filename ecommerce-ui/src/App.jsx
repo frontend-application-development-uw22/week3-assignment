@@ -28,12 +28,26 @@ export default function App() {
   return (
     <ThemeContext.Provider value={theme}>
       <main className="main">
-        <Link to="/">GetAway</Link> |{" "}
-        <Link to="/properties/houses">Houses</Link> |&nbsp;
-        <Link to="/properties/apartments">Apartments</Link> |&nbsp;
-        <Link to="/properties/condos">Condos</Link> |&nbsp;
-        <Link to="/properties/places">Places</Link> |&nbsp;
-        <Link to="/cart">Cart ({cartItems.length})</Link>
+        <nav className="navbar">
+          <Link className="navbar__link" to="/">
+            GetAway
+          </Link>
+          <Link className="navbar__link" to="/properties/houses">
+            Houses
+          </Link>
+          <Link className="navbar__link" to="/properties/apartments">
+            Apartments
+          </Link>
+          <Link className="navbar__link" to="/properties/condos">
+            Condos
+          </Link>
+          <Link className="navbar__link" to="/properties/places">
+            Places
+          </Link>
+          <Link className="navbar__link" to="/cart">
+            Cart ({cartItems.length})
+          </Link>
+        </nav>
         <Routes>
           <Route
             path="/"

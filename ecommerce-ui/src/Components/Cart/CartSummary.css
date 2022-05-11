@@ -1,0 +1,13 @@
+.cart-summary__subtotal,
+.cart-summary__taxes,
+.cart-summary__fees,
+.cart-summary__total {
+  display: flex;
+}
+
+.cart-summary {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  padding: 5px 20px;
+  flex: 0 1 15em;
+}
