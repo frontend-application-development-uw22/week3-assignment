@@ -1,5 +1,6 @@
 import React from "react";
 import "./PropertyCard.css";
+import { Link } from "react-router-dom";
 
 export default function PropertyCard({
   cartItems,
@@ -23,7 +24,9 @@ export default function PropertyCard({
           <h1 className={`property-card__title`}>{propertyData.title}</h1>
         )}
         {size === "medium" && (
-          <h4 className={`property-card__title`}>{propertyData.title}</h4>
+          <Link to={`/property/${propertyData.id}`}>
+            <h4 className={`property-card__title`}>{propertyData.title}</h4>
+          </Link>
         )}
         <p className={`property-card__type`}>
           {propertyData.houseType} hosted by {propertyData.host.name}
@@ -56,11 +59,13 @@ export default function PropertyCard({
           </button>
         )}
       </div>
-      <img
-        className={`property-card__image property-card__image--${size}`}
-        src={propertyData.image}
-        alt={propertyData.title}
-      />
+      <Link to={`/property/${propertyData.id}`}>
+        <img
+          className={`property-card__image property-card__image--${size}`}
+          src={propertyData.image}
+          alt={propertyData.title}
+        />
+      </Link>
     </div>
   );
 }

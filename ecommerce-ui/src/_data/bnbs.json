@@ -4,13 +4,7 @@
     "title": "Centrally-located Manhattan studio",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "New York",
-      "country": "USA",
-      "neighborhood": "Flushing",
-      "lat": 40.7675,
-      "lng": -73.8331
-    },
+    "location": 0,
     "payment": {
       "cost": 105,
       "description": "Free cancellation"
@@ -29,13 +23,7 @@
     "title": "Clean, upscale Denver apartment outside Union Station",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Denver",
-      "country": "USA",
-      "neighborhood": "LoDo",
-      "lat": 39.7527,
-      "lng": -105.0017
-    },
+    "location": 12,
     "payment": {
       "cost": 130,
       "description": ""
@@ -54,13 +42,7 @@
     "title": "Quaint 3-bedroom home in hip and historic Ustick neighborhood in downtown Boise",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Boise",
-      "country": "USA",
-      "neighborhood": "Ustick",
-      "lat": 43.6339,
-      "lng": -116.3219
-    },
+    "location": 11,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -79,13 +61,7 @@
     "title": "Beautiful 4-bedroom apartment in downtown Portland",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "San Diego",
-      "country": "USA",
-      "neighorhood": "Point Loma",
-      "lat": 32.7,
-      "lng": -117.2467
-    },
+    "location": 10,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -101,16 +77,10 @@
   },
   {
     "id": 4,
-    "title": "Trendy three bedroom apartment near the tech scene",
+    "title": "Trendy three bedroom apartment near the downton San Francisco tech scene",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "San Francisco",
-      "country": "USA",
-      "neighborhood": "Tenderloin",
-      "lat": 37.7856,
-      "lng": -122.4147
-    },
+    "location": 5,
     "payment": {
       "cost": 440,
       "description": "Free cancellation"
@@ -129,13 +99,7 @@
     "title": "Upscale three bedroom home in quiet suburb of downtown Seattle",
     "houseType": "Entire house",
     "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Seattle",
-      "country": "USA",
-      "neighborhood": "Capitol Hill",
-      "lat": 47.6253,
-      "lng": -122.3222
-    },
+    "location": 3,
     "payment": {
       "cost": 180,
       "description": ""
@@ -154,10 +118,7 @@
     "title": "Warm two bedroom home in downtown Columbus, close to trendy restaurant scene",
     "houseType": "Entire home",
     "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Seattle",
-      "country": "USA"
-    },
+    "location": 3,
     "payment": {
       "cost": 210,
       "description": "Free cancellation"
@@ -176,10 +137,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Seattle",
-      "country": "USA"
-    },
+    "location": 3,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -198,10 +156,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Seattle",
-      "country": "USA"
-    },
+    "location": 3,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -220,10 +175,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 7,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -242,10 +194,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 6,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -264,10 +213,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 4,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -286,10 +232,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 3,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -308,10 +251,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 2,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -330,10 +270,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 1,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -352,10 +289,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 2,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -374,10 +308,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 3,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -396,10 +327,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 11,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -418,10 +346,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 12,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -440,10 +365,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 8,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -462,10 +384,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 7,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -484,10 +403,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 9,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -506,10 +422,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
+    "location": 0,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -528,10 +441,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Miami",
-      "country": "USA"
-    },
+    "location": 3,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -550,10 +460,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Miami",
-      "country": "USA"
-    },
+    "location": 1,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -572,10 +479,7 @@
     "title": "Quaint 3-bedroom home in Gamla stan",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": {
-      "city": "Miami",
-      "country": "USA"
-    },
+    "location": 1,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"

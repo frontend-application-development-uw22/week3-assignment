@@ -1,8 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PropertySummaryCard from "../Property/PropertySummaryCard";
+import Carousel from "../Carousel/Carousel";
+import PropertyCard from "../Property/PropertyCard";
 
-export default function Property({
+export default function Collection({
   cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
@@ -12,25 +13,22 @@ export default function Property({
   const { city } = useParams();
 
   const collectionProps = propertyData.filter((property) => {
-    return property.location.city.toLowerCase() === city.replace("-", " ");
+    return locationData[property.location].slug === city;
   });
 
   return (
-    <>
-      <h1>Find popular {city} getaways</h1>
-      <div className="carousel--container carousel--container__popular">
-        {collectionProps.map((property) => {
-          return (
-            <PropertySummaryCard
-              cartItems={cartItems}
-              onAddToCartHandler={onAddToCartHandler}
-              onRemoveFromCartHandler={onRemoveFromCartHandler}
-              size="medium"
-              data={property}
-            />
-          );
-        })}
-      </div>
-    </>
+    <Carousel title="Popular {city} getaways">
+      {collectionProps.map((property) => {
+        return (
+          <PropertyCard
+            cartItems={cartItems}
+            onAddToCartHandler={onAddToCartHandler}
+            onRemoveFromCartHandler={onRemoveFromCartHandler}
+            size="medium"
+            propertyData={property}
+          />
+        );
+      })}
+    </Carousel>
   );
 }

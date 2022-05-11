@@ -90,19 +90,22 @@ button:hover {
 }
 
 .navbar {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
   background-color: var(--white);
 }
 
 .navbar__link {
+  text-decoration: none;
   font-size: 18px;
-  padding: 15px;
+  padding: 15px 0;
   transition: background-color 0.2s ease-in;
+  flex: 0 1 150px;
+  text-align: center;
 }
 
 .navbar__link:hover {
   background-color: var(--grey);
+  text-decoration: underline;
 }

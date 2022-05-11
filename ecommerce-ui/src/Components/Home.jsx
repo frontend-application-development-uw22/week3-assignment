@@ -52,6 +52,10 @@ export default function Property({
           );
         })}
       </Carousel>
+
+      <div className="footer">
+        <h5 className="footer__copy">Copyright 2022 | All rights reserved</h5>
+      </div>
     </>
   );
 }
