@@ -13,11 +13,13 @@ function BnBCardList ({bnbData, cartContents, setCartContents}) {
   const bnbCardList = bnbData.map((bnb) => {
     // Construct a unique key for each [BnBCard].
     iKey++;
-    const id = "bnbcard-" + iKey;
+    const cardId = "bnbcard-" + iKey;
+    const bnbId = "bnb-" + iKey;
     return <BnBCard 
       bnb={bnb}
-      key={id}
-      id={id}
+      key={cardId}
+      cardId={cardId}
+      bnbId={bnbId}
       cartContents={cartContents}
       setCartContents={setCartContents} />
   });

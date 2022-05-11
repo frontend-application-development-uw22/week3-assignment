@@ -5,22 +5,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function BnBCardButton ({inCart, title, cost, cartContents, setCartContents}) {
+function BnBCardButton ({bnbId, title, cost, cartContents, setCartContents}) {
 
-  const test = () => {
-    console.log(typeof(priceList));
+  // addToCart /////////////////////////////////////////////////////////////////
+  // Rewrites [cartContents] with an added object representing this 
+  // BnBCardButton's BnB.
+  const addToCart = () => {
+    setCartContents(cartContents => 
+      [...cartContents, 
+      {
+        id: bnbId,
+        title: title,
+        cost: cost,
+      }]);
   }
 
   return (
     <div>
-      <button onClick={test} className="bnbcard-button">Add to Cart</button>
+      <button onClick={addToCart} className="bnbcard-button">
+        Add to Cart
+      </button>
     </div>
   );
 
 }
 
 BnBCardButton.propTypes = {
-  inCart: PropTypes.bool,
+  bnbId: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   cost: PropTypes.number.isRequired,
   cartContents: PropTypes.array.isRequired,

@@ -81,16 +81,19 @@ p {
   cursor: pointer;
 }
 
-.bnbcard-button {
+button {
   background-color: #01A5D9;
   color: #FFF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.bnbcard-button {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
   float: right;
 }
 
@@ -131,4 +134,8 @@ nav > ul > li {
 
 nav > ul > li:hover {
   background-color: #01A5D9;
+}
+
+.shoppingcart-item-x {
+
 }
