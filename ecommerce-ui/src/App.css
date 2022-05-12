@@ -27,6 +27,7 @@ p {
 
 .bnbcard-img {
   cursor: pointer;
+  overflow: hidden;
 }
 
 .bnbcard-img > img {
@@ -112,6 +113,7 @@ nav {
   URL: https://www.flickr.com/photos/25050455@N02/2733466836
   */
   background-image: url("img/nav-bg.jpg");
+  overflow: hidden;
 }
 
 nav > ul {
@@ -134,6 +136,26 @@ nav > ul > li {
 
 nav > ul > li:hover {
   background-color: #01A5D9;
+}
+
+.shoppingcart-button > .shoppingcart-button-itemcount {
+  background-color: #01A5D9;
+  text-align: center;
+  font-family: monospace;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 25px;
+  margin-right: 5px;
+  text-align: center;
+  width: 25px; 
+}
+
+.red-highlight {
+  background-color: #ED3E31 !important;
+}
+
+.shoppingcart-empty {
+  font-style: italic;
 }
 
 .shoppingcart-item-x {
