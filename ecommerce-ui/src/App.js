@@ -82,27 +82,51 @@ function App() {
     console.log('form button clicked')
     console.log()
 
+    // const newBnb =
+    //
+    //   {
+    //     "title": "Room straight from the Form",
+    //     "houseType": "Room",
+    //     "image": "https://www.usnews.com/dims4/USNEWS/969b907/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F7d%2Fd7%2Fce42ec8b466ebf93dc1da709ae62%2F1-main-photo-courtesy-of-airbnb.jpg",
+    //     "location": {
+    //       "city": "Toronto",
+    //       "country": "Canada"
+    //     },
+    //     "payment": {
+    //       "cost": 200,
+    //       "description": "Free cancellation"
+    //     },
+    //     "host": {
+    //       "name": "John",
+    //       "isSuperhost": false
+    //     },
+    //     "rating": {
+    //       "stars": 5,
+    //       "reviews": 12
+    //     }
+    //   }
+
     const newBnb =
 
       {
-        "title": "Room straight from the Form",
-        "houseType": "Room",
-        "image": "https://www.usnews.com/dims4/USNEWS/969b907/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F7d%2Fd7%2Fce42ec8b466ebf93dc1da709ae62%2F1-main-photo-courtesy-of-airbnb.jpg",
+        "title": title,
+        "houseType": houseType,
+        "image": image,
         "location": {
-          "city": "Toronto",
-          "country": "Canada"
+          "city": city,
+          "country": country
         },
         "payment": {
-          "cost": 200,
-          "description": "Free cancellation"
+          "cost": cost,
+          "description": description
         },
         "host": {
-          "name": "John",
-          "isSuperhost": false
+          "name": name,
+          "isSuperhost": isSuperhost
         },
         "rating": {
-          "stars": 5,
-          "reviews": 12
+          "stars": stars,
+          "reviews": reviews
         }
       }
 
@@ -112,14 +136,12 @@ function App() {
     setBnbList([...bnbList])
 
     console.log(bnbList)
-
     console.log()
 
-    // setTitle(title)
+    // console logs
     //
     console.log(title)
     console.log()
-
     console.log(houseType)
     console.log()
     console.log(image)
