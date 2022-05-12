@@ -1,6 +1,6 @@
 import React from 'react';
 import HouseImage from '../HouseCard/HouseImage';
-
+import Proptypes from 'prop-types';
 export default function BookingSummary ({ imageUrl, title, houseType, stars, reviews, isSuperhost, cost, noOfNights, removeBooking}) {
 
     const totalCost = () => {
@@ -15,7 +15,6 @@ export default function BookingSummary ({ imageUrl, title, houseType, stars, rev
 
     return (
         <div className = "booking-container">
-            <h2>Booking details</h2>
             <div className = "details-container">
               <div className = "image-section booking-img">
                 <HouseImage imageUrl = { imageUrl }/>
@@ -32,7 +31,7 @@ export default function BookingSummary ({ imageUrl, title, houseType, stars, rev
               </div>
             </div>
             <hr/>
-            <h3>Price details</h3>
+            <h3 className = "bookingSummary__heading">Price details</h3>
             <div className = "booking-cards ">
               <p className = "booking-text">{ cost } x { noOfNights }</p>
               <p> ${ totalPrice }</p>
@@ -58,3 +57,6 @@ export default function BookingSummary ({ imageUrl, title, houseType, stars, rev
     );
 }
 
+BookingSummary.propTypes = {
+  BookingSummary: Proptypes.object.isRequired
+}

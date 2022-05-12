@@ -3,6 +3,7 @@ import HouseImage from './HouseImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import Proptypes from 'prop-types';
 
 function HouseDetails ({imageUrl, city, country, title, name, houseType, noOfGuest, noOfRoom,  noOfBathroom, amenities, description, stars, reviews, cost, reserveBooking, selectedProperty}){   
   const [heart, setHeart] = useState (false);
@@ -42,8 +43,10 @@ function HouseDetails ({imageUrl, city, country, title, name, houseType, noOfGue
         </div>
     );
 }
-//   
 
+HouseDetails.propTypes = {
+  HouseDetails : Proptypes.object.isRequired
+}
 export default HouseDetails;
 
 
