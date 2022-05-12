@@ -1,0 +1,363 @@
+.mother{
+  /*text-align: center;*/
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 3fr 1fr;*/
+  /*!*grid-gap: 20px;*!*/
+  /*!*background-color: powderblue;*!*/
+  /*!*background-color: lightgray;*!*/
+  /*background-color: white;*/
+
+}
+
+.website-description{
+  margin: 1rem;
+  /*color: slateblue;*/
+  color: fuchsia;
+  text-align: left;
+  font-style: oblique;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
+  background-color: white;
+  padding: 0 16px;
+}
+
+.menu-buttons{
+  /*display: flex;*/
+  /*justify-content: left;*/
+  /*align-items: center;*/
+  /*border: 1px solid gray;*/
+
+  margin: 1rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
+  background-color: white;
+  padding: 0 16px;
+
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-gap: 20px;*/
+  /*background-color: powderblue;*/
+  /*background-color: lightgray;*/
+  background-color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shopping-cart{
+
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 1rem;
+  /*background-color: khaki;*/
+  background-color: lightsalmon;
+  /*border: 2px solid lightgray;*/
+  /*border: 2px solid tomato;*/
+  /*border: 2px solid #61dafb;*/
+  border-radius: 20px;
+  height: 110px;
+
+}
+
+.shopping-cart-component{
+  /*background-color: aliceblue;*/
+  /*margin: 1rem;*/
+}
+
+
+.author-name{
+  font-weight: bold;
+
+}
+
+.rental-city{
+  font-weight: bold;
+  alignment: right;
+  text-align: left;
+  /*float: right;*/
+  padding: 10px 0;
+
+}
+
+.rental-price{
+  font-weight: bold;
+  alignment: left;
+  text-align: left;
+  float: left;
+  padding: 10px 0;
+  color: blue;
+
+}
+
+.rental-description{
+  /*vertical-align: center;*/
+  /*vertical-align: text-bottom;*/
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: blue;
+
+}
+
+.remove-button{
+  padding: 10px 0;
+}
+
+#rental-title{
+  font-weight: normal;
+  height: 80px;
+  alignment: center;
+  /*text-align: left;*/
+  text-align: center;
+  /*float: right;*/
+  vertical-align: central;
+  /*padding: 10px 0;*/
+
+}
+
+#author{
+  vertical-align: bottom;
+
+}
+
+#link-article{
+  vertical-align: top;
+
+}
+
+.shopping-cart-img{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.card-img{
+  width:240px;
+  height:240px;
+  object-fit:cover;
+  align-content: center;
+  align-items: center;
+  alignment: center;
+  /*background-color: lightgray;*/
+  border-radius: 20px;
+
+}
+
+.app-grid{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: white;
+}
+
+.app-grid-form{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: white;
+  /*margin: 1rem 1rem;*/
+}
+
+.input-bnb-form{
+  margin: 0 1rem;
+}
+
+.vacation-list{
+  /*background-color: aliceblue;*/
+}
+
+.vacation-card{
+  /*background-color: aliceblue;*/
+}
+
+.app-grid-shopping-cart{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: white;
+}
+
+.app-grid-total-due{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+  background-color: white;
+  /*border-style: dotted;*/
+  /*border-color: #282c34;*/
+}
+
+.grid{
+  display: inline;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem 1rem;
+}
+
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 1rem 1rem;
+}
+
+.parent {
+  /*border: 2px solid #61dafb;*/
+  margin: 1rem;
+  text-align: left;
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 240px;
+}
+
+.child {
+  display: inline-block;
+  height: 240px;
+  vertical-align: text-top;
+  horiz-align: left;
+}
+
+.not-on-cart{
+  display: none;
+}
+
+.rental-list-description{
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  color: blue;
+
+}
+
+.rental-list-city{
+  margin: 1rem;
+  font-weight: bolder;
+  color: darkcyan;
+
+}
+
+.rental-list-country{
+  margin: 1rem;
+  font-weight: bold;
+
+}
+
+.rental-list-cost{
+  margin: 1rem;
+  font-weight: bold;
+  color: blue;
+
+}
+
+.rental-add-to-cart{
+  /*float: right;*/
+  /*horiz-align: right;*/
+  /*alignment: right;*/
+  margin: 1rem;
+
+}
+
+.total-payment{
+
+  color: slategray;
+  font-size: 40px;
+  text-align: left;
+
+
+}
+
+.sum{
+
+  color: blue;
+  /*border-style: dashed;*/
+  /*border-color: blue;*/
+  /*border-width: thick;*/
+  text-align: left;
+
+}
+
+.vacation-rentals-h1{
+  color:blue;
+  text-align: left;
+}
+
+.shopping-cart-h1{
+  color: coral;
+  text-align: left;
+}
+
+.input-bnb-h1{
+  color:slategray;
+  text-align: left;
+  /*margin: 1rem;*/
+}
+
+.shopping-cart-off{
+  display: none;
+}
+
+.form-off{
+  display: none;
+}
+
+
+.form-group{
+  font-size: 16px;
+  background-color: white;
+  /*color: #ba9d37;*/
+  color: slategray;
+  font-weight: normal;
+  /*opacity: 0.5;*/
+  text-align: left;
+  /*margin: 1rem;*/
+
+}
