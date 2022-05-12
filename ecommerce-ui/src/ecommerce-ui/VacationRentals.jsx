@@ -1,42 +1,16 @@
 import React from "react";
-import PropTypes from 'prop-types'
 
-function VacationRentals({ id, title, houseType, rentalImage, city, country, cost, costDescr, hostName, isSuperhost, stars, reviews, addRental }) {
+function VacationRentals(props) {
+    const { property } = props;
 
     return (
-        <article className="rental-options">
-            <h2>{title}</h2>
-            <div className="rental-info">
-                <img
-                    src={rentalImage}
-                    alt={title}
-                    className="rental-image"
-                />
-                <div className="rental-card-info">
-                    <p><span>Location: </span>{city}, {country} </p>
-                    <p><span>Price per night:  $</span>{cost}</p>
-                </div>
-                <div className="button-container">
-                    <div className="center-button" >
-                        <button
-                            type="submit"
-                            onClick={event => addRental(event.target.key)}
-                            className="add-rental">
-                            Add to cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </article>
+    <div>
+        <h3> {property.title}</h3>
+       <img className="small" src={property.image} alt={property.title}/>
+       <p><span>Cost per night:</span> ${property.payment.cost}</p>
+       <p><span>Location:</span> {property.location.city}, {property.location.country}</p>
+    </div>
     )
-}
-
-VacationRentals.propTypes = {
-    title: PropTypes.string.isRequired,
-    rentalImage: PropTypes.string.isRequired,
-    city: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
-    cost: PropTypes.number.isRequired
 
 }
 

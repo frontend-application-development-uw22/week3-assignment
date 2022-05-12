@@ -1,11 +1,20 @@
 
 import './App.css';
-import ECommerceUIApp from './ecommerce-ui/ECommerceUIApp'
+import Main from './ecommerce-ui/Main'
+import Header from './ecommerce-ui/Header';
+import ShoppingCart from './ecommerce-ui/ShoppingCart';
+import properties from "./_data/bnbs.json"
+
 
 function App() {
+
   return (
     <div className="App">
-      <ECommerceUIApp/>
+      <Header/> 
+      <div className="row">
+        <Main properties={properties}/>
+        <ShoppingCart/>
+      </div>
     </div>
   );
 }

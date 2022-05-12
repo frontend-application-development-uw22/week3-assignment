@@ -6,211 +6,77 @@
   font-size: 100%;
 }
 
-.App {
-  margin-bottom: .5rem;
+body {
+  font-family: 'Helvetica';
 }
 
-
-
-span {
-  font-weight: bold;
-  color: blue;
-
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
 }
-
-p {
-  font-weight: bold;
-
-}
-
-.header-container {
-  background-color: rgb(92, 171, 202);
-}
-
-header {
-  margin-left: 15%;
-  height: 200px;
-  width: 70%;
-  background-image: url("./images/beach-banner2.png");
-  background-color: skyblue;
-  color: darkblue;
-}
-
-header h1 {
-  /* display: block; */
-  font-size: 3rem;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  font-style: italic;
-
-}
-
-header h3 {
-  color: black;
-  padding-left: 3rem;
-  font-style: italic;
-
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* flex-wrap: wrap; */
-}
-
-.rentals {
-  width: 60%;
-}
-
-.rentals h1 {
-  font-size: 2rem;
-  color: black;
-  margin-top:3rem;
-  margin-left: 3rem;
-
-}
-
-
-/* styling for rentals */
-.rental-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-  /* flex-wrap: wrap; */
-
-}
-
-.rental-options {
-  width: 35%;
-  margin: .5rem;
-  border: 2px solid darkblue;
-  /* padding-bottom: 3%; */
-  border-radius: 0.5rem;
-
-}
-
-.rental-options h2 {
-  font-size: 1.25rem;
-  padding-bottom: .5rem;
-  padding-top: 0.5rem;
-  text-align: center;
-  border-bottom: 0.15rem solid darkblue;
-  background-color: skyblue;
-}
-
-
-/* .rental-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
-.rental-image {
-  width: 100%;
-}
-
-.rental-card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: .5rem;
-}
-
-/* styling for cart */
-
-.cart {
-  width: 40%;
-  margin: 4rem .5rem;
-
-
-}
-
-.cart h2 {
+h1 {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
-
 }
-
-.cart-item {
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  border: 3px solid darkblue;
-  border-radius: .5rem;
-  background-color: rgb(197, 226, 244);
-  padding-left: .5rem;
-
+}
+.row.center {
+  align-items: center;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.row.center {
+  align-items: center;
 }
 
-.cart-item {
-  border-left: 1rem solid darkblue;
-
+.text-right {
+  text-align: right;
 }
-
-.cart-info {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  width: 50%;
+img.small {
+  max-height: 8rem;
 }
-
-
-
-.cart-image {
-  height: 50px;
-  width: auto;
-
-}
-
-/* styling for buttons */
-.button-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
-
-/* .cart-button-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
-
-.center-button,
-.cart-center-button {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
-
 button {
-  /* background-color: darkblue;
-  color: white;
-  font-weight: bold;
-  padding: 10px 15px;
-  margin-top: 25%;
-  margin-bottom: 10%;
-  width: 100%; */
   font-size: 0.8rem;
   padding: 0.2rem;
   margin: 0.1rem;
   border-radius: 0.5rem;
-  border: 0.1rem darkblue solid;
-  background-color: darkblue;
-  color: white;
-  width: 90%;
-  margin: .5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 100%;
   cursor: pointer;
 }
-
-/* .delete-cart {
-  margin-top: 50%;
-  /* margin-right: 15%; */
-  /* width: 100%;
-  padding: 5% 5%;
-  } */
-
-
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
