@@ -15,7 +15,7 @@ export default function Property({
     return property.rating.stars >= 4 && property.rating.reviews >= 80;
   });
 
-  featuredProps = featuredProps.slice(0, 4);
+  featuredProps = featuredProps.slice(0, 8);
 
   const featuredLocations = locationData.filter((location) => {
     return location.id <= 3;
@@ -36,6 +36,7 @@ export default function Property({
               onRemoveFromCartHandler={onRemoveFromCartHandler}
               size="medium"
               propertyData={property}
+              locationData={locationData}
             />
           );
         })}

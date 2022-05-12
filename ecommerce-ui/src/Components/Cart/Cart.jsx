@@ -3,7 +3,11 @@ import CartCard from "./CartCard";
 import CartSummary from "./CartSummary";
 import "./Cart.css";
 
-export default function Cart({ cartItems, onRemoveFromCartHandler }) {
+export default function Cart({
+  cartItems,
+  onRemoveFromCartHandler,
+  locationData,
+}) {
   let totalCost = cartItems.reduce((total, individual) => {
     return (total += individual.payment.cost);
   }, 0);
@@ -21,11 +25,12 @@ export default function Cart({ cartItems, onRemoveFromCartHandler }) {
               <CartCard
                 onRemoveFromCartHandler={onRemoveFromCartHandler}
                 property={property}
+                locationData={locationData}
               />
             );
           })}
         </div>
-        <CartSummary />
+        <CartSummary cartItems={cartItems} />
       </div>
     </div>
   );

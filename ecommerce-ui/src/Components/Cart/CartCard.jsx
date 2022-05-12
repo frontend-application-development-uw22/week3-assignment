@@ -1,7 +1,11 @@
 import React from "react";
 import "./CartCard.css";
 
-export default function CartCard({ onRemoveFromCartHandler, property }) {
+export default function CartCard({
+  onRemoveFromCartHandler,
+  property,
+  locationData,
+}) {
   return (
     <div className="cart-card">
       <div className="cart-card__details">
@@ -11,9 +15,13 @@ export default function CartCard({ onRemoveFromCartHandler, property }) {
           alt={property.title}
         />
         <div className="cart-card__info">
-          <h4 className="cart-card__title">{property.title}</h4>
+          <h3 className="cart-card__title">{property.title}</h3>
           <p className="cart-card__location">
-            {property.location.city}, {property.location.country}
+            {locationData[property.location].city},{" "}
+            {locationData[property.location].state}
+          </p>
+          <p className="cart-card__cost">
+            Unit Cost = ${property.payment.cost}
           </p>
           <button
             className="cart-card__button"
@@ -22,9 +30,6 @@ export default function CartCard({ onRemoveFromCartHandler, property }) {
             Remove from cart
           </button>
         </div>
-      </div>
-      <div className="cart-card__cost">
-        <p>Unit Cost = ${property.payment.cost}</p>
       </div>
     </div>
   );

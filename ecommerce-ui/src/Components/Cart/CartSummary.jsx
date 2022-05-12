@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartSummary.css";
 
-export default function CartSummary() {
+export default function CartSummary({ cartItems }) {
   return (
     <div className="cart-summary">
       <h2 className="cart-summary__heading">Summary</h2>
@@ -20,7 +20,7 @@ export default function CartSummary() {
         </div>
         <div className="cart-summary__total">
           <h3>Total</h3>
-          <p>$</p>
+          <p>${}</p>
         </div>
       </div>
     </div>

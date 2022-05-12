@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import Home from "./Components/Home";
 import Cart from "./Components/Cart/Cart";
 import Property from "./Components/Property/Property";
@@ -41,9 +41,6 @@ export default function App() {
           <Link className="navbar__link" to="/properties/condos">
             Condos
           </Link>
-          <Link className="navbar__link" to="/properties/places">
-            Places
-          </Link>
           <Link className="navbar__link" to="/cart">
             Cart ({cartItems.length})
           </Link>
@@ -67,6 +64,7 @@ export default function App() {
               <Cart
                 cartItems={cartItems}
                 onRemoveFromCartHandler={onRemoveFromCartHandler}
+                locationData={locationData}
               />
             }
           ></Route>

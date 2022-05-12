@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useDebugValue } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../Carousel/Carousel";
 import PropertyCard from "../Property/PropertyCard";
@@ -12,12 +12,15 @@ export default function Collection({
 }) {
   const { city } = useParams();
 
+  const location = locationData.filter((location) => location.slug === city)[0];
+  const locationId = location.id;
+
   const collectionProps = propertyData.filter((property) => {
-    return locationData[property.location].slug === city;
+    return property.location === locationId;
   });
 
   return (
-    <Carousel title="Popular {city} getaways">
+    <Carousel title={`Popular ${location.city} getaways`}>
       {collectionProps.map((property) => {
         return (
           <PropertyCard
@@ -26,6 +29,7 @@ export default function Collection({
             onRemoveFromCartHandler={onRemoveFromCartHandler}
             size="medium"
             propertyData={property}
+            locationData={locationData}
           />
         );
       })}

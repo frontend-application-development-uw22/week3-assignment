@@ -8,12 +8,15 @@ export default function PropertyCard({
   onRemoveFromCartHandler,
   size,
   propertyData,
+  locationData,
 }) {
   let inCart = false;
 
   if (cartItems) {
     inCart = cartItems.find((property) => property.id === propertyData.id);
   }
+
+  const location = locationData[propertyData.location];
 
   return (
     <div
@@ -32,7 +35,9 @@ export default function PropertyCard({
           {propertyData.houseType} hosted by {propertyData.host.name}
         </p>
         <p className={`property-card__location`}>
-          {propertyData.location.city}, {propertyData.location.country}
+          <Link to={`../collection/${location.slug}`}>
+            {location.city}, {location.state}
+          </Link>
         </p>
         <p className={`property-card__rating`}>
           {propertyData.rating.stars} stars | {propertyData.rating.reviews}{" "}
@@ -44,7 +49,7 @@ export default function PropertyCard({
         </p>
         {!inCart && (
           <button
-            className="property-card__button"
+            className={`property-card__button property-card__button--${size}`}
             onClick={() => onAddToCartHandler(propertyData)}
           >
             Add to cart
@@ -52,20 +57,18 @@ export default function PropertyCard({
         )}
         {inCart && (
           <button
-            className="property-card__button"
+            className={`property-card__button property-card__button--${size}`}
             onClick={() => onRemoveFromCartHandler(propertyData)}
           >
             Remove from cart
           </button>
         )}
       </div>
-      <Link to={`/property/${propertyData.id}`}>
-        <img
-          className={`property-card__image property-card__image--${size}`}
-          src={propertyData.image}
-          alt={propertyData.title}
-        />
-      </Link>
+      <img
+        className={`property-card__image property-card__image--${size}`}
+        src={propertyData.image}
+        alt={propertyData.title}
+      />
     </div>
   );
 }

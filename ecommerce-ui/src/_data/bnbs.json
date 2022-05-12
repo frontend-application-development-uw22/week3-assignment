@@ -26,7 +26,7 @@
     "location": 12,
     "payment": {
       "cost": 130,
-      "description": ""
+      "description": "Get one night free"
     },
     "host": {
       "name": "Jamie",
@@ -39,10 +39,10 @@
   },
   {
     "id": 2,
-    "title": "Quaint 3-bedroom home in hip and historic Ustick neighborhood in downtown Boise",
+    "title": "Quaint 3-bedroom home in hip and historic Ustick neighborhood",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": 11,
+    "location": 12,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -61,7 +61,7 @@
     "title": "Beautiful 4-bedroom apartment in downtown Portland",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": 10,
+    "location": 7,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -77,7 +77,7 @@
   },
   {
     "id": 4,
-    "title": "Trendy three bedroom apartment near the downton San Francisco tech scene",
+    "title": "Trendy apartment near the downtown San Francisco tech scene",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 5,
@@ -97,12 +97,12 @@
   {
     "id": 5,
     "title": "Upscale three bedroom home in quiet suburb of downtown Seattle",
-    "houseType": "Entire house",
+    "houseType": "Entire home",
     "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
     "payment": {
       "cost": 180,
-      "description": ""
+      "description": "Get 20% off"
     },
     "host": {
       "name": "Max",
@@ -115,7 +115,7 @@
   },
   {
     "id": 6,
-    "title": "Warm two bedroom home in downtown Columbus, close to trendy restaurant scene",
+    "title": "Newly built home in quiet, low-key West Seattle",
     "houseType": "Entire home",
     "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
@@ -134,7 +134,7 @@
   },
   {
     "id": 7,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Trendy 3-bedroom brick home in hip Ballard neighborhood",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
@@ -153,7 +153,7 @@
   },
   {
     "id": 8,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Clean, bright studio apartment near Space Needle",
     "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
@@ -172,7 +172,7 @@
   },
   {
     "id": 9,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Large, modern home with pool near Nike campus",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 7,
@@ -191,7 +191,7 @@
   },
   {
     "id": 10,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Beach-front home with jacuzzi and fully stocked bar",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 6,
@@ -210,7 +210,7 @@
   },
   {
     "id": 11,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Open-air home walking distance from Disney World",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 4,
@@ -229,10 +229,10 @@
   },
   {
     "id": 12,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "Downtown Boston apartment. Fully stocked and ready to entertain.",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
-    "location": 3,
+    "location": 8,
     "payment": {
       "cost": 230,
       "description": "Free cancellation"
@@ -248,7 +248,7 @@
   },
   {
     "id": 13,
-    "title": "Quaint 3-bedroom home in Gamla stan",
+    "title": "One of a few homes within walking distance to the LA music scene.",
     "houseType": "Entire House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 2,
@@ -267,8 +267,8 @@
   },
   {
     "id": 14,
-    "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "title": "Roomy two bedroom apartment in Queens",
+    "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 1,
     "payment": {
@@ -286,8 +286,8 @@
   },
   {
     "id": 15,
-    "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "title": "LA studio apartment near the beach",
+    "houseType": "Apartment",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 2,
     "payment": {

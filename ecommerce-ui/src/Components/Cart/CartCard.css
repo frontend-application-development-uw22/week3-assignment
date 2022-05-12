@@ -19,6 +19,7 @@
 .cart-card__title {
   margin: 0;
 }
+
 .cart-card__info {
   display: flex;
   flex-direction: column;
@@ -28,12 +29,4 @@
 
 .cart-card__button {
   width: 160px;
-}
-
-.cart-card__cost {
-  border: 1px solid var(--grey);
-  border-radius: 4px;
-  padding: 10px;
-  font-weight: bold;
-  height: 60px;
 }
