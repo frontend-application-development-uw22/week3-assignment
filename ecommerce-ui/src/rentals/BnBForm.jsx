@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from "prop-types";
+
 
 export default function BnBForm({
                                   setTitle,
@@ -172,5 +174,22 @@ export default function BnBForm({
 
     </form>
   )
+
+}
+
+BnBForm.propTypes = {
+
+  setTitle: PropTypes.func.isRequired,
+  sethouseType: PropTypes.func.isRequired,
+  setImage: PropTypes.func.isRequired,
+  setCountry: PropTypes.func.isRequired,
+  setCity: PropTypes.func.isRequired,
+  setCost: PropTypes.func.isRequired,
+  setDescription: PropTypes.func.isRequired,
+  setName: PropTypes.func.isRequired,
+  setisSuperhost: PropTypes.func.isRequired,
+  setStars: PropTypes.func.isRequired,
+  setReviews: PropTypes.func.isRequired,
+  handleForm: PropTypes.func.isRequired,
 
 }

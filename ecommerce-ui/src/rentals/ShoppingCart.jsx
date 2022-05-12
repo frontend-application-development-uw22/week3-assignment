@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import ShopItem from "./ShopItem";
+import PropTypes from "prop-types";
 
 export default function ShoppingCart({cart, removeFromCart}){
 
@@ -18,5 +18,13 @@ export default function ShoppingCart({cart, removeFromCart}){
       {shoppingCartList}
     </div>
   )
+
+}
+
+
+ShoppingCart.propTypes = {
+
+  cart: PropTypes.arrayOf(PropTypes.object).isRequired,
+  removeFromCart: PropTypes.func.isRequired,
 
 }

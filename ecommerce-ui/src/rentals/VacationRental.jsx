@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import VacationList from './VacationList'
+import PropTypes from "prop-types";
 
 
 export default function VacationRental({bnbList, addToCart}) {
@@ -17,6 +17,13 @@ export default function VacationRental({bnbList, addToCart}) {
     </div>
 
   )
+}
+
+VacationRental.propTypes = {
+
+  bnbList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  addToCart: PropTypes.func.isRequired,
+
 }
 
 

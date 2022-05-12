@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-export default function VacationCard({card, idx, onAdd}){
+export default function VacationCard({card, key, onAdd}){
 
   return (
 
-    <div key={idx} className="parent">
+    <div key={key} className="parent">
 
       <div className="child">
 
@@ -58,9 +57,10 @@ export default function VacationCard({card, idx, onAdd}){
 
 }
 
-// VacationCard.propTypes = {
-//
-//   card: PropTypes.object.isRequired,
-//   idx: PropTypes.number.isRequired,
-//
-// }
+VacationCard.propTypes = {
+
+  card: PropTypes.object.isRequired,
+  key: PropTypes.number.isRequired,
+  onAdd: PropTypes.func.isRequired,
+
+}

@@ -30,7 +30,6 @@ function App() {
 
     console.log('button clicked')
     console.log(cart)
-
     setCart([...cart, card])
 
   }
@@ -57,6 +56,7 @@ function App() {
   function handleForm(event){
     event.preventDefault()
 
+    // gets the element entity that triggered the event, in this case the form.
     const target = event.target
 
     // const name = target.name.value
@@ -95,11 +95,10 @@ function App() {
 
     setBnbList([...bnbList])
 
+    // console logs
+
     console.log(bnbList)
     console.log()
-
-    // console logs
-    //
     console.log(title)
     console.log()
     console.log(houseType)

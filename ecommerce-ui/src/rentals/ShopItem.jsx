@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-export default function ShopItem({card, idx, onRemove}){
+export default function ShopItem({card, key, onRemove}){
 
   return (
 
-    <div key={idx} className="shopping-cart">
+    <div key={key} className="shopping-cart">
 
       <div>
 
@@ -51,9 +50,10 @@ export default function ShopItem({card, idx, onRemove}){
 
 }
 
-// VacationCard.propTypes = {
-//
-//   card: PropTypes.object.isRequired,
-//   idx: PropTypes.number.isRequired,
-//
-// }
+ShopItem.propTypes = {
+
+  card: PropTypes.object.isRequired,
+  key: PropTypes.number.isRequired,
+  onRemove: PropTypes.func.isRequired,
+
+}
