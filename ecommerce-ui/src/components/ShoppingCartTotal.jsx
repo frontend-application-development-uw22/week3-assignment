@@ -16,8 +16,10 @@ function ShoppingCartTotal ({cartContents}) {
   return (
     <div className="shoppingcart-total">
       <p>
-        ${total}
+        <span className="shoppingcart-total-subtotal">Subtotal</span>
+        <span className="shoppingcart-total-cost">${total}</span>
       </p>
+      <button className="shoppingcart-total-checkout-button">Checkout</button>
     </div>
   );
 

@@ -17,18 +17,21 @@ function App() {
         cartOpen={cartOpen}
         setCartOpen={setCartOpen}
       />
-      <BnBCardList 
-        bnbData={bnbData}
-        cartContents={cartContents}
-        setCartContents={setCartContents}
-        cartOpen={cartOpen}
-        setCartOpen={setCartOpen}
-      />
-      <ShoppingCart 
-        cartContents={cartContents}
-        setCartContents={setCartContents}
-        cartOpen={cartOpen}
-      />
+      <main>
+        <BnBCardList 
+          bnbData={bnbData}
+          cartContents={cartContents}
+          setCartContents={setCartContents}
+          cartOpen={cartOpen}
+          setCartOpen={setCartOpen}
+        />
+        <ShoppingCart 
+          cartContents={cartContents}
+          setCartContents={setCartContents}
+          cartOpen={cartOpen}
+          setCartOpen={setCartOpen}
+        />
+      </main>
     </div>
   );
 }

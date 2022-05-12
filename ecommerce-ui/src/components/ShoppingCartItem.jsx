@@ -23,7 +23,12 @@ function ShoppingCartItem ({shoppingCartItemId, title, cost, cartContents, setCa
 
   return (
     <li id={shoppingCartItemId} className="shoppingcart-item">
-      {title} - ${cost}
+      <span className="shoppingcart-item-title">
+        {title}
+      </span>
+      <span className="shoppingcart-item-price">
+        ${cost}
+      </span>
       <button 
         className="shoppingcart-item-x"
         onClick={removeFromCart}

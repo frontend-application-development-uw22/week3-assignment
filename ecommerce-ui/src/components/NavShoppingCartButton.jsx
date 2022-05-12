@@ -15,6 +15,7 @@ function NavShoppingCartButton ({cartContents, cartOpen, setCartOpen}) {
     cartOpen ? setCartOpen(false) : setCartOpen(true);
   }
 
+  // Add a red highlight to the [itemCount] if > 0 items in [cartContents].
   const itemCountClasses =
     itemCount ? "shoppingcart-button-itemcount red-highlight" : "shoppingcart-button-itemcount";
 
