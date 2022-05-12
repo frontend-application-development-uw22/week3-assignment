@@ -5,41 +5,25 @@ import bnbs from './_data/bnbs.json'
 import ShoppingCart from "./rentals/ShoppingCart";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-// import { red } from '@mui/material/colors';
-
-// const toggleButtonColor = red[500];
+import BnBForm from "./rentals/BnBForm";
 
 
 function App() {
 
   const [cart, setCart] = useState([])
-
   const [cartVisible, setCartVisible] = useState(true)
-
   const [formVisible, setFormVisible] = useState(true)
-
   const [bnbList, setBnbList] = useState(bnbs)
-
   const [title, setTitle]= useState("")
-
   const [houseType, sethouseType]= useState("")
-
   const [image, setImage]= useState("")
-
   const [city, setCity]= useState("")
-
   const [country, setCountry]= useState("")
-
   const [cost, setCost]= useState("")
-
   const [description, setDescription]= useState("")
-
   const [name, setName]= useState("")
-
   const [isSuperhost, setisSuperhost]= useState(false)
-
   const [stars, setStars]= useState("")
-
   const [reviews, setReviews]= useState("")
 
   function addToCart(card){
@@ -81,30 +65,6 @@ function App() {
 
     console.log('form button clicked')
     console.log()
-
-    // const newBnb =
-    //
-    //   {
-    //     "title": "Room straight from the Form",
-    //     "houseType": "Room",
-    //     "image": "https://www.usnews.com/dims4/USNEWS/969b907/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F7d%2Fd7%2Fce42ec8b466ebf93dc1da709ae62%2F1-main-photo-courtesy-of-airbnb.jpg",
-    //     "location": {
-    //       "city": "Toronto",
-    //       "country": "Canada"
-    //     },
-    //     "payment": {
-    //       "cost": 200,
-    //       "description": "Free cancellation"
-    //     },
-    //     "host": {
-    //       "name": "John",
-    //       "isSuperhost": false
-    //     },
-    //     "rating": {
-    //       "stars": 5,
-    //       "reviews": 12
-    //     }
-    //   }
 
     const newBnb =
 
@@ -168,23 +128,14 @@ function App() {
     setImage("")
     setCity("")
     setCountry("")
-    setCost(0)
+    setCost("")
     setDescription("")
     setName("")
     setisSuperhost(false)
-    setStars(0)
-    setReviews(0)
-
-    //
-    // setTitle("")
-    //
-    // console.log(title.value)
+    setStars("")
+    setReviews("")
 
     target.reset()
-
-
-
-
 
   }
 
@@ -259,162 +210,19 @@ function App() {
 
               <hr />
 
-              <form onSubmit={handleForm} id="bnb-form">
-                <div className="form-group mb-2">
-                  <label htmlFor="title">Title</label>
-                  <input
-                    id="title"
-                    name="title"
-                    // value={title}
-                    onChange={(event)=> setTitle(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="^\w+\s*\w+$"
-
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label htmlFor="houseType">House Type</label>
-                  <input
-                    id="houseType"
-                    name="houseType"
-                    onChange={(event)=> sethouseType(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="^\w+\s*\w+$"
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label htmlFor="image">Image</label>
-                  <input
-                    id="image"
-                    name="image"
-                    onChange={(event)=> setImage(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="city">City</label>
-                  <input
-                    id="city"
-                    name="city"
-                    onChange={(event)=> setCity(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="country">Country</label>
-                  <input
-                    id="country"
-                    name="country"
-                    onChange={(event)=> setCountry(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="cost">Cost</label>
-                  <input
-                    id="cost"
-                    name="cost"
-                    onChange={(event)=> setCost(event.target.value)}
-                    className="form-control"
-                    type="number"
-                    // placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="description">Description</label>
-                  <input
-                    id="description"
-                    name="description"
-                    onChange={(event)=> setDescription(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="name">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    onChange={(event)=> setName(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label htmlFor="isSuperhost">isSuperhost</label>
-                  <input
-                    id="isSuperhost"
-                    name="isSuperhost"
-                    onChange={(event)=> setisSuperhost(event.target.value)}
-                    // className="form-control"
-                    type="checkbox"
-                    // placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="stars">Stars</label>
-                  <input
-                    id="stars"
-                    name="stars"
-                    onChange={(event)=> setStars(event.target.value)}
-                    className="form-control"
-                    type="number"
-                    // placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <label htmlFor="reviews">Reviews</label>
-                  <input
-                    id="reviews"
-                    name="reviews"
-                    onChange={(event)=> setReviews(event.target.value)}
-                    className="form-control"
-                    type="number"
-                    // placeholder=""
-                    // pattern="\d{1,}"
-                  />
-                </div>
-
-                <div className="form-group mb-2">
-                  <input
-                    id="submit"
-                    className="btn btn-primary"
-                    type="submit"
-                    value="Submit Form"
-
-
-                  />
-                </div>
-
-
-              </form>
+              <BnBForm
+                setTitle={setTitle}
+                sethouseType={sethouseType}
+                setImage={setImage}
+                setCity={setCity}
+                setCountry={setCountry}
+                setCost={setCost}
+                setDescription={setDescription}
+                setName={setName}
+                setisSuperhost={setisSuperhost}
+                setStars={setStars}
+                setReviews={setReviews}
+                handleForm={handleForm}/>
 
             </div>
 
