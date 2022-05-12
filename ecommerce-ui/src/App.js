@@ -30,17 +30,17 @@ function App() {
 
   const [country, setCountry]= useState("")
 
-  const [cost, setCost]= useState("")
+  const [cost, setCost]= useState(0)
 
   const [description, setDescription]= useState("")
 
   const [name, setName]= useState("")
 
-  const [isSuperhost, setisSuperhost]= useState("")
+  const [isSuperhost, setisSuperhost]= useState(false)
 
-  const [stars, setStars]= useState("")
+  const [stars, setStars]= useState(0)
 
-  const [reviews, setReviews]= useState("")
+  const [reviews, setReviews]= useState(0)
 
   function addToCart(card){
 
@@ -332,8 +332,8 @@ function App() {
                     name="cost"
                     onChange={(event)=> setCost(event.target.value)}
                     className="form-control"
-                    type="text"
-                    placeholder=""
+                    type="number"
+                    // placeholder=""
                     // pattern="\d{1,}"
                   />
                 </div>
@@ -369,9 +369,9 @@ function App() {
                     id="isSuperhost"
                     name="isSuperhost"
                     onChange={(event)=> setisSuperhost(event.target.value)}
-                    className="form-control"
-                    type="text"
-                    placeholder=""
+                    // className="form-control"
+                    type="checkbox"
+                    // placeholder=""
                     // pattern="\d{1,}"
                   />
                 </div>
@@ -383,8 +383,8 @@ function App() {
                     name="stars"
                     onChange={(event)=> setStars(event.target.value)}
                     className="form-control"
-                    type="text"
-                    placeholder=""
+                    type="number"
+                    // placeholder=""
                     // pattern="\d{1,}"
                   />
                 </div>
@@ -396,8 +396,8 @@ function App() {
                     name="reviews"
                     onChange={(event)=> setReviews(event.target.value)}
                     className="form-control"
-                    type="text"
-                    placeholder=""
+                    type="number"
+                    // placeholder=""
                     // pattern="\d{1,}"
                   />
                 </div>
