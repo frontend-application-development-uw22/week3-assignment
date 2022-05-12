@@ -25,26 +25,30 @@ export default function App() {
     localStorage.setItem("selectedProperties", cartItems);
   };
 
+  const totalCost = cartItems.reduce((prev, curr) => {
+    return prev + curr.payment.cost;
+  }, 0);
+
   return (
     <ThemeContext.Provider value={theme}>
+      <nav className="navbar">
+        <Link className="navbar__link" to="/">
+          GetAway
+        </Link>
+        <Link className="navbar__link" to="/properties/houses">
+          Houses
+        </Link>
+        <Link className="navbar__link" to="/properties/apartments">
+          Apartments
+        </Link>
+        <Link className="navbar__link" to="/properties/condos">
+          Condos
+        </Link>
+        <Link className="navbar__link" to="/cart">
+          Cart ({cartItems.length} - ${totalCost})
+        </Link>
+      </nav>
       <main className="main">
-        <nav className="navbar">
-          <Link className="navbar__link" to="/">
-            GetAway
-          </Link>
-          <Link className="navbar__link" to="/properties/houses">
-            Houses
-          </Link>
-          <Link className="navbar__link" to="/properties/apartments">
-            Apartments
-          </Link>
-          <Link className="navbar__link" to="/properties/condos">
-            Condos
-          </Link>
-          <Link className="navbar__link" to="/cart">
-            Cart ({cartItems.length})
-          </Link>
-        </nav>
         <Routes>
           <Route
             path="/"

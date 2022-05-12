@@ -1,5 +1,5 @@
 .collection-card__container--medium {
-  flex: 0 1 40%;
+  flex: 0 1 46%;
 }
 
 .collection-card__container--large {
@@ -8,8 +8,7 @@
 
 .collection-card__image--medium {
   height: 140px;
-  width: 500px;
-  max-width: 500px;
+  width: 100%;
   object-fit: cover;
   transition: transform 0.2s;
 }

@@ -18,7 +18,7 @@ export default function CollectionCard({
           src={locationData.image}
           alt={locationData.city}
         />
-        <h4 className="collection-card__location">{locationData.city}</h4>
+        <h3 className="collection-card__location">{locationData.city}</h3>
       </Link>
     </div>
   );

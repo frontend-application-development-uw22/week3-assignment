@@ -1,5 +1,6 @@
 .property-card__container {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .property-card__details {
@@ -12,11 +13,12 @@
 .property-card__container--medium {
   flex-flow: column-reverse wrap;
   flex: 0 1 20%;
+  margin-bottom: 40px;
 }
 
 .property-card__container--large {
   flex-flow: row wrap;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid var(--dark);
   padding-left: 20px;
   background-color: white;
 }
@@ -43,4 +45,12 @@
 
 .property-card__button {
   margin: 20px 0;
+}
+
+.property-card__button--medium {
+  width: 100%;
+}
+
+.property-card__button--large {
+  width: 170px;
 }

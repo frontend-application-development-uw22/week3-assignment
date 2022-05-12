@@ -44,7 +44,7 @@ export default function Property({
       <h2>Property Reviews</h2>
       <Reviews totalReviews={property.rating.reviews} />
       <h2>Property Location</h2>
-      {/* <Map lat={geocode[0]} lng={geocode[1]} /> */}
+      <Map lat={geocode[0]} lng={geocode[1]} />
     </div>
   );
 }
