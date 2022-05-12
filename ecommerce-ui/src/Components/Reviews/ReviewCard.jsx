@@ -2,6 +2,7 @@ import React from "react";
 import "./ReviewCard.css";
 
 export default function ReviewCard({ reviewer, review }) {
+  review = review.toUpperCase();
   return (
     <div className="review-card">
       <img

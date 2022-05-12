@@ -1,3 +1,10 @@
+.cart {
+  display: flex;
+  flex: 0;
+  gap: 8em;
+  flex-wrap: wrap;
+}
+
 .cart-header {
   display: flex;
   align-items: baseline;
@@ -14,9 +21,4 @@
   border-radius: 4px;
   padding: 10px;
   font-weight: bold;
-}
-
-.cart__summary {
-  display: flex;
-  justify-content: space-around;
 }

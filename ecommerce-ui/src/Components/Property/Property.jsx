@@ -31,7 +31,6 @@ export default function Property({
       .then((data) => setGeocode([data[0].lat, data[0].lon]));
   }, []);
 
-  console.log(geocode);
   return (
     <div className="property__wrapper">
       <PropertyCard

@@ -13,25 +13,28 @@ export default function Cart({
   }, 0);
 
   return (
-    <div className="cart">
+    <>
       <div className="cart-header">
         <h1 className="cart-header__title">Cart Items</h1>
       </div>
-      <div className="cart__summary">
-        <div className="cart__items">
-          {cartItems.length === 0 && <h3>Your cart is currently empty</h3>}
-          {cartItems.map((property) => {
-            return (
-              <CartCard
-                onRemoveFromCartHandler={onRemoveFromCartHandler}
-                property={property}
-                locationData={locationData}
-              />
-            );
-          })}
+      <div className="cart">
+        <div className="cart-contents">
+          {cartItems.length === 0 ? (
+            <h3>Your cart is currently empty</h3>
+          ) : (
+            cartItems.map((property) => {
+              return (
+                <CartCard
+                  onRemoveFromCartHandler={onRemoveFromCartHandler}
+                  property={property}
+                  locationData={locationData}
+                />
+              );
+            })
+          )}
         </div>
-        <CartSummary cartItems={cartItems} />
+        {cartItems.length !== 0 && <CartSummary cartItems={cartItems} />}
       </div>
-    </div>
+    </>
   );
 }

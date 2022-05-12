@@ -40,7 +40,7 @@
   {
     "id": 2,
     "title": "Quaint 3-bedroom home in hip and historic Ustick neighborhood",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 12,
     "payment": {
@@ -173,7 +173,7 @@
   {
     "id": 9,
     "title": "Large, modern home with pool near Nike campus",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 7,
     "payment": {
@@ -192,7 +192,7 @@
   {
     "id": 10,
     "title": "Beach-front home with jacuzzi and fully stocked bar",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 6,
     "payment": {
@@ -211,7 +211,7 @@
   {
     "id": 11,
     "title": "Open-air home walking distance from Disney World",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 4,
     "payment": {
@@ -230,7 +230,7 @@
   {
     "id": 12,
     "title": "Downtown Boston apartment. Fully stocked and ready to entertain.",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 8,
     "payment": {
@@ -249,7 +249,7 @@
   {
     "id": 13,
     "title": "One of a few homes within walking distance to the LA music scene.",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 2,
     "payment": {
@@ -306,7 +306,7 @@
   {
     "id": 16,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
     "payment": {
@@ -325,7 +325,7 @@
   {
     "id": 17,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 11,
     "payment": {
@@ -344,7 +344,7 @@
   {
     "id": 18,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 12,
     "payment": {
@@ -363,7 +363,7 @@
   {
     "id": 19,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 8,
     "payment": {
@@ -382,7 +382,7 @@
   {
     "id": 20,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 7,
     "payment": {
@@ -401,7 +401,7 @@
   {
     "id": 21,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 9,
     "payment": {
@@ -420,7 +420,7 @@
   {
     "id": 22,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 0,
     "payment": {
@@ -439,7 +439,7 @@
   {
     "id": 23,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 3,
     "payment": {
@@ -458,7 +458,7 @@
   {
     "id": 24,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 1,
     "payment": {
@@ -477,7 +477,7 @@
   {
     "id": 25,
     "title": "Quaint 3-bedroom home in Gamla stan",
-    "houseType": "Entire House",
+    "houseType": "House",
     "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
     "location": 1,
     "payment": {
