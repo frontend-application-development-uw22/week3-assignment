@@ -18,6 +18,8 @@ function App() {
 
   const [formVisible, setFormVisible] = useState(true)
 
+  const [bnbList, setBnbList] = useState(bnbs)
+
   function addToCart(card){
 
     console.log('button clicked')
@@ -51,6 +53,43 @@ function App() {
 
     console.log('form button clicked')
     console.log()
+
+    const newBnb =
+
+      {
+        "title": "Room straight from the Form",
+        "houseType": "Room",
+        "image": "https://www.usnews.com/dims4/USNEWS/969b907/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F7d%2Fd7%2Fce42ec8b466ebf93dc1da709ae62%2F1-main-photo-courtesy-of-airbnb.jpg",
+        "location": {
+          "city": "Toronto",
+          "country": "Canada"
+        },
+        "payment": {
+          "cost": 200,
+          "description": "Free cancellation"
+        },
+        "host": {
+          "name": "John",
+          "isSuperhost": false
+        },
+        "rating": {
+          "stars": 5,
+          "reviews": 12
+        }
+      }
+
+
+    bnbList.push(newBnb)
+
+    setBnbList([...bnbList])
+
+    console.log(bnbList)
+
+    console.log()
+
+
+
+
   }
 
   let sum=0
@@ -79,7 +118,6 @@ function App() {
       </div>
 
       <div className="menu-buttons">
-        {/*add material-ui button*/}
 
         <div>
 
@@ -94,7 +132,7 @@ function App() {
               padding: "10px 10px",
               marginTop: "10px",
 
-            }}>Input BnB</Button>
+            }}>Toggle Form</Button>
 
             <Button onClick={handleToggle} variant="contained" style={{
               backgroundColor: "#6200ea",
@@ -257,8 +295,14 @@ function App() {
                 </div>
 
                 <div className="form-group mb-2">
-                  <input id="submit" className="btn btn-primary" type="submit"
-                         value="Submit Form"/>
+                  <input
+                    id="submit"
+                    className="btn btn-primary"
+                    type="submit"
+                    value="Submit Form"
+
+
+                  />
                 </div>
 
 
@@ -274,7 +318,7 @@ function App() {
 
             <hr />
 
-            <VacationRental bnbs={bnbs} addToCart = {addToCart}/>
+            <VacationRental bnbList={bnbList} addToCart = {addToCart}/>
 
           </div>
 
@@ -303,11 +347,6 @@ function App() {
       </div>
 
       </div>
-
-
-
-
-
 
   );
 }

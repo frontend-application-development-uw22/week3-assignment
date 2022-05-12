@@ -2,9 +2,9 @@
 import React from 'react'
 import VacationCard from './VacationCard'
 
-export default function VacationList({bnbs, addToCart}){
+export default function VacationList({bnbList, addToCart}){
 
-    const vacationRentals = bnbs.map((card, idx)=>
+    const vacationRentals = bnbList.map((card, idx)=>
 
     <VacationCard
       card={card}

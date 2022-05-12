@@ -3,14 +3,14 @@ import React from 'react'
 import VacationList from './VacationList'
 
 
-export default function VacationRental({bnbs, addToCart}) {
+export default function VacationRental({bnbList, addToCart}) {
 
   return (
     <div>
 
       <div className="vacation-list">
 
-        <VacationList bnbs={bnbs} addToCart={addToCart}/>
+        <VacationList bnbList={bnbList} addToCart={addToCart}/>
 
       </div>
 
