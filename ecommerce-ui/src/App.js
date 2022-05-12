@@ -20,6 +20,8 @@ function App() {
 
   const [bnbList, setBnbList] = useState(bnbs)
 
+  const [title, setTitle]= useState("")
+
   function addToCart(card){
 
     console.log('button clicked')
@@ -50,6 +52,12 @@ function App() {
 
   function handleForm(event){
     event.preventDefault()
+
+    const target = event.target
+
+    const name = target.name.value
+
+    console.log(name)
 
     console.log('form button clicked')
     console.log()
@@ -86,6 +94,23 @@ function App() {
     console.log(bnbList)
 
     console.log()
+
+    // setTitle(title)
+    //
+    console.log(title)
+
+    console.log(
+
+    )
+
+    setTitle("")
+    //
+    // setTitle("")
+    //
+    // console.log(title.value)
+
+    target.reset()
+
 
 
 
@@ -169,6 +194,8 @@ function App() {
                   <input
                     id="title"
                     name="title"
+                    // value={title}
+                    onChange={(event)=> setTitle(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
