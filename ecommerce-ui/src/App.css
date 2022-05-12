@@ -59,12 +59,13 @@ img.small {
 button {
   font-size: 0.8rem;
   padding: 0.2rem;
-  margin: 0.1rem;
+  margin: 0.2rem;
   border-radius: 0.5rem;
-  border: 0.1rem #404040 solid;
-  background-color: #f0c040;
-  width: 100%;
+  border: 0.1rem darkblue solid;
+  background-color: darkblue;
+  width: 90%;
   cursor: pointer;
+  color: white;
 }
 button.add {
   background-color: #40c0f0;

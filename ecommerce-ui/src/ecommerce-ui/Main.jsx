@@ -2,7 +2,7 @@ import React from "react";
 import VacationRentals from "./VacationRentals";
 
 function Main(props) {
-    const { properties } = props;
+    const { properties, addRental } = props;
 
     return (
 
@@ -10,7 +10,7 @@ function Main(props) {
             <h2>Available Properties</h2>
             <div className="row">
                 {properties.map((property) => (
-                    <VacationRentals key={property.id} property={property} />
+                    <VacationRentals key={property.id} property={property} addRental={addRental} />
                 ))}
 
             </div>
