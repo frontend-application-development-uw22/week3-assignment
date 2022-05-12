@@ -1,7 +1,7 @@
 import React from "react";
 
-function VacationRentals(props) {
-    const { property, addRental } = props;
+function VacationRentals({ property, addRental }) {
+    
 
     return (
         <div>
