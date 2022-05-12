@@ -22,6 +22,26 @@ function App() {
 
   const [title, setTitle]= useState("")
 
+  const [houseType, sethouseType]= useState("")
+
+  const [image, setImage]= useState("")
+
+  const [city, setCity]= useState("")
+
+  const [country, setCountry]= useState("")
+
+  const [cost, setCost]= useState("")
+
+  const [description, setDescription]= useState("")
+
+  const [name, setName]= useState("")
+
+  const [isSuperhost, setisSuperhost]= useState("")
+
+  const [stars, setStars]= useState("")
+
+  const [reviews, setReviews]= useState("")
+
   function addToCart(card){
 
     console.log('button clicked')
@@ -55,9 +75,9 @@ function App() {
 
     const target = event.target
 
-    const name = target.name.value
-
-    console.log(name)
+    // const name = target.name.value
+    //
+    // console.log(name)
 
     console.log('form button clicked')
     console.log()
@@ -98,12 +118,41 @@ function App() {
     // setTitle(title)
     //
     console.log(title)
+    console.log()
 
-    console.log(
-
-    )
+    console.log(houseType)
+    console.log()
+    console.log(image)
+    console.log()
+    console.log(city)
+    console.log()
+    console.log(country)
+    console.log()
+    console.log(cost)
+    console.log()
+    console.log(description)
+    console.log()
+    console.log(name)
+    console.log()
+    console.log(isSuperhost)
+    console.log()
+    console.log(stars)
+    console.log()
+    console.log(reviews)
+    console.log()
 
     setTitle("")
+    sethouseType("")
+    setImage("")
+    setCity("")
+    setCountry("")
+    setCost("")
+    setDescription("")
+    setName("")
+    setisSuperhost("")
+    setStars("")
+    setReviews("")
+
     //
     // setTitle("")
     //
@@ -208,6 +257,7 @@ function App() {
                   <input
                     id="houseType"
                     name="houseType"
+                    onChange={(event)=> sethouseType(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -219,6 +269,7 @@ function App() {
                   <input
                     id="image"
                     name="image"
+                    onChange={(event)=> setImage(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -231,6 +282,7 @@ function App() {
                   <input
                     id="city"
                     name="city"
+                    onChange={(event)=> setCity(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -243,6 +295,7 @@ function App() {
                   <input
                     id="country"
                     name="country"
+                    onChange={(event)=> setCountry(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -255,6 +308,7 @@ function App() {
                   <input
                     id="cost"
                     name="cost"
+                    onChange={(event)=> setCost(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -267,6 +321,7 @@ function App() {
                   <input
                     id="description"
                     name="description"
+                    onChange={(event)=> setDescription(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -279,6 +334,7 @@ function App() {
                   <input
                     id="name"
                     name="name"
+                    onChange={(event)=> setName(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -290,6 +346,7 @@ function App() {
                   <input
                     id="isSuperhost"
                     name="isSuperhost"
+                    onChange={(event)=> setisSuperhost(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -302,6 +359,7 @@ function App() {
                   <input
                     id="stars"
                     name="stars"
+                    onChange={(event)=> setStars(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
@@ -314,6 +372,7 @@ function App() {
                   <input
                     id="reviews"
                     name="reviews"
+                    onChange={(event)=> setReviews(event.target.value)}
                     className="form-control"
                     type="text"
                     placeholder=""
