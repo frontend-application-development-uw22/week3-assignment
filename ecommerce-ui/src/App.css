@@ -1,0 +1,240 @@
+/* Body /////////////////////////////////////////////////////////////////////*/
+
+body {
+  color: #5C5857;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+main {
+  /* width: 62vw; */
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: grid;
+  grid-template-columns: 61.8% auto;
+  column-gap: 20px;
+}
+
+button {
+  background-color: #01A5D9;
+  color: #FFF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009BCF;
+}
+
+button:active {
+  background-color: #0091C4;
+}
+
+.hidden {
+  display: none;
+}
+
+.red-highlight {
+  background-color: #ED3E31 !important;
+}
+
+/* BnBCard //////////////////////////////////////////////////////////////////*/
+
+.bnbcard-list {
+  /* width: 62vw;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.bnbcard {
+  display: grid;
+  grid-template-columns: 38% auto;
+  box-shadow: 0px 0px 20px 5px rgba(92, 88, 87, 0.25);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.bnbcard-img {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bnbcard-img > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+
+.bnbcard-data {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: auto auto;
+}
+
+.bnbcard-foot {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bnbcard-rating > p, .bnbcard-price > p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.bnbcard-rating {
+  flex-basis: initial;
+}
+
+.bnbcard-price {
+  text-align: right;
+  flex-basis: auto;
+}
+
+.bnbcard-title > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.bnbcard-title > h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0.2em;
+  cursor: pointer;
+}
+
+.bnbcard-button, .shoppingcart-total-checkout-button {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bnbcard-button {
+  float: right;
+}
+
+.bnbcard-img-superhost {
+  padding: 1em;
+  background-color: #FFF;
+  position: absolute;
+  border-top-left-radius: 25px;
+}
+
+/* Nav //////////////////////////////////////////////////////////////////////*/
+
+nav {
+  /* 
+  Photographer: Giuseppe
+  License:  Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)
+  URL: https://www.flickr.com/photos/25050455@N02/2733466836
+  */
+  background-image: url("img/nav-bg.jpg");
+  overflow: hidden;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav > ul > li {
+  color: #FFF;
+  font-size: 18px;
+  display: inline;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav > ul > li:hover {
+  background-color: #01A5D9;
+}
+
+/* ShoppingCart /////////////////////////////////////////////////////////////*/
+
+.shoppingcart-close-button {
+  float: right;
+  cursor: pointer;
+}
+
+.shoppingcart-close-button:hover {
+  color: #009BCF;
+}
+
+.shoppingcart-close-button:active {
+  color: #0091C4;
+}
+
+.shoppingcart-item-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shoppingcart-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  align-items: center;
+  column-gap: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: solid 1px rgba(92, 88, 87, 0.25);
+}
+
+.shoppingcart-item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.shoppingcart-button > .shoppingcart-button-itemcount {
+  background-color: #01A5D9;
+  text-align: center;
+  font-family: monospace;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 25px;
+  margin-right: 5px;
+  text-align: center;
+  width: 25px; 
+}
+
+.shoppingcart-empty {
+  font-style: italic;
+}
+
+.shoppingcart-total > p {
+  text-align: right;
+}
+
+.shoppingcart-total-subtotal {
+  margin-right: 1.2em;
+}
+
+.shoppingcart-item-x {
+}
+
+.shoppingcart-total-checkout-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
