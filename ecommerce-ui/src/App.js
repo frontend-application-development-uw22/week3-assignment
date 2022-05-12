@@ -30,7 +30,7 @@ function App() {
 
   const [country, setCountry]= useState("")
 
-  const [cost, setCost]= useState(0)
+  const [cost, setCost]= useState("")
 
   const [description, setDescription]= useState("")
 
@@ -38,9 +38,9 @@ function App() {
 
   const [isSuperhost, setisSuperhost]= useState(false)
 
-  const [stars, setStars]= useState(0)
+  const [stars, setStars]= useState("")
 
-  const [reviews, setReviews]= useState(0)
+  const [reviews, setReviews]= useState("")
 
   function addToCart(card){
 
@@ -117,16 +117,16 @@ function App() {
           "country": country
         },
         "payment": {
-          "cost": cost,
+          "cost": Number(cost),
           "description": description
         },
         "host": {
           "name": name,
-          "isSuperhost": isSuperhost
+          "isSuperhost": Boolean(isSuperhost)
         },
         "rating": {
-          "stars": stars,
-          "reviews": reviews
+          "stars": Number(stars),
+          "reviews": Number(reviews)
         }
       }
 
@@ -168,12 +168,12 @@ function App() {
     setImage("")
     setCity("")
     setCountry("")
-    setCost("")
+    setCost(0)
     setDescription("")
     setName("")
-    setisSuperhost("")
-    setStars("")
-    setReviews("")
+    setisSuperhost(false)
+    setStars(0)
+    setReviews(0)
 
     //
     // setTitle("")
