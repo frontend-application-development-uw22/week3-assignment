@@ -1,6 +1,4 @@
-import React, {
-  useState
-} from "react";
+import React, {useState} from "react";
 import './App.css';
 import Main from './ecommerce-ui/Main'
 import Header from './ecommerce-ui/Header';
@@ -13,26 +11,29 @@ function App() {
   const [rentalItems, setRentalItems] = useState([]);
   // let totalCost = 0;
 
-  const addRental = (index) => {
+  // const addRental = (property) => {
 
-    const exist = rentalItems.find((x) => x.id === properties.id);
+  //   const exist = rentalItems.find((x) => x.id === properties.id);
 
-    if (exist) {
-      setRentalItems(
-        rentalItems.map((x, id) =>
-          x.id === properties.id ? {...exist, qty: exist.qty + 1} : x)
-      );
-    } else {
-      setRentalItems([...rentalItems, {...properties[index], qty: 1}])
-    }
+  //   if (exist) {
+  //     setRentalItems(
+  //       rentalItems.map((x, id) =>
+  //         x.id === properties.id ? {...exist, qty: exist.qty + 1} : x)
+  //     );
+  //   } else {
+  //     setRentalItems([...rentalItems, {...property, qty: 1}])
+  //   }
 
-  };
 
-  //   const addRental = (id) => {
-  //   setRentalItems([...rentalItems, properties[id]]);
-  //   // update total cost
-  //   // totalCost += properties.payment.cost;
-  // }
+//  }
+
+ const addRental = (property) => {
+  console.log('we are in addRental')
+setRentalItems([...rentalItems, property]);
+// update total cost
+// totalCost += properties.payment.cost;
+// return;
+}
 
   return ( 
   <div className = "App" >
@@ -45,6 +46,8 @@ function App() {
       <ShoppingCart 
         rentalItems = {rentalItems}  
         addRental = {addRental}
+        id={rentalItems.id}
+       
       />  
     </div>   
   </div>

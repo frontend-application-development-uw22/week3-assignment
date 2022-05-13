@@ -1,27 +1,31 @@
 import React from "react";
 
-function CartItems({index, item, addRental, removeRental}) {
-
+function CartItems({ index, item, addRental, removeRental }) {
+    // console.log(index);
     return (
-    <div  className="block col-2">
-        <div className="row">
-          
-                <div key={index}  className="row">
-                    <div key={index} className="col-2">{item.title}</div>
-                    <div key={index} className="col-2">
-                       <button key={index} onClick={() => removeRental(item)} className="remove">
-                                -
+
+        <div className="block col-2">
+            <div className="row">
+
+                <div key={index} className="row  row-start">
+                    <div className="column">
+                        <div key={index} className=" ">{item.shortTitle}</div>
+                        <div key={index} className=" ">
+                            1 night @ ${item.payment.cost} per night
+                        </div>
+                    </div>
+                    <div key={index} className="row block">
+                        <button key={index} onClick={() => removeRental(index)} className="remove">
+                            -
                         </button>
-                        <button key={index}  onClick={() => addRental(item)} className="add">
-                                +
+                        <button key={index} onClick={() => addRental(index)} className="add">
+                            +
                         </button>
                     </div>
-                    <div key={index} className="col-2 text-right">
-                            {item.qty} nights x ${item.cost} 
-                    </div>
+
                 </div>
-       </div>
-    </div>
+            </div>
+        </div>
 
     )
 }

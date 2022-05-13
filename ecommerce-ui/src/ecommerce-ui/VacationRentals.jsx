@@ -10,7 +10,7 @@ function VacationRentals({ property, addRental }) {
             <p><span>Cost per night:</span> ${property.payment.cost}</p>
             <p><span>Location:</span> {property.location.city}, {property.location.country}</p>
             <div>
-                <button onClick={addRental}>Add to Cart</button>
+                <button onClick={() => addRental(property)}>Add to Cart</button>
             </div>
         </div>
 

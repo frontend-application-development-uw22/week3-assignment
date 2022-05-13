@@ -29,10 +29,22 @@ a {
 }
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
-.row.center {
-  align-items: center;
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.row.start {
+  align-items: flex-start;
+}
+
+.row-center {
+  align-items: flex-start;
 }
 .col-1 {
   flex: 1;
@@ -70,10 +82,13 @@ button {
 button.add {
   background-color: #40c0f0;
   width: 1.5rem;
+  height: 1.5rem;
 }
 button.remove {
   background-color: #f04040;
-  width: 1.5rem;}
+  width: 1.5rem;
+  height: 1.5rem;
+}
 button.badge {
   background-color: #f04040;
   border: none;
