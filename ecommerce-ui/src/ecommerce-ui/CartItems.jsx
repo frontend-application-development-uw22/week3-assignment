@@ -11,7 +11,7 @@ function CartItems({ index, item, addRental, removeRental }) {
                     <div className="column">
                         <div key={index} className=" ">{item.shortTitle}</div>
                         <div key={index} className=" ">
-                            1 night @ ${item.payment.cost} per night
+                            {item.qty} night @ ${item.payment.cost} per night
                         </div>
                     </div>
                     <div key={index} className="row block">
