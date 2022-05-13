@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartCard from "./CartCard";
 import CartSummary from "./CartSummary";
 import "./Cart.css";
@@ -8,6 +8,10 @@ export default function Cart({
   onRemoveFromCartHandler,
   locationData,
 }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let totalCost = cartItems.reduce((total, individual) => {
     return (total += individual.payment.cost);
   }, 0);

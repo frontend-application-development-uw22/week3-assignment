@@ -1,7 +1,5 @@
 .cart {
   display: flex;
-  flex: 0;
-  gap: 8em;
   flex-wrap: wrap;
 }
 
@@ -9,6 +7,10 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+.cart-contents {
+  flex: 1;
 }
 
 .cart-header__title {

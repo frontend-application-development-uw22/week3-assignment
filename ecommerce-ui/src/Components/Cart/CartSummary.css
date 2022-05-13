@@ -1,5 +1,11 @@
 .cart-summary {
-  border: 1px solid var(--grey);
+  border: 1px solid var(--dark);
   border-radius: 8px;
   padding: 5px 20px;
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  align-self: flex-start;
+  margin-top: 20px;
+  flex: 0 1 auto;
 }
