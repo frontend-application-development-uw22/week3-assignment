@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import PropertyCard from "./Property/PropertyCard";
 import CollectionCard from "./Collections/CollectionCard";
 import Carousel from "./Carousel/Carousel";
 import "./Home.css";
 
-export default function Property({
+export default function Home({
   cartItems,
   onAddToCartHandler,
   onRemoveFromCartHandler,
@@ -31,6 +32,7 @@ export default function Property({
         {featuredProps.map((property) => {
           return (
             <PropertyCard
+              key={property.id}
               cartItems={cartItems}
               onAddToCartHandler={onAddToCartHandler}
               onRemoveFromCartHandler={onRemoveFromCartHandler}
@@ -46,6 +48,7 @@ export default function Property({
         {featuredLocations.map((collection) => {
           return (
             <CollectionCard
+              key={collection.id}
               onAddToCartHandler={onAddToCartHandler}
               size="medium"
               locationData={collection}
@@ -53,10 +56,14 @@ export default function Property({
           );
         })}
       </Carousel>
-
-      <div className="footer">
-        <h5 className="footer__copy">Copyright 2022 | All rights reserved</h5>
-      </div>
     </>
   );
 }
+
+Home.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  onAddToCartHandler: PropTypes.func.isRequired,
+  onRemoveFromCartHandler: PropTypes.func.isRequired,
+  propertyData: PropTypes.array.isRequired,
+  locationData: PropTypes.array.isRequired,
+};

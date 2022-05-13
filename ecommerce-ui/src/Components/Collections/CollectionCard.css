@@ -10,12 +10,6 @@
   height: 140px;
   width: 100%;
   object-fit: cover;
-  transition: transform 0.2s;
-}
-
-.collection-card__image--medium:hover {
-  box-shadow: 0 0 6px 2px rgb(209, 209, 209);
-  transform: scale(1.02);
 }
 
 .collection-card__image--large {

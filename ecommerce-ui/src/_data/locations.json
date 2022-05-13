@@ -85,7 +85,7 @@
     "slug": "san-diego",
     "state": "NY",
     "country": "CA",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 11,
@@ -93,7 +93,7 @@
     "slug": "boise",
     "state": "ID",
     "country": "US",
-    "image": "https://images.unsplash.com/photo-1602958169956-a279ffff1b29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+    "image": "https://images.unsplash.com/photo-1602958169956-a279ffff1b29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 12,
@@ -101,6 +101,6 @@
     "slug": "denver",
     "state": "CO",
     "country": "US",
-    "image": "https://images.unsplash.com/photo-1602983791420-239cf66a01aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+    "image": "https://images.unsplash.com/photo-1602983791420-239cf66a01aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
   }
 ]

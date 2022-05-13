@@ -1,19 +1,21 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import Home from "./Components/Home";
 import Cart from "./Components/Cart/Cart";
 import Property from "./Components/Property/Property";
 import Properties from "./Components/Properties/Properties";
 import Collection from "./Components/Collections/Collection";
-import ThemeContext from "./Components/Context/ThemeContext";
 
 import propertyData from "./_data/bnbs.json";
 import locationData from "./_data/locations.json";
 
 export default function App() {
-  const theme = "light";
   let [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const onAddToCartHandler = (property) => {
     setCartItems((prevState) => [...prevState, property]);
@@ -30,7 +32,7 @@ export default function App() {
   }, 0);
 
   return (
-    <ThemeContext.Provider value={theme}>
+    <>
       <nav className="navbar">
         <Link className="navbar__link" to="/">
           GetAway
@@ -102,6 +104,9 @@ export default function App() {
           ></Route>
         </Routes>
       </main>
-    </ThemeContext.Provider>
+      <div className="footer">
+        <h5 className="footer__copy">Copyright 2022 | All rights reserved</h5>
+      </div>
+    </>
   );
 }

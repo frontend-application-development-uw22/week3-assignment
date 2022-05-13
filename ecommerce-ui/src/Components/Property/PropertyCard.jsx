@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./PropertyCard.css";
 import { Link } from "react-router-dom";
 
@@ -64,11 +65,31 @@ export default function PropertyCard({
           </button>
         )}
       </div>
-      <img
-        className={`property-card__image property-card__image--${size}`}
-        src={propertyData.image}
-        alt={propertyData.title}
-      />
+      {size === "medium" && (
+        <Link to={`/property/${propertyData.id}`}>
+          <img
+            className={`property-card__image property-card__image--${size}`}
+            src={propertyData.image}
+            alt={propertyData.title}
+          />
+        </Link>
+      )}
+      {size !== "medium" && (
+        <img
+          className={`property-card__image property-card__image--${size}`}
+          src={propertyData.image}
+          alt={propertyData.title}
+        />
+      )}
     </div>
   );
 }
+
+PropertyCard.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  onAddToCartHandler: PropTypes.func.isRequired,
+  onRemoveFromCartHandler: PropTypes.func.isRequired,
+  size: PropTypes.string.isRequired,
+  propertyData: PropTypes.object.isRequired,
+  locationData: PropTypes.array.isRequired,
+};

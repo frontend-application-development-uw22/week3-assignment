@@ -1,0 +1,8 @@
+.map {
+  margin-top: 40px;
+}
+
+.map__map {
+  border: 1px solid var(--dark);
+  margin-top: 15px;
+}

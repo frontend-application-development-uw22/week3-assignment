@@ -1,4 +1,4 @@
-import React, { useDebugValue } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../Carousel/Carousel";
 import PropertyCard from "../Property/PropertyCard";
@@ -11,6 +11,10 @@ export default function Collection({
   locationData,
 }) {
   const { city } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const location = locationData.filter((location) => location.slug === city)[0];
   const locationId = location.id;
