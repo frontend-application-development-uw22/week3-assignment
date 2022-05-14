@@ -1,26 +1,28 @@
 import React from "react";
 
-function CartItems({ index, item, addRental, removeRental }) {
-    // console.log(index);
+function CartItems({ costPerUnit, index, id, item , removeRental }) {
+    // // console.log(index);
+    const totalPerProperty = (item.qty * item.payment.cost)
+
     return (
 
-        <div className="block col-2">
-            <div className="row">
+        <div key={id} className="block ">
+            <div key={id} className="row">
 
-                <div key={index} className="row  row-start">
-                    <div className="column">
-                        <div key={index} className=" ">{item.shortTitle}</div>
-                        <div key={index} className=" ">
-                            {item.qty} night @ ${item.payment.cost} per night
+                <div key={id} className="row  row-start">
+                    <div key={id} className="column">
+                        <div key={id} className=" ">{item.shortTitle}</div>
+                        <div key={id} className=" ">
+                            {item.qty} night @ ${item.payment.cost} per night 
                         </div>
+                        <div key={id}>Total Cost: ${totalPerProperty}</div>
+                        <div key={id}>{item.payment.description}</div>
                     </div>
-                    <div key={index} className="row block">
-                        <button key={index} onClick={() => removeRental(index)} className="remove">
-                            -
+                    <div key={id} className="row block">
+                        <button key={id} onClick={() => removeRental(item)} className="remove">
+                            Remove
                         </button>
-                        <button key={index} onClick={() => addRental(index)} className="add">
-                            +
-                        </button>
+
                     </div>
 
                 </div>

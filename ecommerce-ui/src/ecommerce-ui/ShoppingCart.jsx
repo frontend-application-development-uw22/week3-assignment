@@ -2,8 +2,12 @@ import React from "react";
 import CartItems from "./CartItems"
 
 
-function ShoppingCart({ id, rentalItems, addRental, removeRental }) {
-    // console.log(id);
+
+function ShoppingCart({ id, rentalItems,  addRental, cost, qty, totalCost, removeRental }) {
+    // console.log({ totalCost });
+
+    // const totalPerProperty = (rentalItems.qty * rentalItems.payment.cost)
+
     return (
 
         <aside className="block col-1">
@@ -11,15 +15,22 @@ function ShoppingCart({ id, rentalItems, addRental, removeRental }) {
             <div>
                 {rentalItems.length === 0 && <p>No properties have been selected</p>}
             </div>
-            <div className="column" key="index">
+
+            <div key="id" className="column" > 
                 {rentalItems.map((item, index) => (
                     <CartItems
+                        key={id}
+                        id={id}
                         item={item}
                         index={index}
-                        addRental={addRental} />
+                        addRental={addRental}
+                        removeRental={removeRental}
+                        // totalPerProperty={totalPerProperty}
+                         />
                 ))}
 
             </div>
+            {/* <div>Total Cost:  ${grandTotal}</div> */}
         </aside>
     )
 }
