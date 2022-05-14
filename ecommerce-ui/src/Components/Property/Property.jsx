@@ -15,7 +15,7 @@ export default function Property({
 }) {
   const { propertyId } = useParams();
   const [geocode, setGeocode] = useState([]);
-  let [geoCodeLoaded, setGeoCodeLoaded] = useState(false);
+  const [geoCodeLoaded, setGeoCodeLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);

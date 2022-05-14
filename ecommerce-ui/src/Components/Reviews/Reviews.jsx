@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ReviewCard from "./ReviewCard";
+import LoadingSpinner from "../Assets/LoadingSpinner";
 import "./Reviews.css";
 
 export default function Reviews() {
@@ -30,16 +31,24 @@ export default function Reviews() {
     <div className="reviews">
       <h2 className="reviews__title">Property Reviews</h2>
       <div className="reviews__list">
-        {reviewers.map((reviewer, index) => {
-          return (
-            <ReviewCard
-              key={reviewer.login.uuid}
-              reviewer={reviewer}
-              review={reviews[index]}
-              reviewsLoaded={reviewsLoaded}
-            />
-          );
-        })}
+        {!reviewsLoaded ? (
+          <>
+            <p>
+              Loading reviews <LoadingSpinner />
+            </p>
+          </>
+        ) : (
+          reviewers.map((reviewer, index) => {
+            return (
+              <ReviewCard
+                key={reviewer.login.uuid}
+                reviewer={reviewer}
+                review={reviews[index]}
+                reviewsLoaded={reviewsLoaded}
+              />
+            );
+          })
+        )}
       </div>
     </div>
   );

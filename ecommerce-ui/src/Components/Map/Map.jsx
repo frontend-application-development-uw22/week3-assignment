@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import LoadingSpinner from "../Assets/LoadingSpinner";
 import "./Map.css";
 
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
@@ -50,31 +51,32 @@ export default function Map({ lat, lng, geoCodeLoaded }) {
     mapTypeControl: false,
   };
 
-  if (!geoCodeLoaded) {
-    return <h2>Map data loading...</h2>;
-  } else {
-    return isLoaded ? (
-      <div className="map">
-        <h2 className="map__title">Property Location</h2>
-        <div className="map__map">
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-            options={defaultMapOptions}
-          >
-            <Marker position={center} />
-          </GoogleMap>
-        </div>
-      </div>
-    ) : (
-      <div className="map">
-        <h2 className="map__title">Property Location</h2>
-        <div className="map__map">
-          <h3>Map view not available at this time</h3>
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="map">
+      <h2 className="map__title">Property Location</h2>
+      {geoCodeLoaded ? (
+        isLoaded ? (
+          <div className="map__map">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              onLoad={onLoad}
+              onUnmount={onUnmount}
+              options={defaultMapOptions}
+            >
+              <Marker position={center} />
+            </GoogleMap>
+          </div>
+        ) : (
+          <div className="map__map">
+            <h3>Map view not available at this time</h3>
+          </div>
+        )
+      ) : (
+        <p>
+          Map data loading <LoadingSpinner />
+        </p>
+      )}
+    </div>
+  );
 }
