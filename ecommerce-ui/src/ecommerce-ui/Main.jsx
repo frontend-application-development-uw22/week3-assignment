@@ -1,5 +1,6 @@
 import React from "react";
 import VacationRentals from "./VacationRentals";
+import PropTypes from 'prop-types'
 
 function Main({ properties, addRental }) {
  
@@ -18,6 +19,12 @@ function Main({ properties, addRental }) {
             </div>
         </main>
     )
+
+}
+
+Main.propTypes = {
+    properties: PropTypes.arrayOf(Object).isRequired,
+    addRental: PropTypes.func.isRequired
 
 }
 

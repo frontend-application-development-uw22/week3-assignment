@@ -9,8 +9,6 @@ import properties from "./_data/bnbs.json"
 function App() {
 
   const [rentalItems, setRentalItems] = useState([]);
-    // let totalCost = 0;
-
 
 // function to add selected property to the cart
   const addRental = (property) => {
@@ -31,13 +29,17 @@ function App() {
   const removeRental = (item) => {
 
     setRentalItems(rentalItems.filter((x) => x.id !== item.id));
+    
   } 
  
   
-
+  console.log(rentalItems);
+  
+  
 
 // return section of APP
   return ( 
+  
   <div className = "App" >
     <Header/>
     <div className = "row" >
@@ -45,13 +47,15 @@ function App() {
         key={properties.id}
         properties = {properties} 
         addRental = {addRental}
+        setRentalItems={setRentalItems}
+
       />   
       <ShoppingCart 
         key={rentalItems.id}
         rentalItems = {rentalItems}  
         addRental = {addRental}
         id={rentalItems.id}
-       removeRental={removeRental}
+        removeRental={removeRental}
        
       />  
     </div>   

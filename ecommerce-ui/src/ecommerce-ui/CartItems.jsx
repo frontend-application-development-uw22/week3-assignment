@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 function CartItems({ costPerUnit, index, id, item , removeRental }) {
-    // // console.log(index);
+ 
     const totalPerProperty = (item.qty * item.payment.cost)
 
     return (
@@ -32,4 +33,11 @@ function CartItems({ costPerUnit, index, id, item , removeRental }) {
     )
 }
 
+CartItems.propTypes = {
+    properties: PropTypes.arrayOf(Object).isRequired,
+    addRental: PropTypes.func.isRequired,
+    removeRental: PropTypes.func.isRequired,
+    id: PropTypes.number
+
+}
 export default CartItems

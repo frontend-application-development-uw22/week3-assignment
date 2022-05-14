@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 function VacationRentals({ property, addRental }) {
     
@@ -16,6 +17,12 @@ function VacationRentals({ property, addRental }) {
         </div>
 
     )
+
+}
+
+VacationRentals.propTypes = {
+    properties: PropTypes.arrayOf(Object).isRequired,
+    addRental: PropTypes.func.isRequired
 
 }
 

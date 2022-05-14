@@ -1,6 +1,6 @@
 import React from "react";
 import CartItems from "./CartItems"
-
+import PropTypes from 'prop-types'
 
 
 function ShoppingCart({ id, rentalItems,  addRental, cost, qty, totalCost, removeRental }) {
@@ -34,5 +34,14 @@ function ShoppingCart({ id, rentalItems,  addRental, cost, qty, totalCost, remov
         </aside>
     )
 }
+
+ShoppingCart.propTypes = {
+    properties: PropTypes.arrayOf(Object).isRequired,
+    addRental: PropTypes.func.isRequired,
+    removeRental: PropTypes.func.isRequired,
+    id: PropTypes.number
+
+}
+
 export default ShoppingCart
 
