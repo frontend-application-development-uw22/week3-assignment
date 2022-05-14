@@ -7,12 +7,19 @@ import './App.css';
 
 function App() {
   const [cart, setCart] = useState([]);
+  const totalCost = cart.reduce((a, c) => a + c.payment.cost, 0);
 
   const addItem = (idx) => {
 
     setCart([...cart, idx ]);
 
   }
+
+  const deleteItem = (item) => {
+  setCart(cart.filter((x) => x.id !== item.id));
+
+  }
+  
 
   return (
     <div className="App">
@@ -40,10 +47,13 @@ function App() {
             <Cart
               key={idx}
               item={item}
-              // removeItem={removeItem}
+              deleteItem={deleteItem}
             />
           )
           }
+        </div>
+        <div>
+          <p>Total: ${totalCost} </p>
         </div>
         </aside>
 

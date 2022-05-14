@@ -1,16 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function Cart({item}) {
+function Cart({item, deleteItem}) {
     return(
         <div key = "idx">
-            <h3>{item.title}</h3>
-            <img src = {item.image} alt = {item.title}/>
+            <h3>{item.shortTitle}</h3>
             <p>{item.location.city}, {item.location.country}</p>
             <p>${item.payment.cost} a night</p>
             <p>{item.payment.description}</p>
-            {/* <button onClick={() => addItem(item)}>Add to Cart</button> */}
+            <button onClick={() => deleteItem(item)}>Delete</button>
         </div>
     )
+}
+
+Cart.propTypes={
+    item:PropTypes.arrayOf(Object).isRequired,
+    deleteItem:PropTypes.func.isRequired
 }
 
 export default Cart;

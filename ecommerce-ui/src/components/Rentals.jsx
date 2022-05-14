@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 function Rentals({bnb, addItem}) {
     return(
@@ -11,6 +12,11 @@ function Rentals({bnb, addItem}) {
             <button onClick={() => addItem(bnb)}>Add to Cart</button>
         </div>
     )
+}
+
+Rentals.propTypes={
+    bnb:PropTypes.arrayOf(Object).isRequired,
+    addItem:PropTypes.func.isRequired
 }
 
 export default Rentals;
