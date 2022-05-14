@@ -34,8 +34,7 @@ function CartItems({ costPerUnit, index, id, item , removeRental }) {
 }
 
 CartItems.propTypes = {
-    properties: PropTypes.arrayOf(Object).isRequired,
-    addRental: PropTypes.func.isRequired,
+    item: PropTypes.object.isRequired,
     removeRental: PropTypes.func.isRequired,
     id: PropTypes.number
 

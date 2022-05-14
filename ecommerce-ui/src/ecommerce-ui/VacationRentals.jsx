@@ -21,7 +21,7 @@ function VacationRentals({ property, addRental }) {
 }
 
 VacationRentals.propTypes = {
-    properties: PropTypes.arrayOf(Object).isRequired,
+    property: PropTypes.object.isRequired,
     addRental: PropTypes.func.isRequired
 
 }

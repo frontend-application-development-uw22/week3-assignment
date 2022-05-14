@@ -42,6 +42,7 @@ function App() {
   
   <div className = "App" >
     <Header/>
+
     <div className = "row" >
       <Main 
         key={properties.id}
@@ -57,8 +58,9 @@ function App() {
         id={rentalItems.id}
         removeRental={removeRental}
        
-      />  
+       />  
     </div>   
+  
   </div>
   );
 }

@@ -3,11 +3,14 @@ import CartItems from "./CartItems"
 import PropTypes from 'prop-types'
 
 
-function ShoppingCart({ id, rentalItems,  addRental, cost, qty, totalCost, removeRental }) {
+function ShoppingCart({ id, rentalItems, cost, qty, totalCost, removeRental }) {
     // console.log({ totalCost });
 
     // const totalPerProperty = (rentalItems.qty * rentalItems.payment.cost)
 
+    let grandTotal = 0;
+
+    
     return (
 
         <aside className="block col-1">
@@ -23,21 +26,19 @@ function ShoppingCart({ id, rentalItems,  addRental, cost, qty, totalCost, remov
                         id={id}
                         item={item}
                         index={index}
-                        addRental={addRental}
                         removeRental={removeRental}
                         // totalPerProperty={totalPerProperty}
                          />
                 ))}
 
             </div>
-            {/* <div>Total Cost:  ${grandTotal}</div> */}
+            <div>Total Cost:  ${grandTotal}</div>
         </aside>
     )
 }
 
 ShoppingCart.propTypes = {
-    properties: PropTypes.arrayOf(Object).isRequired,
-    addRental: PropTypes.func.isRequired,
+    rentalItems: PropTypes.arrayOf(Object).isRequired,
     removeRental: PropTypes.func.isRequired,
     id: PropTypes.number
 
