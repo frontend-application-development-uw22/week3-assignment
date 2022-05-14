@@ -31,13 +31,10 @@ function App() {
     setRentalItems(rentalItems.filter((x) => x.id !== item.id));
     
   } 
- 
-  
+    
   console.log(rentalItems);
   
-  
-
-// return section of APP
+  // return section of APP
   return ( 
   
   <div className = "App" >
@@ -56,6 +53,7 @@ function App() {
         rentalItems = {rentalItems}  
         id={rentalItems.id}
         removeRental={removeRental}
+        
        
        />  
     </div>   

@@ -4,12 +4,7 @@ import PropTypes from 'prop-types'
 
 
 function ShoppingCart({ id, rentalItems, removeRental }) {
-    // console.log({ totalCost });
-
-    // const totalPerProperty = (rentalItems.qty * rentalItems.payment.cost)
-
-    let grandTotal = 0;
-
+    const itemsPrice = rentalItems.reduce((a, c) => a + c.qty * c.payment.cost, 0);
     
     return (
 
@@ -32,7 +27,7 @@ function ShoppingCart({ id, rentalItems, removeRental }) {
                 ))}
 
             </div>
-            <div>Total Cost:  ${grandTotal}</div>
+            <div>Total Cost:  ${itemsPrice}</div>
         </aside>
     )
 }
