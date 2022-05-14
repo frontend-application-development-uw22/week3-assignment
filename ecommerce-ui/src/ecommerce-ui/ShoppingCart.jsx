@@ -3,7 +3,7 @@ import CartItems from "./CartItems"
 import PropTypes from 'prop-types'
 
 
-function ShoppingCart({ id, rentalItems, cost, qty, totalCost, removeRental }) {
+function ShoppingCart({ id, rentalItems, removeRental }) {
     // console.log({ totalCost });
 
     // const totalPerProperty = (rentalItems.qty * rentalItems.payment.cost)
@@ -27,7 +27,7 @@ function ShoppingCart({ id, rentalItems, cost, qty, totalCost, removeRental }) {
                         item={item}
                         index={index}
                         removeRental={removeRental}
-                        // totalPerProperty={totalPerProperty}
+                      
                          />
                 ))}
 

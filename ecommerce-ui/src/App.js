@@ -54,7 +54,6 @@ function App() {
       <ShoppingCart 
         key={rentalItems.id}
         rentalItems = {rentalItems}  
-        addRental = {addRental}
         id={rentalItems.id}
         removeRental={removeRental}
        
