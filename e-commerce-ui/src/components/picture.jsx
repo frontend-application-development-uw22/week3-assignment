@@ -8,6 +8,8 @@ export default function Picture({src, alt, className, id}){
 Picture.propTypes ={
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  // This is a styling feature therefore not required for all 
+  // but the proptype must be a string
+  className: PropTypes.string,
+  id: PropTypes.string
 }

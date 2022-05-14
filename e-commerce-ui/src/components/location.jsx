@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from "react";
-import PropTyes from "prop-types"
+import PropTypes from 'prop-types';
 
-
-
-const Location = ({city, country})=>{
+export default function Location({city, country}){
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [user_country, setCountry] = useState("");
-  // let url = process.env.REACT_APP_API_URL
   useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL)
+    fetch(process.env.REACT_APP_LOCATION_API_URL)
       .then(res => res.json())
       .then(
         (jsonResponse) => {
@@ -21,7 +18,7 @@ const Location = ({city, country})=>{
           setError(error);
         }
       )
-  }, [])
+  },[])
   if(error) {
     return `${city}, ${country}`;
   } else if (!isLoaded) {
@@ -34,10 +31,8 @@ const Location = ({city, country})=>{
   
 }
 
-export default Location
-
-Location.PropTyes = {
-  city: PropTyes.string.isRequired,
-  country: PropTyes.string.isRequired
+Location.propTyes = {
+  city: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired
 }
 
