@@ -34,7 +34,7 @@
         },
         "payment": {
             "cost": 130,
-            "description": ""
+            "description": "Cancellation fees apply"
         },
         "host": {
             "name": "Jamie",

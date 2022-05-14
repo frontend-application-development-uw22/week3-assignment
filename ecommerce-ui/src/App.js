@@ -32,7 +32,7 @@ function App() {
     
   } 
     
-  console.log(rentalItems);
+  // console.log(rentalItems);
   
   // return section of APP
   return ( 

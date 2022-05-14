@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
-function CartItems({ costPerUnit, index, id, item , removeRental }) {
+function CartItems({ id, item , removeRental }) {
  
     const totalPerProperty = (item.qty * item.payment.cost)
 
@@ -14,7 +14,7 @@ function CartItems({ costPerUnit, index, id, item , removeRental }) {
                     <div key={id} className="column">
                         <div key={id} className=" ">{item.shortTitle}</div>
                         <div key={id} className=" ">
-                            {item.qty} night @ ${item.payment.cost} per night 
+                            {item.qty} night(s) @ ${item.payment.cost} per night 
                         </div>
                         <div key={id}>Total Cost: ${totalPerProperty}</div>
                         <div key={id}>{item.payment.description}</div>

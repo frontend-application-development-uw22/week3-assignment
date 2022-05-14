@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 
 function ShoppingCart({ id, rentalItems, removeRental }) {
+    
+    // function to calculate grand total for all properties
     const itemsPrice = rentalItems.reduce((a, c) => a + c.qty * c.payment.cost, 0);
     
     return (

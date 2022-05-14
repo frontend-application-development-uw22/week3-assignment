@@ -89,9 +89,4 @@ button.remove {
   width: 5rem;
   height: 1.5rem;
 }
-button.badge {
-  background-color: #f04040;
-  border: none;
-  color: #ffffff;
-  width: 1.5rem;
-}
+

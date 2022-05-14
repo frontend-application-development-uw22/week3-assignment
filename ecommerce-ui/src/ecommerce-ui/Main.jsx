@@ -9,12 +9,12 @@ function Main({ properties, addRental }) {
         <main className="block col-2">
             <h2>Available Properties</h2>
             <div className="row">
-                {properties.map((property) => (
+                {properties.map((property) => 
                     <VacationRentals 
                         key={property.id} 
                         property={property} 
                         addRental={addRental} />
-                ))}
+                )}
 
             </div>
         </main>
