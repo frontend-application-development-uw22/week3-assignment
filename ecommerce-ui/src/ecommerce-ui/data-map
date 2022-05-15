@@ -1,0 +1,20 @@
+                        {data.map((rental, index) =>
+                            <VacationRentals
+                                key={index}
+                                id={rental.id}
+                                image={rental.image}
+                                title={rental.title}
+                                houseType={rental.houseType}
+                                rentalImage={rental.image}
+                                city={rental.location.city}
+                                country={rental.location.country}
+                                cost={rental.payment.cost}
+                                costDescr={rental.payment.description}
+                                hostName={rental.host.name}
+                                isSuperhost={rental.host.isSuperhost}
+                                start={rental.rating.stars}
+                                reviews={rental.rating.reviews}
+                                rentalToAdd={rentalToAdd}
+                                addRental={addRental}
+                                setRentalObject={setRentalObject}
+                            />
