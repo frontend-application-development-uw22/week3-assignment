@@ -20,15 +20,15 @@ function App() {
     }
   };
   return (
-    <div className="justify-content-evenly">
-      <div className="row">
-        <div className="col col-4">
+    <div className="">
+      <div className="row row-cols-sm-2 Centered">
+        <div className="col">
           <Listings 
             onAdd={onAdd}
             cartItems={cartItems}
             onRemove={onRemove}/>
         </div>
-        <div onAdd={onAdd} className="col col-4">
+        <div className="col Cart-pos">
           <Cart
             onAdd={onAdd}
             onRemove={onRemove}

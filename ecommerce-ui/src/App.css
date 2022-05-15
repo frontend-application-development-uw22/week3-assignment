@@ -1,5 +1,5 @@
 .Card-width {
-  width: 25rem;
+  max-width: 50rem;
 }
 
 .Title {
@@ -35,7 +35,12 @@
   margin: auto;
 }
 
-/* .Cart-pos {
-  position:fixed;
+.Cart-pos {
+  position:sticky;
   top:0;
-} */
+  max-height: 100vh;
+}
+
+.Text-right {
+  text-align: right;
+}

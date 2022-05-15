@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function Cart({ cartItems, onRemove }) {
   const totalPrice = cartItems.reduce((prev, current) => prev + current.payment.cost, 0);
   return (
-    <div className="card Card-width">
+    <div className="card Card-width p-2 m-2">
       <h4>Cart</h4>
       <div>
         {cartItems.length === 0 && <div>Empty</div>}
@@ -12,7 +12,7 @@ export default function Cart({ cartItems, onRemove }) {
       {cartItems.map((item) => (
         <div key={item.id} className="row">
           <div className="col-8">{item.title}</div>
-          <div className="col-4 text-right">
+          <div className="col-4 Text-right">
             {item.qty}
             $
             {item.payment.cost}
@@ -29,11 +29,8 @@ export default function Cart({ cartItems, onRemove }) {
         <>
           <hr />
           <div className="row">
-            <p>Total</p>
-            <p>
-              $
-              {totalPrice}
-            </p>
+            <p className="col">Total</p>
+            <p className="col Text-right">${totalPrice}</p>
           </div>
         </>
       )}
@@ -45,6 +42,5 @@ Cart.propTypes = {
   cartItems: PropTypes.func.isRequired,
   onAdd: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
-  onAdd: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
 };

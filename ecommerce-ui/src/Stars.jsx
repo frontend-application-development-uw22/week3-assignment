@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import three from './3star.png';
 import four from './4star.png';
 import five from './5star.png';
@@ -22,4 +22,6 @@ export default function Stars(rating) {
   }
 }
 
-// Stars.propTypes = {};
+Stars.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
