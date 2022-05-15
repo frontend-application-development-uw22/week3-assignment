@@ -2,25 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import bnbs from './bnbs.json';
 import Stars from './Stars';
-import SuperHost from './SuperHost';
+import Oops from './Oops';
 
 export default function Listings({ onAdd, cartItems, onRemove }) {
   return (
     <>
       {bnbs.map((listing) => (
-          <div key={listing.id} className="card Card-width">
+          <div key={listing.id} className="card Card-width m-2">
             <img src={listing.image} className="card-img-top" alt={listing.title} />
             <div className="card-body">
               <h4 className="card-title">{listing.title}</h4>
-              <p className="card-text">{listing.houseType}</p>
-              <p className="card-text">{listing.location.city}</p>
-              <p className="card-text">{listing.location.country}</p>
-              <p className="card-text">{listing.payment.cost}</p>
-              <p className="card-text">{listing.payment.description}</p>
+              <div className="card-text fw-bold">
+                {listing.houseType} in {listing.location.city}, {listing.location.country}</div>
+              <div className="card-text">${listing.payment.cost}</div>
+              <div>{listing.payment.description}</div>
               <Stars rating={listing.rating.stars} />
             </div>
             <div className="card-footer">
-              <button className="btn btn-primary" onClick={() => cartItems.includes(listing) ? onRemove(listing) : onAdd(listing)} >Add to cart</button>
+              <button className="btn btn-primary" onClick={() => cartItems.includes(listing) ? Oops() : onAdd(listing)} >Add to cart</button>
             </div>
           </div>
       ))}
