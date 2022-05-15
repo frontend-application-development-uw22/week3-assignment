@@ -2,6 +2,10 @@
   max-width: 50rem;
 }
 
+.Cart-width {
+  max-width: 25rem;
+}
+
 .Title {
   font-weight:400;
   font-size:1.2em;

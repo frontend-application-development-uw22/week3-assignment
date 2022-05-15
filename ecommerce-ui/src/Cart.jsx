@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 export default function Cart({ cartItems, onRemove }) {
   const totalPrice = cartItems.reduce((prev, current) => prev + current.payment.cost, 0);
   return (
-    <div className="card Card-width p-2 m-2">
-      <h4>Cart</h4>
+    <div className="card Cart-width p-2 m-2">
+      <h4>Your Reservations</h4>
       <div>
         {cartItems.length === 0 && <div>Empty</div>}
       </div>
