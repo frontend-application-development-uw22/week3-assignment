@@ -29,7 +29,7 @@ function ShoppingCart({ id, rentalItems, removeRental }) {
                 ))}
 
             </div>
-            <div>Total Cost:  ${itemsPrice}</div>
+            <div>Grand Total:  ${itemsPrice}</div>
         </aside>
     )
 }
