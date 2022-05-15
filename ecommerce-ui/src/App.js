@@ -1,7 +1,6 @@
 import Header from './components/Header';
-import RentalListings from './components/RentalListings';
-
-import ShoppingBasket from './components/ShoppingBasket';
+import RentalListings from './components/VacationRentalListings';
+import ShoppingBasket from './components/ShoppingCart';
 import { useState } from 'react';
 import bnbs from './bnbs.json';
 

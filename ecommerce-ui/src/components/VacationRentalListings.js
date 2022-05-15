@@ -1,9 +1,7 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/prop-types */
 import React from 'react';
-import RentalCard from './RentalCard';
+import RentalCard from './VacationRentalCard';
 
-export default function RentalListings(props) {
+export default function VacationRentalListings(props) {
   const { bnbs, onAdd } = props;
   return (
     <main className="block col-2" >

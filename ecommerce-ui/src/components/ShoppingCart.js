@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
+
 import React from 'react';
 
-export default function ShoppingBasket(props) {
+export default function ShoppingCart(props) {
   const { cartItems,  onRemove } = props;
 
   console.log("CART ITEMS = " + JSON.stringify(cartItems));

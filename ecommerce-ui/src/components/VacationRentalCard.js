@@ -1,9 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
 import React from 'react';
  
 
-export default function RentalCard(props) {
+export default function VacationRentalCard(props) {
   const { bnb, onAdd, index } = props;
   const { title,houseType, image, location, payment, host, rating } = bnb;
   console.log(`title is ${title}, image is ${image} houseType = ${houseType} host = ${host}, rating = ${rating}` );
@@ -20,11 +18,9 @@ export default function RentalCard(props) {
        <div className="flex-child magenta">
            <img className="small" src={bnb.image} alt={bnb.title} />
        </div>
-
-        <div className="flex-child green">
+       <div className="flex-child green">
            <h3>{title} </h3>
            {houseType} <br></br>   <br></br>  
-
            {name} <br></br>
            {city}, {country} <br></br>  <br></br>  
            {superhost} <br></br>
