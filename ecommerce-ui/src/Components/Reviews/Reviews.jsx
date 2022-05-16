@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import ReviewCard from "./ReviewCard";
 import LoadingSpinner from "../Assets/LoadingSpinner";
 import "./Reviews.css";
@@ -51,7 +50,3 @@ export default function Reviews() {
     </div>
   );
 }
-
-Reviews.propTypes = {
-  reviewers: PropTypes.string,
-};

@@ -1,12 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./CollectionCard.css";
 
-export default function CollectionCard({
-  onAddToCartHandler,
-  size,
-  locationData,
-}) {
+export default function CollectionCard({ size, locationData }) {
   return (
     <div className={`collection-card__container--${size}`}>
       <Link
@@ -23,3 +20,8 @@ export default function CollectionCard({
     </div>
   );
 }
+
+CollectionCard.propTypes = {
+  size: PropTypes.string.isRequired,
+  locationData: PropTypes.object.isRequired,
+};

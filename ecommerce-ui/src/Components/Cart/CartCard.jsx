@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./CartCard.css";
 
 export default function CartCard({
@@ -34,3 +35,9 @@ export default function CartCard({
     </div>
   );
 }
+
+CartCard.propTypes = {
+  onRemoveFromCartHandler: PropTypes.func.isRequired,
+  property: PropTypes.object.isRequired,
+  locationData: PropTypes.array.isRequired,
+};

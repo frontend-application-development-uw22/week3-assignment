@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import CartCard from "./CartCard";
 import CartSummary from "./CartSummary";
 import "./Cart.css";
@@ -11,10 +12,6 @@ export default function Cart({
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  let totalCost = cartItems.reduce((total, individual) => {
-    return (total += individual.payment.cost);
-  }, 0);
 
   return (
     <>
@@ -29,6 +26,7 @@ export default function Cart({
             cartItems.map((property) => {
               return (
                 <CartCard
+                  key={property.id}
                   onRemoveFromCartHandler={onRemoveFromCartHandler}
                   property={property}
                   locationData={locationData}
@@ -42,3 +40,9 @@ export default function Cart({
     </>
   );
 }
+
+Cart.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  onRemoveFromCartHandler: PropTypes.func.isRequired,
+  locationData: PropTypes.array.isRequired,
+};

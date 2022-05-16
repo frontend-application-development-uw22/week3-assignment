@@ -1,22 +1,8 @@
 import React from "react";
-import Properties from "../Properties/Properties";
+import PropTypes from "prop-types";
 import "./CartSummary.css";
 
 export default function CartSummary({ cartItems }) {
-  const items = cartItems.length;
-
-  const apartments = cartItems.filter((property) => {
-    return property.houseType === "Apartment";
-  });
-
-  const homes = cartItems.filter((property) => {
-    return property.houseType === "House";
-  });
-
-  const condos = cartItems.filter((property) => {
-    return property.houseType === "Condo";
-  });
-
   const total = cartItems.reduce((prev, curr) => {
     return prev + curr.payment.cost;
   }, 0);
@@ -31,3 +17,7 @@ export default function CartSummary({ cartItems }) {
     </div>
   );
 }
+
+CartSummary.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+};

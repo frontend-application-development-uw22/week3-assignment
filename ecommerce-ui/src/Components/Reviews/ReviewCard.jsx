@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ReviewCard.css";
 
-export default function ReviewCard({ reviewer, review, reviewsLoaded }) {
+export default function ReviewCard({ reviewer, review }) {
   return (
     <div className="review-card">
       <img

@@ -1,6 +1,5 @@
 import React, { useState, useCallback, useMemo } from "react";
 import PropTypes from "prop-types";
-import LoadingSpinner from "../Assets/LoadingSpinner";
 import "./Map.css";
 
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";

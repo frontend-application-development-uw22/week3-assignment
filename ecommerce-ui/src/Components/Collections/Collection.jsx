@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
 import Carousel from "../Carousel/Carousel";
 import PropertyCard from "../Property/PropertyCard";
 
@@ -28,6 +29,7 @@ export default function Collection({
       {collectionProps.map((property) => {
         return (
           <PropertyCard
+            key={property.id}
             cartItems={cartItems}
             onAddToCartHandler={onAddToCartHandler}
             onRemoveFromCartHandler={onRemoveFromCartHandler}
@@ -40,3 +42,11 @@ export default function Collection({
     </Carousel>
   );
 }
+
+Collection.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  onAddToCartHandler: PropTypes.func.isRequired,
+  onRemoveFromCartHandler: PropTypes.func.isRequired,
+  propertyData: PropTypes.array.isRequired,
+  locationData: PropTypes.array.isRequired,
+};
