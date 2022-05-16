@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const ShoppingCart = (props) => {
   const { rentalItems, onAdd, onRemove } = props;
@@ -9,21 +10,21 @@ const ShoppingCart = (props) => {
     <aside className="main cart">
       <h1>Your stay</h1>
       <div>
-        {rentalItems.map((item) => (
-          <div key={item.id} className="bnb-card">
-            <div className="title">{item.title}</div>
-            <p>How many nights?</p>
-            <div className="bnbs">
-              <button onClick={() => onRemove(item)} className="decrease">-</button>{' '}
-              <button onClick={() => onAdd(item)} className="increase">+</button>
-            </div>
-            <div className="bnbs text-right">
-              {item.qty} nights
-            </div>
-          </div>
-        ))}
         {rentalItems.length !== 0 && (
           <>
+            {rentalItems.map((item) => (
+              <div key={item.id} className="bnb-card">
+                <div className="title">{item.title}</div>
+                <div className="bnb-card">
+                  <h2>How many nights?</h2>
+                  <button onClick={() => onRemove(item)} className="decrease">-</button>{' '}
+                  <button onClick={() => onAdd(item)} className="increase">+</button>
+                  <div className="cart text-right">
+                    <p>{item.qty} nights</p>
+                  </div>
+                </div>
+              </div>
+            ))}
             <div className="bnb-card">
               <h2>Price Per Night</h2>
               <div className="cart text-right">
@@ -43,5 +44,11 @@ const ShoppingCart = (props) => {
     </aside>
   );
 }
+
+ShoppingCart.propTypes = {
+  rentalItems: propTypes.array,
+  onAdd: propTypes.func,
+  onRemove: propTypes.func
+};
 
 export default ShoppingCart;
