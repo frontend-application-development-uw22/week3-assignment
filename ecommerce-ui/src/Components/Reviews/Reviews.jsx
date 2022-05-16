@@ -32,11 +32,9 @@ export default function Reviews() {
       <h2 className="reviews__title">Property Reviews</h2>
       <div className="reviews__list">
         {!reviewsLoaded ? (
-          <>
-            <p>
-              Loading reviews <LoadingSpinner />
-            </p>
-          </>
+          <div>
+            Loading reviews <LoadingSpinner />
+          </div>
         ) : (
           reviewers.map((reviewer, index) => {
             return (

@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useMemo } from "react";
+import PropTypes from "prop-types";
 import LoadingSpinner from "../Assets/LoadingSpinner";
 import "./Map.css";
 
@@ -8,11 +9,13 @@ const containerStyle = {
   height: "240px",
 };
 
-export default function Map({ lat, lng, geoCodeLoaded }) {
-  const center = {
-    lat: lat,
-    lng: lng,
-  };
+export default function Map({ lat, lng }) {
+  const center = useMemo(() => {
+    return {
+      lat: lat,
+      lng: lng,
+    };
+  }, [lat, lng]);
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
@@ -37,7 +40,7 @@ export default function Map({ lat, lng, geoCodeLoaded }) {
       });
       setMap(map);
     },
-    [geoCodeLoaded]
+    [center]
   );
 
   const onUnmount = useCallback(function callback(map) {
@@ -54,29 +57,28 @@ export default function Map({ lat, lng, geoCodeLoaded }) {
   return (
     <div className="map">
       <h2 className="map__title">Property Location</h2>
-      {geoCodeLoaded ? (
-        isLoaded ? (
-          <div className="map__map">
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              onLoad={onLoad}
-              onUnmount={onUnmount}
-              options={defaultMapOptions}
-            >
-              <Marker position={center} />
-            </GoogleMap>
-          </div>
-        ) : (
-          <div className="map__map">
-            <h3>Map view not available at this time</h3>
-          </div>
-        )
+      {isLoaded ? (
+        <div className="map__map">
+          <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+            options={defaultMapOptions}
+          >
+            <Marker position={center} />
+          </GoogleMap>
+        </div>
       ) : (
-        <p>
-          Map data loading <LoadingSpinner />
-        </p>
+        <div className="map__map">
+          <h3>Map view not available at this time</h3>
+        </div>
       )}
     </div>
   );
 }
+
+Map.propTypes = {
+  lat: PropTypes.number.isRequired,
+  lng: PropTypes.number.isRequired,
+};

@@ -51,7 +51,11 @@ export default function Property({
         locationData={locationData}
       />
       <Reviews totalReviews={property.rating.reviews} />
-      <Map lat={geocode[0]} lng={geocode[1]} geoCodeLoaded={geoCodeLoaded} />
+      {geoCodeLoaded ? (
+        <Map lat={geocode[0]} lng={geocode[1]} geoCodeLoaded={geoCodeLoaded} />
+      ) : (
+        <p>Loading map data...</p>
+      )}
     </div>
   );
 }
