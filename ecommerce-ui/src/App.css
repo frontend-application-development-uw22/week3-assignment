@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  color: white;
+  background-color: rgb(40, 79, 100);
+  font-size: 2.25em;
+  font-weight: 900;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+.bnb-ui-main-container{
+  float: left;
+}
+
+.image{
+  height: 300px;
+  float: left;
+  border-top-left-radius: 15px ;
+  border-bottom-left-radius: 15px ;
+  margin-right: 2%;
+}
+
+.bnb-container{
+  height: 300px;
+  width: auto;
+  border-radius: 15px;
+  border: rgb(182, 182, 182) 0.5px solid;
+  margin: 1%;
+  box-shadow: -7px 4px 14px -15px #000000;
+}
+
+.cart-ui-main-container{
+  float: right;
+  height: auto;
+  width: auto;
+  border-radius: 15px;
+  border: rgb(182, 182, 182) 0.5px solid;
+  margin: 1%;
+  margin-right: 2%;
+  padding-bottom: 1%;
+  box-shadow: -7px 4px 14px -15px #000000;
+  position: relative;
+}
+
+.title{
+  margin-left: 2%;
+  text-align: left;
+  font-size: 1.35em;
+  font-weight: 800;
+  color: rgb(70, 70, 70);
+}
+
+.type{
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.location{
+  font-size: 1.15em;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+  text-align: left;
+}
+
+.cost{
+  font-size: 1.25em;
+  font-weight: 700;
+  color: rgb(70, 70, 70);
+  text-align: left;
+}
+
+.description{
+  color: rgb(75, 139, 174);
+}
+
+.host-container{
+  text-align: left;
+}
+
+.host{
+  font-size: 1.15em;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+  text-align: left;
+}
+
+.superhost{
+  color: rgb(75, 139, 174);
+  font-weight: 600;
+}
+
+.add-to-cart{
+  float: right;
+  margin-top: -0.5%;
+  color: white !important;
+  font-weight: 600!important;
+}
+
+.add-to-cart-invalid{
+  float: right;
+  margin-top: -0.5%;
+  color: white !important;
+  font-weight: 600!important;
+  background-color: grey !important;
+}
+
+.cart-header{
+    color: white;
+    background-color: rgb(40, 79, 100);
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 2%;
+    margin-bottom: 1%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cart-item{
+  text-align: left;
+  padding: 5%;
+  border: rgb(182, 182, 182) 0.5px solid;
+  margin: 3%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.cart-btn{
+  color: white !important;
+  font-weight: 600!important;
+}
+
+.cart-total{
+  padding: 5%;
+  border: rgb(182, 182, 182) 0.5px solid;
+  margin: 3%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.total{
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(40, 79, 100);
+}
+
+.cart-item-title{
+  text-align: left;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+
+.cart-item-cost{
+  text-align: left;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: rgb(70, 70, 70);
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+  .image{
+    height: 375px;
+  }
+  
+  .bnb-container{
+    height: 375px;
+  }
+
+  .add-to-cart{
+    float: left;
+    margin-top: 2%;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .image{
+    height: 400px;
+  }
+  
+  .bnb-container{
+    height: 400px;
+  }
+
+  .add-to-cart{
+    float: left;
+    margin-top: 2%;
+  }
+  
+  .cart-ui-main-container{
+    clear: both!important;
+  }
+
+}
