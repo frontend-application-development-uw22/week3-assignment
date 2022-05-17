@@ -4,7 +4,7 @@
         "title": "Huck's houseboat",
         "houseType": "Tent 'n raft",
         "image": "https://live.staticflickr.com/83/213669357_2b361d8654_b.jpg",
-        "img-creator": "https://www.flickr.com/photos/44128322@N00",
+        "credit": "https://www.flickr.com/photos/44128322@N00",
         "location": {
             "city": "some pond",
             "country": ""
@@ -27,7 +27,7 @@
         "title": "Perfectly safe charming older home near forest",
         "houseType": "Entire not-haunted house",
         "image": "https://live.staticflickr.com/3002/2825142048_5ba031169c_b.jpg",
-        "img-creator": "https://www.flickr.com/photos/57565555@N00",
+        "credit": "https://www.flickr.com/photos/57565555@N00",
         "location": {
             "city": "a field",
             "country": ""
@@ -50,7 +50,7 @@
         "title": "USGI Protective Shelter",
         "houseType": "Shared studio",
         "image": "https://live.staticflickr.com/7016/6807618699_d1290da058_b.jpg",
-        "img-creator": "https://www.flickr.com/photos/35703177@N00",
+        "credit": "https://www.flickr.com/photos/35703177@N00",
         "location": {
             "city": "potentially any conflict zone",
             "country": ""
@@ -73,6 +73,7 @@
         "title": "Flight of a Lifetime!",
         "houseType": "Shared habitat",
         "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/International_Space_Station_after_undocking_of_STS-132.jpg",
+        "credit": "https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg",
         "location": {
             "city": "Low Earth Orbit",
             "country": ""

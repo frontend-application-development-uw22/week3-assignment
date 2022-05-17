@@ -12,6 +12,7 @@ export default function Listings({ onAdd, cartItems }) {
           <div key={listing.id} className="card Card-width m-2 p-2">
             <img src={listing.image} className="card-img-top" alt={listing.title} />
             <div className="card-body">
+              <a href={listing.credit} className="Host-info">Image credit</a>
               <h4 className="card-title">{listing.title}</h4>
               <div className="card-text fw-bold">
                 {listing.houseType} in {listing.location.city} {listing.location.country}</div>
