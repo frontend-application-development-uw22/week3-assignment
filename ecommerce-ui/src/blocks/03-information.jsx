@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Combination from './04a-combination'
 import PropertyPicture from './06-property-picture'
+import CartButton from './05-cart-button';
 
 function Information({
     title,
@@ -33,6 +34,8 @@ function Information({
                 rightColumnImageSrc="../icons/money-16.png"
                 rightColumnEntry={priceInfo}
             />
+            
+            <CartButton />
 
             <PropertyPicture 
                 picturePath={picturePath}
