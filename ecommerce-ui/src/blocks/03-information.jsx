@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import Combination from './04a-combination'
-import PropertyPicture from './06-property-picture'
 import CartButton from './05-cart-button';
+import PropertyPicture from './06-property-picture'
 
 function Information({
     title,
@@ -11,6 +11,7 @@ function Information({
     location,
     hostName,
     priceInfo,
+    stayTotal,
     picturePath
 }){
     return(
@@ -35,7 +36,7 @@ function Information({
                 rightColumnEntry={priceInfo}
             />
             
-            <CartButton />
+            <CartButton amountTotal={stayTotal}/>
 
             <PropertyPicture 
                 picturePath={picturePath}
@@ -50,6 +51,7 @@ Information.propTypes = {
     location: PropTypes.string.isRequired,
     hostName: PropTypes.string.isRequired,
     priceInfo: PropTypes.string.isRequired,
+    stayTotal: PropTypes.string.isRequired,
     picturePath: PropTypes.string.isRequired
 }
 
