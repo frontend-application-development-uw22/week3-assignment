@@ -41,6 +41,13 @@ function Information({
     );
 }
 
-
+Information.propTypes = {
+    title: PropTypes.string.isRequired,
+    houseType: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    hostName: PropTypes.string.isRequired,
+    priceInfo: PropTypes.string.isRequired,
+    picturePath: PropTypes.string.isRequired
+}
 
 export default Information
