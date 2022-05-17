@@ -1,11 +1,10 @@
 import './App.css';
-import ListingAllForm from './ecommerceApp/ListingAllForm';
-
+import EcommerceApp from './ecommerceApp/EcommerceApp';
 
 function App() {
   return (
     <div>
-      <ListingAllForm/>
+      <EcommerceApp/>
     </div>
   );
 }
