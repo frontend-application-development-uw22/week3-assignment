@@ -492,5 +492,119 @@
       "stars": 5,
       "reviews": 83
     }
+  },
+  {
+    "id": 26,
+    "title": "Beautiful condo on the sunny side of town",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1571905837410-87605d34ad73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uZG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 10,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 27,
+    "title": "Condo by a pool. What more could you possibly want?",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29uZG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 4,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 28,
+    "title": "Moving on up to the top! Clean, bright condo on the east side.",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 7,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Megan",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 29,
+    "title": "Newly constructured condo that welcomes pets and animal lovers",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 4,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Steven",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 4,
+      "reviews": 33
+    }
+  },
+  {
+    "id": 30,
+    "title": "Newly painted and decorated condo close to the weekend farmers market",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1601462900787-77c5df94d683?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 9,
+    "payment": {
+      "cost": 430,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Shannon",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 77
+    }
+  },
+  {
+    "id": 31,
+    "title": "Newly remodeled with all the best modern construction has to offer",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 1,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Lila",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 3,
+      "reviews": 33
+    }
   }
 ]
