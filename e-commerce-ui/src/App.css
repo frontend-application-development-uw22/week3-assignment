@@ -1,0 +1,107 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  background-color: white;
+}
+.main{
+  display: grid;
+  grid-template-rows: 2fr;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+}
+.nav-list{
+  list-style: none;
+}
+  .shoppingCart{
+    position: absolute;
+    left: 90%;
+  }
+  .rental-block{
+    display: flex;
+    justify-content: center;
+  }
+  .rental-card{
+    margin: 10px;
+    border-radius: 2%;
+    padding: 15px;
+    background-color: rgba(44, 45, 48, 0.15);  
+    backdrop-filter: blur(5px)    
+  }
+  .cardImg{
+    width: 450px;
+    height: 250px;
+  }
+  .rating{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .houseType{
+    position: relative;
+    top: 20px;
+    left: 40%;
+  }
+  .isSuper_false{
+    display: none;
+  }
+  .isSuper_true{
+    color: red;
+    width: fit-content;
+    padding: 2px;
+    background-color: gray blur(10px);
+    position: absolute;
+    top: 20px;
+    
+  }
+  .hostName{
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 20px;
+  }
+  .location{
+    position: relative;
+    bottom: 10px;
+  }
+  .cost-description{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    right: 8%;
+    font-style: italic;
+    color: gray;
+  }
+  .cardButton{
+    position: relative;
+    left: 80%;
+  }
+  #cardButtonID_1{
+    top: 20px;
+  }
+  .hiddenCart{
+      display: none;
+      position: relative;
+      left: 55%;
+    }
+  .showCart{
+      display: block;
+      position: relative;
+      left: 55%;
+  }
+  .CartImg{
+    width: 45px;
+  }
+    #taxSpan{
+      font-style: italic;
+      color: gray;
+      font-size: 10px;
+    }
+    #checkoutBtn{
+      width: 10px;
+      font-size: 8px;
+    }
