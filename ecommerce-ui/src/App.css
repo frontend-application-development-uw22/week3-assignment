@@ -1,0 +1,145 @@
+:root {
+    --midnight-green-eagle-green: #114B5F;
+    --queen-blue: #456990;
+    --beige: #E6E9D2;
+    --almond: #E8D5C3;
+    --fiery-rose: #F45B69;
+    --wine: #6B2737;
+}
+  
+body {
+    background-color: var(--beige);
+}
+
+/* PARENT BLOCK
+*/
+.master-block {
+    display: flex;
+    flex-flow: column;
+}
+
+/* .master-block CHILD
+** .top-navigation
+** For the purposes of adding some random items
+** in the top nav bar
+*/
+
+
+
+/* .master-block CHILD
+** .top-navigation container
+*/
+.top-navigation {
+    background-color: var(--queen-blue);
+}
+
+.top-navigation ul {
+    display: flex;
+    justify-content:center;
+}
+
+.top-navigation li {
+    color: white;
+
+    padding-left: 3em;
+    padding-right: 3em;
+    list-style-type: none;
+}
+
+/* Converts the standard black image into white.
+*/
+.top-navigation li img{
+    filter: invert(1);
+}
+
+/* .master-block CHILD
+** .host-block container
+*/
+.host-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row;
+}
+/* .host-block CHILD
+** .exhibit container 
+** holds booking information
+*/
+.exhibit {
+    background-color: var(--beige);
+    width: 500px;
+    margin: 5px;
+}
+
+.exhibit:hover {
+    box-shadow: 5px 2px 7px var(--wine);
+}
+
+.exhibit h1 {
+    color: var(--wine);
+    font-size: large;
+    text-align: center;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.property-picture {
+    width: 500px;
+    max-height: 331px;
+
+    object-fit: none;
+}
+
+/* .exhibit CHILD
+** .information-card
+** For the purposes of making a grid of
+** house type ... location
+** host ......... price
+*/
+.information-card {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* .information-card CHILD
+** .combination-house-type-location
+** For the purposes of house type and location row
+*/
+.combination-house-type-location {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+/* .information-card CHILD
+** .combination-host-price
+** For the purposes of house and price row
+*/
+.combination-host-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+/* .exhibit CHILD
+** .cart-button
+** For the purposes of putting a button to add
+** room to the cart
+*/
+.cart-button {
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-button button {
+    background-color: var(--fiery-rose);
+    color: white;
+    
+    margin: 0;
+    border: none;
+    padding: 1em;
+    outline: none;
+
+    display: inline-block;
+}
