@@ -1,0 +1,89 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.main {
+  padding: 11px;
+  margin: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.bnb-card {
+  display: flex;
+  padding: 3px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.bnb-card.center {
+  align-items: center;
+}
+
+button {
+  align-items: center;
+  color: white;
+  border: 1px #dd5f9e solid;
+  background-color: #dd5f9e;
+  font-size: 12px;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 80%;
+  cursor: pointer;
+}
+
+button.increase {
+  align-items: center;
+  background-color: #dd5f9e;
+  width: 20px;
+}
+
+button.decrease {
+  align-items: center;
+  background-color: #dd5f9e;
+  width: 20px;
+}
+
+.title {
+  display: block;
+}
+
+h1 {
+  color: #dd5f9e;
+  font-size: 20px;
+  margin: 5px ;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.cart {
+  flex: 1;
+  font-size: 15px;
+}
+
+.bnbs {
+  flex: 2;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+  font-size: 15px;
+}
+
+img {
+  max-height: 250px;
+  border-radius: 10px;
+}
