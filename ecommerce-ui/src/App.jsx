@@ -87,8 +87,16 @@ export default function App() {
             }
           ></Route>
           <Route
-            path="/properties/:propertiesType"
-            element={<Properties />}
+            path="/properties/:propertyType"
+            element={
+              <Properties
+                cartItems={cartItems}
+                onAddToCartHandler={onAddToCartHandler}
+                onRemoveFromCartHandler={onRemoveFromCartHandler}
+                propertyData={propertyData}
+                locationData={locationData}
+              />
+            }
           ></Route>
           <Route
             path="/collection/:city"
