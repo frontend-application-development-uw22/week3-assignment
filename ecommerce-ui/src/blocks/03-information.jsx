@@ -2,15 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Combination from './04a-combination'
+import PropertyPicture from './06-property-picture'
 
 function Information({
+    title,
     houseType,
     location,
     hostName,
-    priceInfo
+    priceInfo,
+    picturePath
 }){
     return(
         <div className="information-card">
+            <h1>{title}</h1>
             <Combination
                 thisClassName="combination-house-type-location"
                 leftColumnImageAlt="house icon"
@@ -29,6 +33,14 @@ function Information({
                 rightColumnImageSrc="../icons/money-16.png"
                 rightColumnEntry={priceInfo}
             />
+
+            <PropertyPicture 
+                picturePath={picturePath}
+            />
         </div>
     );
 }
+
+
+
+export default Information

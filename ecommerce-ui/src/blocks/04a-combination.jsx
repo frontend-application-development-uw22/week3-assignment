@@ -24,14 +24,14 @@ function Combination({
     );
 }
 
-Combination.PropTypes(
-    thisClassName = PropTypes.string.isRequired,
-    leftColumnImageAlt = PropTypes.string.isRequired,
-    leftColumnImageSrc = PropTypes.string.isRequired,
-    leftColumnEntry = PropTypes.string.isRequired,
-    rightColumnImageAlt = PropTypes.string.isRequired,
-    rightColumnImageSrc = PropTypes.string.isRequired,
-    rightColumnEntry = PropTypes.string.isRequired
-);
+Combination.propTypes = {
+    thisClassName: PropTypes.string.isRequired,
+    leftColumnImageAlt: PropTypes.string.isRequired,
+    leftColumnImageSrc: PropTypes.string.isRequired,
+    leftColumnEntry: PropTypes.string.isRequired,
+    rightColumnImageAlt: PropTypes.string.isRequired,
+    rightColumnImageSrc: PropTypes.string.isRequired,
+    rightColumnEntry: PropTypes.string.isRequired
+}
 
 export default Combination;
