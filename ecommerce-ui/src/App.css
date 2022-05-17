@@ -35,7 +35,7 @@ body {
 
 .top-navigation ul {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
 }
 
 .top-navigation li {
@@ -46,6 +46,8 @@ body {
     list-style-type: none;
 }
 
+/* Converts the standard black image into white.
+*/
 .top-navigation li img{
     filter: invert(1);
 }
@@ -54,6 +56,8 @@ body {
 ** .host-block container
 */
 .host-block {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-flow: row;
 }
