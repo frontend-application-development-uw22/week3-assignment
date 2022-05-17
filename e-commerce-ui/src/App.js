@@ -9,18 +9,46 @@ import CardBuilder from './components/card';
 import Button from '@mui/material/Button'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { IconButton, Badge } from '@mui/material';
+import CartItemBuilder from './components/cartItem';
 
 function App() {
-  const[bookingCount, setCount]=useState(0)
-    function booking(){
+  const [cart, setCart] = useState([])
+  const [cartCount, setCartCount] = useState(0)
+  const [cartTotal, setCartTotal] = useState(0)
+  const [cartTotalCost, setCartTotalCost] = useState(0)
+  
+  function shoppingCartAddItem(houseType, city, country, img ,index, cost ){
+    setCart(prevCartItem=> {return {...prevCartItem, dataIndex: index, houseType: houseType, city: city, country: country, cost: cost}})
+    setCartCount(cartCount + 1)
+    setCartTotal(cartTotal + 1)
+    setCartTotalCost(cartTotalCost + cost)
+    setCart([...cart, {dataIndex: index, houseType: houseType, city: city, country: country, img: img, cost: cost}])
+    console.log(cart, cartCount, cartTotal, cartTotalCost)
+    // return a div with the cart item
+  }
+  function shoppingCartRemoveItem(houseType, city, country, img ,index, cost ){
+    setCartCount(cartCount - 1)
+    setCartTotal(cartTotal - 1)
+    setCartTotalCost(cartTotalCost - cost)
+    setCart([...cart.filter(item => item.dataIndex !== index)])
+    console.log(cart, cartCount, cartTotal, cartTotalCost)
+  }
+    const[bookingCount, setCount]=useState(0)
+    function booking(e, houseType, city, country, img, index, cost){
+      shoppingCartAddItem(houseType, city, country, img, index, cost)
       setCount(prevbookingCount => prevbookingCount + 1)
     }
-    function minus(){
+    function minus( e, houseType, city, country, img, index, cost){
       if(bookingCount>0){
         setCount(prevbookingCount=> prevbookingCount - 1)
+        shoppingCartRemoveItem(houseType, city, country, img, index, cost)
       }else{
         setCount(0)
       }
+    }
+    const[viewCart , setViewCart]=useState("hiddenCart")
+    function showCart(e){
+      setViewCart(prevViewCart=> {return prevViewCart === "hiddenCart" ? "showCart" : "hiddenCart"})
     }
   return (
     <div className='main'>
@@ -32,11 +60,29 @@ function App() {
         </ul>
       </div>
       <div className='shoppingCart'>
-        <IconButton onClick={(e)=>minus()} size='large' aria-label="show 4 new mails" color="inherit">
+        <IconButton className='cartLogo' onClick={(e)=>showCart()} size='large'color="inherit">
           <Badge badgeContent={bookingCount} color="error">
             <ShoppingBasketIcon />
           </Badge>
         </IconButton>
+      </div>
+      <div className={viewCart}>
+        {
+          cart.map((item, index)=> {
+            return (
+              <div>
+              <CartItemBuilder
+              key={index} 
+              houseType={item.houseType} 
+              city={item.city} 
+              country={item.country} 
+              img={item.img} 
+              cost={item.cost}/>
+              <Button variant="outlined" color="error" onClick={(e)=>{minus(e, item.houseType, item.city, item.country, item.img, item.dataIndex, item.cost)}}>Remove</Button>
+              </div>
+            )
+        })}
+        <p>TOTAL: ${cartTotalCost} <span id='taxSpan'>( Taxes and Fees not included )</span> <span><Button id="checkoutBtn" variant='contained' color='error' onClick={()=>{alert("Demo ends here")}}>Checkout</Button></span></p>
       </div>
       <div className='rental-block'>
           {data.map((rental, index)=>{
@@ -59,7 +105,7 @@ function App() {
                       city={rental.location.city}
                       country={rental.location.country}
                       />
-                    <Button id={`cardButtonID_${index}`} className='cardButton' variant="contained" onClick={(e)=>booking()} >Book</Button>
+                    <Button id={`cardButtonID_${index}`} className='cardButton' variant="contained" onClick={(e)=>booking(e, rental.houseType, rental.location.city, rental.location.country, rental.image, index, rental.payment.cost)} >Book</Button>
                   </div>
                   )
                 }
