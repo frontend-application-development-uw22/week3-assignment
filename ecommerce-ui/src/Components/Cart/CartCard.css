@@ -1,0 +1,33 @@
+.cart-card {
+  display: flex;
+  flex-shrink: 1;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.cart-card__details {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 2em;
+}
+
+.cart-card__image {
+  width: 220px;
+  flex: 0 1 2em;
+  object-fit: cover;
+}
+
+.cart-card__title {
+  margin: 0;
+}
+
+.cart-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 1 40em;
+}
+
+.cart-card__button {
+  width: 160px;
+}

@@ -1,0 +1,9 @@
+.reviews {
+  margin-top: 40px;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+}

@@ -1,0 +1,29 @@
+.collection-card__container--medium {
+  flex: 0 1 46%;
+}
+
+.collection-card__container--large {
+  flex: 1 1 560px;
+}
+
+.collection-card__image--medium {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.collection-card__image--large {
+  width: 480px;
+}
+
+.collection-card__link {
+  text-decoration: none;
+}
+
+.collection-card__location {
+  position: relative;
+  top: -140px;
+  padding: 7px 0 7px 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: var(--white);
+}

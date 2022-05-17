@@ -1,0 +1,610 @@
+[
+  {
+    "id": 0,
+    "title": "Centrally-located Manhattan studio",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80",
+    "location": 0,
+    "payment": {
+      "cost": 105,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Robert",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 3,
+      "reviews": 133
+    }
+  },
+  {
+    "id": 1,
+    "title": "Clean, upscale Denver apartment outside Union Station",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80",
+    "location": 12,
+    "payment": {
+      "cost": 130,
+      "description": "Get one night free"
+    },
+    "host": {
+      "name": "Jamie",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 4.5,
+      "reviews": 381
+    }
+  },
+  {
+    "id": 2,
+    "title": "Quaint 3-bedroom home in hip and historic Ustick neighborhood",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    "location": 12,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 3,
+    "title": "Beautiful 4-bedroom apartment in downtown Portland",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 7,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Stephanie",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 4,
+      "reviews": 99
+    }
+  },
+  {
+    "id": 4,
+    "title": "Trendy apartment near the downtown San Francisco tech scene",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 5,
+    "payment": {
+      "cost": 440,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Steven",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 4,
+      "reviews": 132
+    }
+  },
+  {
+    "id": 5,
+    "title": "Upscale three bedroom home in quiet suburb of downtown Seattle",
+    "houseType": "Entire home",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 3,
+    "payment": {
+      "cost": 180,
+      "description": "Get 20% off"
+    },
+    "host": {
+      "name": "Max",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 36
+    }
+  },
+  {
+    "id": 6,
+    "title": "Newly built home in quiet, low-key West Seattle",
+    "houseType": "Entire home",
+    "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 3,
+    "payment": {
+      "cost": 210,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Lisa",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 3,
+      "reviews": 13
+    }
+  },
+  {
+    "id": 7,
+    "title": "Trendy 3-bedroom brick home in hip Ballard neighborhood",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 3,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 8,
+    "title": "Clean, bright studio apartment near Space Needle",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 3,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 9,
+    "title": "Large, modern home with pool near Nike campus",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=80",
+    "location": 7,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 10,
+    "title": "Beach-front home with jacuzzi and fully stocked bar",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1592595896551-12b371d546d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    "location": 6,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 11,
+    "title": "Open-air home walking distance from Disney World",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 4,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 12,
+    "title": "Downtown Boston apartment. Fully stocked and ready to entertain.",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 8,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 13,
+    "title": "One of a few homes within walking distance to the LA music scene.",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1568605115459-4b731184f961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHZpbGxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 2,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 14,
+    "title": "Roomy two bedroom apartment in Queens",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlsbGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 1,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 15,
+    "title": "LA studio apartment near the beach",
+    "houseType": "Apartment",
+    "image": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHZpbGxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 2,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 16,
+    "title": "Curl up with a good book in our cozy cabin",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    "location": 3,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 17,
+    "title": "Ultra modern, beautiful home in popular Boise neighborhood",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1568605115459-4b731184f961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    "location": 11,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 18,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 12,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 19,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 8,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 20,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 7,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 21,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80",
+    "location": 9,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 22,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fHZpbGxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 0,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 23,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1616012760010-8da02da071fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fHZpbGxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 3,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 24,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlsbGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 1,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 25,
+    "title": "Quaint 3-bedroom home in Gamla stan",
+    "houseType": "House",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dmlsbGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 1,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 26,
+    "title": "Beautiful condo on the sunny side of town",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1571905837410-87605d34ad73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uZG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 10,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 27,
+    "title": "Condo by a pool. What more could you possibly want?",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29uZG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "location": 4,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Olivia",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 28,
+    "title": "Moving on up to the top! Clean, bright condo on the east side.",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 7,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Megan",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 83
+    }
+  },
+  {
+    "id": 29,
+    "title": "Newly constructured condo that welcomes pets and animal lovers",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 4,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Steven",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 4,
+      "reviews": 33
+    }
+  },
+  {
+    "id": 30,
+    "title": "Newly painted and decorated condo close to the weekend farmers market",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1601462900787-77c5df94d683?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 9,
+    "payment": {
+      "cost": 430,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Shannon",
+      "isSuperhost": false
+    },
+    "rating": {
+      "stars": 5,
+      "reviews": 77
+    }
+  },
+  {
+    "id": 31,
+    "title": "Newly remodeled with all the best modern construction has to offer",
+    "houseType": "Condo",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "location": 1,
+    "payment": {
+      "cost": 230,
+      "description": "Free cancellation"
+    },
+    "host": {
+      "name": "Lila",
+      "isSuperhost": true
+    },
+    "rating": {
+      "stars": 3,
+      "reviews": 33
+    }
+  }
+]
