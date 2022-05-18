@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function BnbCard({bnb}) {
     // let superHost = '';
@@ -38,4 +39,8 @@ export default function BnbCard({bnb}) {
             <br></br>
         </div>
     );
+}
+
+BnbCard.propTypes = {
+    bnb: PropTypes.any.isRequired
 }
