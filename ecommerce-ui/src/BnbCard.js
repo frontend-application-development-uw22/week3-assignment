@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function BnbCard({bnb}) {
+export default function BnbCard({bnb},{myKey}) {
     // let superHost = '';
     // if (bnb.host.isSuperhost === true) {
     //     superHost = `Superhost`;
@@ -10,9 +10,7 @@ export default function BnbCard({bnb}) {
         <div className='container'>
 
             <img className='image' src={bnb.image} alt={bnb.title}></img>
-
             <div className='information'>
-
                 <div className='leftSide'>
                     <div className='location'>
                         <b>{bnb.location.city}, {bnb.location.country}</b>
@@ -20,11 +18,12 @@ export default function BnbCard({bnb}) {
                     <div className='title'>
                         <b>{bnb.title}</b>
                     </div>
-                    <div className='houseType'>{bnb.houseType}</div>
+                    <div className='houseType'>
+                        {bnb.houseType} 
+                        <span hidden={!bnb.payment.description}> &#x2022; {bnb.payment.description}</span>
+                    </div>
                     <div className='cost'>${bnb.payment.cost}</div>
-                    <div className='description'>{bnb.payment.description}</div>
                 </div>
-
                 <div className='rightSide'>
                     <div className='name'>
                         {bnb.host.name} 
@@ -33,14 +32,13 @@ export default function BnbCard({bnb}) {
                     <div className='stars'>{bnb.rating.stars} Stars</div>
                     <div className='reviews'>{bnb.rating.reviews} Reviews</div>
                 </div>
-                
             </div>
-            
             <br></br>
+            {myKey}
         </div>
     );
 }
 
 BnbCard.propTypes = {
-    bnb: PropTypes.any.isRequired
+    bnb: PropTypes.any.isRequired,
 }
