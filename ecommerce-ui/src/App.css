@@ -1,9 +1,8 @@
 .container {
   border: 1px solid black;
-  width: 500px ;
+  width: 500px;
   padding: 10px;
-  padding-bottom: 72px;
-  margin: 30px;
+  margin: 1%;
 }
 
 .rightSide{
@@ -13,4 +12,10 @@
 
 .leftSide {
   float: left;
+}
+
+.bnbcard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }

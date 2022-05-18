@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function BnbCard({bnb},{myKey}) {
+export default function BnbCard({bnb}) {
     // let superHost = '';
     // if (bnb.host.isSuperhost === true) {
     //     superHost = `Superhost`;
@@ -34,7 +34,6 @@ export default function BnbCard({bnb},{myKey}) {
                 </div>
             </div>
             <br></br>
-            {myKey}
         </div>
     );
 }
