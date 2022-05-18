@@ -2,13 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function BnbCard({bnb}) {
-    // let superHost = '';
-    // if (bnb.host.isSuperhost === true) {
-    //     superHost = `Superhost`;
-    // };
     return (
         <div className='container'>
-
             <img className='image' src={bnb.image} alt={bnb.title}></img>
             <div className='information'>
                 <div className='leftSide'>

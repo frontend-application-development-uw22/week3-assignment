@@ -2,7 +2,7 @@
   border: 1px solid black;
   width: 500px;
   padding: 10px;
-  margin: 1%;
+  margin: 10px;
 }
 
 .rightSide{
@@ -18,4 +18,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.cart {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1fr;
+  border: 1px;
 }
