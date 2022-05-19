@@ -18,6 +18,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 280px;
 }
 
 .cart {
@@ -25,6 +26,11 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 1fr;
+
+  width: 100%;
   border: 1px;
+  position: fixed;
+  top: 0; 
+  overflow: hidden;
+  background-color: rgba(161, 218, 47, 0.468);
 }
