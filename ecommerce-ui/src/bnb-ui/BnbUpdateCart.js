@@ -6,7 +6,7 @@ export default function BnbUpdateCart({cartItem, removeItem}) {
     <div className='cart-item'>
       <div>
         <img className="cartimage leftSide" src={cartItem.bnb.image} alt={cartItem.bnb.title}></img>
-        <div className='rightside'>
+        <div className='rightSide'>
             <div>{cartItem.bnb.title}</div>
             
             <div>{cartItem.bnb.houseType} 

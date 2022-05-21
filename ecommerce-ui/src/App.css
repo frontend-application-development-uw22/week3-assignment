@@ -10,11 +10,6 @@
   float: right;
 }
 
-.rightside{
-  text-align: left;
-  float: right;
-}
-
 .leftSide {
   float: left;
 }
@@ -23,17 +18,14 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 280px;
+  float: left;
 }
 
 .cart {
-  /* display: flex;
-  flex-flow: column wrap;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  float: right;
   padding: 5px;
-  width: 100%;
-  border: 1px;
   background-color: rgba(161, 218, 47, 0.468);
 }
 
