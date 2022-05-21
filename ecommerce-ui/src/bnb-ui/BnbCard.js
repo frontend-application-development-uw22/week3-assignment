@@ -1,21 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BnbCart from './BnbCart.js';
 
-export default function BnbCard({bnb}) {
+export default function BnbCard({bnb, addItem}) {
     return (
-        <div className='container' onClick={() => {
-            <BnbCart
-                image={bnb.image} 
-                title={bnb.title}
-                houseType={bnb.houseType}
-                description={bnb.payment.description}
-                stars={bnb.rating.stars}
-                reviews={bnb.rating.reviews}
-                superhost={bnb.host.isSuperhost}
-                cost={bnb.payment.cost}
-            />
-          }}>
+        <div className='container' onClick={() => addItem(bnb)}>
+            
             <img className='image' src={bnb.image} alt={bnb.title}></img>
             <div className='information'>
                 <div className='leftSide'>

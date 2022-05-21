@@ -1,43 +1,42 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import BnbUpdateCart from './BnbUpdateCart';
+// import PropTypes from 'prop-types';
 
-export default function BnbCart({image, title, houseType, description, stars, reviews, superhost, cost}) {
-
-  console.log('hello')
-
+export default function BnbCart({cartItems, removeItem, totalCost}) {
+  const cartRender = cartItems.map((cartItem,index) =>
+    <BnbUpdateCart
+        key = {index}
+        cartItem = {cartItem}
+        removeItem = {removeItem}
+    />
+  )
+  // console.log(totalCost);
   return (
     <div className='cart'>
-      <div>Your cart is currently empty.</div>
-      <br></br>
-
-      <img src={image} alt='placeholder'></img>
-
-      <div>{title}</div>
-      
-      <div>{houseType} 
-        <span hidden={!description}> &#x2022; {description}</span>
+      <div>
+        {totalCost === 0 && <div>Your cart is currently empty.</div>}
+        {totalCost !== 0 && (
+          <>
+            {cartRender}
+            <div className='total'>
+              Price details
+              <br></br>
+              Total &#40;USD&#41; ${totalCost}
+            </div>
+          </>
+        )}
       </div>
-      <div>{stars} Stars &#40;{reviews}&#41;
-        <span hidden={!superhost}> &#x2022; Superhost</span>
-      </div>
-      <br></br>
-      <div>Remove</div>
-      <br></br>
-      <div>Price details</div>
-      
-      <div>Total &#40;USD&#41; ${cost}</div>
-
     </div>
   );
 }
 
-BnbCart.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  houseType: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  stars: PropTypes.number.isRequired,
-  reviews: PropTypes.number.isRequired,
-  superhost: PropTypes.bool.isRequired,
-  cost: PropTypes.number.isRequired
-}
+// BnbCart.propTypes = {
+//   image: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   houseType: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   stars: PropTypes.number.isRequired,
+//   reviews: PropTypes.number.isRequired,
+//   superhost: PropTypes.bool.isRequired,
+//   cost: PropTypes.number.isRequired
+// }

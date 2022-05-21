@@ -10,6 +10,11 @@
   float: right;
 }
 
+.rightside{
+  text-align: left;
+  float: right;
+}
+
 .leftSide {
   float: left;
 }
@@ -22,15 +27,27 @@
 }
 
 .cart {
-  display: flex;
+  /* display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-
+  align-items: center; */
+  padding: 5px;
   width: 100%;
   border: 1px;
-  position: fixed;
-  top: 0; 
-  overflow: hidden;
   background-color: rgba(161, 218, 47, 0.468);
+}
+
+.cart-item {
+  padding: 80px;
+}
+
+.cartimage {
+  width: 200px;
+}
+
+.total {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  margin-top: 60px;
 }
