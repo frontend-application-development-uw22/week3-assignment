@@ -1,0 +1,79 @@
+body
+{
+
+}
+
+.app
+{
+  background-color: white;
+  margin: 30px;
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.bnbcontainer
+{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.bnbcell
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  border-style: solid;
+  border-width: thin;
+  width: 1fr;
+}
+
+.bnbtextcell
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sccontainer
+{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.bnbcontainer
+{
+  display:grid;
+
+}
+
+.bnbimagecell
+{
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.bnbimage
+{
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+  object-fit: fill;
+
+
+}
+
+.bnbaddtocart
+{
+  grid-column: 2;
+  align-content: center;
+}
+
+.bnbtitle
+{
+
+}
+
