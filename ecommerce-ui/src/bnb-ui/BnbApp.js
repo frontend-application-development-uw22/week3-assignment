@@ -1,8 +1,9 @@
 import React from 'react';
 import BnbCard from './BnbCard';
 import Bnbs from '../bnbs';
+import PropTypes from 'prop-types';
 
-function BnbApp({addItem}) {
+export default function BnbApp({addItem}) {
     const bnbrender = Bnbs.map((bnb,index) =>
       <BnbCard
           key = {index}
@@ -18,5 +19,8 @@ function BnbApp({addItem}) {
     );
   }
   
-  export default BnbApp;
+
   
+BnbApp.propTypes = {
+    addItem: PropTypes.func.isRequired
+}

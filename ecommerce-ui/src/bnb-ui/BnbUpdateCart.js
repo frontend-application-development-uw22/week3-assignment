@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function BnbUpdateCart({cartItem, removeItem}) {
   return (
@@ -24,4 +24,9 @@ export default function BnbUpdateCart({cartItem, removeItem}) {
     <br></br>
     </div>
   );
+}
+
+BnbUpdateCart.propTypes = {
+  cartItem: PropTypes.any.isRequired,
+  removeItem: PropTypes.func.isRequired
 }

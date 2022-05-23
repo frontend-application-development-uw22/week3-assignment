@@ -36,4 +36,5 @@ export default function BnbCard({bnb, addItem}) {
 
 BnbCard.propTypes = {
     bnb: PropTypes.any.isRequired,
+    addItem: PropTypes.func.isRequired
 }

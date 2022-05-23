@@ -1,6 +1,6 @@
 import React from 'react';
 import BnbUpdateCart from './BnbUpdateCart';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function BnbCart({cartItems, removeItem, totalCost}) {
   const cartRender = cartItems.map((cartItem,index) =>
@@ -30,13 +30,8 @@ export default function BnbCart({cartItems, removeItem, totalCost}) {
   );
 }
 
-// BnbCart.propTypes = {
-//   image: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired,
-//   houseType: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   stars: PropTypes.number.isRequired,
-//   reviews: PropTypes.number.isRequired,
-//   superhost: PropTypes.bool.isRequired,
-//   cost: PropTypes.number.isRequired
-// }
+BnbCart.propTypes = {
+  cartItems: PropTypes.any.isRequired,
+  removeItem: PropTypes.func.isRequired,
+  totalCost: PropTypes.number.isRequired
+}
