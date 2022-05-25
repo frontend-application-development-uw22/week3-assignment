@@ -36,3 +36,127 @@
     transform: rotate(360deg);
   }
 }
+
+.listing-item {
+  position: relative;
+  box-shadow: rgb(0 0 0 / 5%) 0 2px 3px 0;
+  background: white;
+  border-radius: 2px;
+  font-size: 1.05em;
+  margin: 0.5em 0.5em 2em;
+  padding: 1em 0;
+}
+.listing-item__image {
+  max-height: 250px;
+  max-width: 100%;
+}
+.listings {
+  position: relative;
+}
+
+.listing-item__figure-container {
+  position: relative;
+  float:left;
+}
+
+.listing-item__figure {
+    height: 200px;
+    width: 300px;
+}
+
+.listing-item__body {
+  font-size: 1.1em;
+  font-weight: 300;
+  overflow: hidden;
+  padding: 0.75em;
+  text-align: left;
+}
+
+.detail-box__item {
+  border-left: 1px solid rgba(0,0,0,0.1);
+  padding: 0 0.75em 0.5em 0.75em;
+  display: inline-block;
+  margin: -5px;
+  vertical-align: middle;
+}
+
+.detail-box__label {
+  font-size: 0.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.listing-item__title {
+    font-weight: 400;
+    margin: 0;
+}
+
+.u-space-ts {
+    margin-top: 0.5em !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+p, pre, blockquote, table {
+    margin: 0 0 1em;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+dt {
+  display: block;
+}
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+body {
+    margin: 0;
+    font-family: Nunito Sans,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2d2f30;
+    text-align: left;
+    background-color: #edf0f2;
+}
+.detail-box__value {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* .btnAddToCart {
+  position: absolute;
+  background-color: transparent;
+  color: yellow;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .01;
+  outline: 0;
+  overflow: visible;
+  z-index: 20;
+} */
+
+.btnAddToCart {
+  color: #313c43;
+  background-color: #f0f3f4;
+  background-image: none;
+  border-color: #adadad;
+}
