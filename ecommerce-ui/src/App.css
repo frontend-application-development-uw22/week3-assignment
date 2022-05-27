@@ -1,0 +1,50 @@
+.Card-width {
+  max-width: 50rem;
+}
+
+.Cart-width {
+  max-width: 25rem;
+}
+
+.Title {
+  font-weight:400;
+  font-size:1.2em;
+  color:black;
+}
+
+.Host-info {
+  font-size:x-small;
+}
+
+.SupHost-pic {
+  border-radius: 50%;
+  height:auto;
+  max-width: 3em;
+}
+
+.Stars-pic {
+  height:auto;
+  max-width: 7em;
+}
+
+.Card-width {
+  max-width: 40vw;
+}
+
+.Page-width {
+  max-width: 80em;
+}
+
+.Centered {
+  margin: auto;
+}
+
+.Cart-pos {
+  position:sticky;
+  top:0;
+  max-height: 100vh;
+}
+
+.Text-right {
+  text-align: right;
+}
