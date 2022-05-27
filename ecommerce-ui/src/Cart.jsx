@@ -40,7 +40,5 @@ export default function Cart({ cartItems, onRemove }) {
 
 Cart.propTypes = {
   cartItems: PropTypes.func.isRequired,
-  onAdd: PropTypes.func.isRequired,
-  onRemove: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
 };

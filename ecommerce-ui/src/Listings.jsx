@@ -32,19 +32,6 @@ export default function Listings({ onAdd, cartItems }) {
 }
 
 Listings.propTypes = {
-  id: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  houseType: PropTypes.string.isRequired,
-  location: PropTypes.shape({
-    city: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
-  }),
-  payment: PropTypes.shape({
-    cost: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }),
   onAdd: PropTypes.func.isRequired,
-  Oops: PropTypes.func.isRequired,
   cartItems: PropTypes.array.isRequired,
 };
