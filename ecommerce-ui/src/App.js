@@ -3,20 +3,20 @@ import Button from './components/Button';
 import ShoppingCart from './components/ShoppingCart';
 import VacationRental from './components/VacationRental';
 import bnbs from './data/bnbs.json';
-let totalCost = 0;
 function App() {
   const [itemList, setItemList] = useState([]);
   const [toggleDisplay, setToggleDisplay] = useState(true);
+  const [totalCost, setTotalCost] = useState(0);
   // Add the selected vacation rental to the itemList array
   const addItem = (id) => {
     setItemList([...itemList, bnbs[id]]);
     // Sum total cost
-    totalCost += bnbs[id].payment.cost;
+    setTotalCost(previousValue => previousValue + bnbs[id].payment.cost);
   }
 
   const removeItem = (id) => {
     // Minus total cost
-    totalCost -= itemList[id].payment.cost;
+    setTotalCost(previousValue => previousValue - itemList[id].payment.cost);
     // Remove the current item from the item list array
     setItemList([
       ...itemList.slice(0, id),
